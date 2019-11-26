@@ -9,8 +9,9 @@ import java.util.*;
 public class Slytherin extends House {
 
   /***
-  * 
-  */
+   * Order from high to less by the attribute attackPoints the character of
+   * characterList
+   */
   @Override
   public void orderCharacters() {
     Collections.sort(characterList, Collections.reverseOrder(new AttackPointsComparator()));

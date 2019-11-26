@@ -9,8 +9,9 @@ import java.util.*;
 public class Gryffindor extends House {
 
   /***
-  * 
-  */
+   * Order from less to high by the attribute resistencePoints the character of
+   * characterList
+   */
   @Override
   public void orderCharacters() {
     Collections.sort(characterList, new ResistencePointsComparator());

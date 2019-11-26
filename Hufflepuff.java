@@ -9,8 +9,9 @@ import java.util.*;
 public class Hufflepuff extends House {
 
   /***
-  *
-  */
+   * Order from less to high by the attribute attackPoints the character of
+   * characterList
+   */
   @Override
   public void orderCharacters() {
     Collections.sort(characterList, new AttackPointsComparator());

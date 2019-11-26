@@ -1,8 +1,7 @@
 
 /**
- * Creating a class which implements Comparator Interface
- * (using resistencePoints)
- * Ordena de menor a mayor por el atributo resistencePoints
+ * Creating a class which implements Comparator Interface (using resistencePoints)
+ * Order from less to high by the attribute resistencePoints
  */
 import java.util.*;
 

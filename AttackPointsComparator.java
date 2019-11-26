@@ -1,9 +1,8 @@
 import java.util.*;
 
 /**
- * Creating a class which implements Comparator Interface
- * (using attackPoints)
- * Ordena de menor a mayor por el atributo attackPoints
+ * Creating a class which implements Comparator Interface (using attackPoints)
+ * Order from less to high by the attribute attackPoints
  */
 class AttackPointsComparator implements Comparator<Character> {
   public int compare(Character c1, Character c2) {

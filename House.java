@@ -18,7 +18,7 @@ public abstract class House {
   }
 
   /***
-   * abstract method that especific house order it is own characters
+   * Abstract method that especific house order it is own characters
    */
   public abstract void orderCharacters();
 
@@ -42,10 +42,13 @@ public abstract class House {
     return c;
   }
 
+  /***
+   * Print all character in characterList with him attributes
+   */
   public void printCharacterList() {
 
     for (Character c : characterList) {
-      System.out.printf("character:<%s> <e: %f> <o: %f> <d: %f> <wand: %s (%s)>\n",c.getName(), c.getEnergyPoints(),
+      System.out.printf("character:<%s> <e: %f> <o: %f> <d: %f> <wand: %s (%s)>\n", c.getName(), c.getEnergyPoints(),
           c.getAttackPoints(), c.getResistencePoints(), "null", "null");
     }
 
