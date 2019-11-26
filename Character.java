@@ -45,7 +45,6 @@ public class Character
 
     /**
      * Method that checks Character type and applies the type characterictics
-     
      */
     public void checkType()
     {
@@ -62,17 +61,58 @@ public class Character
         characterWand = newWand;
     }
     
-    public float getAttackPoints(){
-        return characterWand.offesiveUse(offensivePoints, energyPoints);
+    /***
+     * 
+     */
+    public String getName(){
+        return Name;
     }
+    
+     /***
+     * 
+     */
+    public String getWandName(){
+        return characterWand.getName();
+    }
+    
+    /***
+     * 
+     */
+    public String getWandType(){
+        return characterWand.getType();
+    }
+    
+    /***
+     * 
+     */
+    public float getAttackPoints(){
+        return characterWand.offensiveUse(offensivePoints, energyPoints);
+    }
+    
+    /***
+     * 
+     */
     public float getResistancePoints(){
         return characterWand.defensiveUse(defensivePoints, energyPoints);
     }
     
+    /***
+     * 
+     */
+    public float getEnergyPoints(){
+        return energyPoints;
+    }
+    
+    /***
+     * 
+     */
     public void executeDamage(float damage){
         energyPoints -= damage;
     }
     
+    /***
+     * 
+     */
     public void fight(Character opponent){
         float attackPoints;
         float resistancePoints;

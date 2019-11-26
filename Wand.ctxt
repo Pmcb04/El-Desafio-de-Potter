@@ -2,7 +2,11 @@
 comment0.target=Wand
 comment0.text=\n\ Class\ Character\n\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 26/11/2019\n
 comment1.params=characterOffensivePoints\ characterEnergyPoints
-comment1.target=float\ offesiveUse(float,\ float)
+comment1.target=float\ offensiveUse(float,\ float)
 comment2.params=characterdefensivePoints\ characterEnergyPoints
 comment2.target=float\ defensiveUse(float,\ float)
-numComments=3
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment4.params=
+comment4.target=java.lang.String\ getType()
+numComments=5

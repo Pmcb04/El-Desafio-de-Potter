@@ -49,7 +49,7 @@ public abstract class House {
 
     for (Character c : characterList) {
       System.out.printf("character:<%s> <e: %f> <o: %f> <d: %f> <wand: %s (%s)>\n", c.getName(), c.getEnergyPoints(),
-          c.getAttackPoints(), c.getResistencePoints(), "null", "null");
+          c.getOffensivePoints(), c.getDefensivePoints(), c.getWandName(), c.getWandType());
     }
 
   }

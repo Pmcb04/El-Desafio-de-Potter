@@ -7,6 +7,8 @@
  */
 public interface Wand
 {
-    public float offesiveUse(float characterOffensivePoints, float characterEnergyPoints);
+    public float offensiveUse(float characterOffensivePoints, float characterEnergyPoints);
     public float defensiveUse(float characterdefensivePoints, float characterEnergyPoints);
+    public String getName();
+    public String getType();
 }

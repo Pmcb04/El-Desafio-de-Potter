@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=AbstractWand
+comment0.text=\n\ Write\ a\ description\ of\ class\ AbstractWand\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=Name\ Type
+comment1.target=AbstractWand(java.lang.String,\ java.lang.String)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ AbstractWand\n
+comment2.params=characterOffensivePoints\ characterEnergyPoints
+comment2.target=float\ offensiveUse(float,\ float)
+comment2.text=\n\ \n
+comment3.params=characterdefensivePoints\ characterEnergyPoints
+comment3.target=float\ defensiveUse(float,\ float)
+comment3.text=\n\ \n
+comment4.params=
+comment4.target=java.lang.String\ getName()
+comment4.text=\n\ \n
+comment5.params=
+comment5.target=java.lang.String\ getType()
+comment5.text=\n\ \n
+numComments=6

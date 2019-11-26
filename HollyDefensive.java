@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class HollyDefensive implements Wand
+public class HollyDefensive extends AbstractWand
 {
     private float offensivePointsMultiplier;
     private float defensivePointsMultiplier;
@@ -15,8 +15,9 @@ public class HollyDefensive implements Wand
     /**
      * Constructor for objects of class OffensiveHawthron
      */
-    public HollyDefensive()
+    public HollyDefensive(String Name)
     {
+        super(Name,"HollyDefensive");
         offensivePointsMultiplier = 0.3f;
         defensivePointsMultiplier = 1.1f;
         offensiveEnergyMultiplier = 0.7f;
@@ -25,7 +26,7 @@ public class HollyDefensive implements Wand
     }
 
     @Override
-    public float offesiveUse(float characterOffensivePoints, float characterEnergyPoints){
+    public float offensiveUse(float characterOffensivePoints, float characterEnergyPoints){
         return (offensiveEnergyMultiplier * characterEnergyPoints + offensivePointsMultiplier * characterOffensivePoints);   
     }
 
