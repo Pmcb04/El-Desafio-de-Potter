@@ -7,7 +7,7 @@
  */
 public class Character {
   private String name;
-  private float energyPoints;
+  private float energy;
   private float attackPoints;
   private float resistencePoints;
 
@@ -17,7 +17,7 @@ public class Character {
   public Character(String name) {
 
     this.name = name;
-    energyPoints = 20;
+    energy = 20;
     attackPoints = 20;
     resistencePoints = 20;
 
@@ -33,8 +33,8 @@ public class Character {
   /***
   *
   */
-  public void setEnergyPoints(float energyPoints) {
-    this.energyPoints = energyPoints;
+  public void setEnergyPoints(float energy) {
+    this.energy = energy;
   }
 
   /***
@@ -62,7 +62,7 @@ public class Character {
   *
   */
   public float getEnergyPoints() {
-    return energyPoints;
+    return energy;
   }
 
   /***
