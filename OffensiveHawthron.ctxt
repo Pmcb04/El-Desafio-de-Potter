@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=OffensiveHawthron
+comment0.text=\n\ Write\ a\ description\ of\ class\ OffensiveHawthron\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=OffensiveHawthron()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ OffensiveHawthron\n
+comment2.params=characterOffensivePoints\ characterEnergyPoints
+comment2.target=float\ offesiveUse(float,\ float)
+comment3.params=characterdefensivePoints\ characterEnergyPoints
+comment3.target=float\ defensiveUse(float,\ float)
+numComments=4

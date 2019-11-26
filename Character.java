@@ -3,87 +3,86 @@
  * Class Character
  *
  * @author Pedro Miguel Carmona Broncano & Rubén Marín Lucas & Adrián Ruiz Parra
- * @version 12/11/2019
+ * @version 26/11/2019
  */
-public class Character {
-  private String name;
-  private float energy;
-  private float attackPoints;
-  private float resistencePoints;
+public class Character
+{
+    // instance variables - replace the example below with your own
+    private String Name;
+    private float energyPoints;
+    private float offensivePoints;
+    private float defensivePoints;
+    private Wand characterWand;
+    private String Type;
 
-  /**
-   * Constructor for objects of class Character
-   */
-  public Character(String name) {
+    /**
+     * Constructor for objects of class Character
+     */
+    public Character(String Name, String Type, Wand wand)
+    {
+        this.Name = Name;
+        this.Type = Type;
+        characterWand = wand;
+        energyPoints = 20;
+        offensivePoints = 20;
+        defensivePoints = 20;
+        checkType();
+    }
+    
+    /**
+     * Constructor for objects of class Character
+     */
+    public Character(String Name, String Type, float energyPoints, float offensivePoints, float defensivePoints, Wand wand)
+    {
+        this.Name = Name;
+        this.Type = Type;
+        characterWand = wand;
+        this.energyPoints = energyPoints;
+        this.offensivePoints = offensivePoints;
+        this.defensivePoints = defensivePoints;
+        checkType();
+    }
 
-    this.name = name;
-    energy = 20;
-    attackPoints = 20;
-    resistencePoints = 20;
-
-  }
-
-  /***
-  *
-  */
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  /***
-  *
-  */
-  public void setEnergyPoints(float energy) {
-    this.energy = energy;
-  }
-
-  /***
-  *
-  */
-  public void setAttackPoints(float attackPoints) {
-    this.attackPoints = attackPoints;
-  }
-
-  /***
-  *
-  */
-  public void setResistencePoints(float resistencePoints) {
-    this.resistencePoints = resistencePoints;
-  }
-
-  /***
-  *
-  */
-  public String getName() {
-    return name;
-  }
-
-  /***
-  *
-  */
-  public float getEnergyPoints() {
-    return energy;
-  }
-
-  /***
-  *
-  */
-  public float getAttackPoints() {
-    return attackPoints;
-  }
-
-  /***
-  *
-  */
-  public float getResistencePoints() {
-    return resistencePoints;
-  }
-
-  /***
-  *
-  */
-  public void fight() {
-
-  }
-
+    /**
+     * Method that checks Character type and applies the type characterictics
+     
+     */
+    public void checkType()
+    {
+        if (Type.equals("Offensive")) offensivePoints += 5;
+        if (Type.equals("Defensive")) defensivePoints += 5;
+    }
+   
+    /**
+     * Changes the current wand into a new wand
+     * 
+     */
+    public void changeWand(Wand newWand)
+    {
+        characterWand = newWand;
+    }
+    
+    public float getAttackPoints(){
+        return characterWand.offesiveUse(offensivePoints, energyPoints);
+    }
+    public float getResistancePoints(){
+        return characterWand.defensiveUse(defensivePoints, energyPoints);
+    }
+    
+    public void executeDamage(float damage){
+        energyPoints -= damage;
+    }
+    
+    public void fight(Character opponent){
+        float attackPoints;
+        float resistancePoints;
+        float balance;
+        
+        attackPoints = getAttackPoints();
+        resistancePoints = opponent.getResistancePoints();
+        
+        balance = attackPoints - resistancePoints;
+        
+        if(balance>0) opponent.executeDamage(balance);
+    }
 }

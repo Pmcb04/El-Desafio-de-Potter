@@ -1,7 +1,8 @@
 #BlueJ class context
 comment0.target=Wand
-comment0.text=\n\ Class\ Wand\n\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 12/11/2019\n
-comment1.params=
-comment1.target=Wand()
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Wand\n
-numComments=2
+comment0.text=\n\ Class\ Character\n\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 26/11/2019\n
+comment1.params=characterOffensivePoints\ characterEnergyPoints
+comment1.target=float\ offesiveUse(float,\ float)
+comment2.params=characterdefensivePoints\ characterEnergyPoints
+comment2.target=float\ defensiveUse(float,\ float)
+numComments=3
