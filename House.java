@@ -1,33 +1,54 @@
+import java.util.*;
 
 /**
- * Write a description of class House here.
+ * Class House
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Pedro Miguel Carmona Broncano & Rubén Marín Lucas & Adrián Ruiz Parra
+ * @version 12/11/2019
  */
-public class House
-{
-    // instance variables - replace the example below with your own
-    private int x;
+public abstract class House {
 
-    /**
-     * Constructor for objects of class House
-     */
-    public House()
-    {
-        // initialise instance variables
-        x = 0;
+  protected List<Character> characterList;
+
+  /**
+   * Constructor for objects of class House
+   */
+  public House() {
+    characterList = new ArrayList<Character>();
+  }
+
+  /***
+   * abstract method that especific house order it is own characters
+   */
+  public abstract void orderCharacters();
+
+  /***
+   * Introduce one Character in the last index of characterList
+   *
+   * @param character is a character that it will introduce in characterList
+   */
+  public void setCharacter(Character character) {
+    characterList.add(character);
+  }
+
+  /***
+   * Return the first character in characterList
+   *
+   * @return Character
+   */
+  public Character getCharacter() {
+    Character c = characterList.get(0);
+    characterList.remove(0);
+    return c;
+  }
+
+  public void printCharacterList() {
+
+    for (Character c : characterList) {
+      System.out.printf("character:<%s> <e: %f> <o: %f> <d: %f> <wand: %s (%s)>\n",c.getName(), c.getEnergyPoints(),
+          c.getAttackPoints(), c.getResistencePoints(), "null", "null");
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+  }
+
 }

@@ -1,33 +1,19 @@
+import java.util.*;
 
 /**
- * Write a description of class Hogwarts here.
+ * Class Hogwarts
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Pedro Miguel Carmona Broncano & Rubén Marín Lucas & Adrián Ruiz Parra
+ * @version 12/11/2019
  */
-public class Hogwarts
-{
-    // instance variables - replace the example below with your own
-    private int x;
+public class Hogwarts {
 
-    /**
-     * Constructor for objects of class Hogwarts
-     */
-    public Hogwarts()
-    {
-        // initialise instance variables
-        x = 0;
-    }
+  HashMap<String, House> characterCollection;
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+  /**
+   * Constructor for objects of class Hogwarts
+   */
+  public Hogwarts() {
+  }
+
 }

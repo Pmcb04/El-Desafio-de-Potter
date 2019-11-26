@@ -1,33 +1,17 @@
 
 /**
- * Write a description of class ExtraPotion here.
+ * Class ExtraPotion
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Pedro Miguel Carmona Broncano & Rubén Marín Lucas & Adrián Ruiz Parra
+ * @version 12/11/2019
  */
-public class ExtraPotion
-{
-    // instance variables - replace the example below with your own
-    private int x;
+public class ExtraPotion {
 
-    /**
-     * Constructor for objects of class ExtraPotion
-     */
-    public ExtraPotion()
-    {
-        // initialise instance variables
-        x = 0;
-    }
+  /**
+   * Constructor for objects of class ExtraPotion
+   */
+  public ExtraPotion() {
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+  }
+
 }

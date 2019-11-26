@@ -1,10 +1,18 @@
 #BlueJ class context
 comment0.target=House
-comment0.text=\n\ Write\ a\ description\ of\ class\ House\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Class\ House\n\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 12/11/2019\n
 comment1.params=
 comment1.target=House()
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ House\n
-comment2.params=y
-comment2.target=int\ sampleMethod(int)
-comment2.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\n
-numComments=3
+comment2.params=
+comment2.target=void\ orderCharacters()
+comment2.text=\n\ abstract\ method\ that\ especific\ house\ order\ it\ is\ own\ characters\n
+comment3.params=character
+comment3.target=void\ setCharacter(Character)
+comment3.text=\n\ Introduce\ one\ Character\ in\ the\ last\ index\ of\ characterList\n\n\ @param\ character\ is\ a\ character\ that\ it\ will\ introduce\ in\ characterList\n
+comment4.params=
+comment4.target=Character\ getCharacter()
+comment4.text=\n\ Return\ the\ first\ character\ in\ characterList\n\n\ @return\ Character\n
+comment5.params=
+comment5.target=void\ printCharacterList()
+numComments=6
