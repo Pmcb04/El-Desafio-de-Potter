@@ -1,4 +1,5 @@
 import java.util.*;
+import java.io.*;
 
 /**
  * Class House
@@ -9,11 +10,13 @@ import java.util.*;
 public abstract class House {
 
   protected List<Character> characterList;
+  protected String name;
 
   /**
    * Constructor for objects of class House
    */
-  public House() {
+  public House(String name) {
+    this.name = name;
     characterList = new ArrayList<Character>();
   }
 
@@ -21,6 +24,22 @@ public abstract class House {
    * Abstract method that especific house order it is own characters
    */
   public abstract void orderCharacters();
+
+  /***
+   * Return the name of the house
+   * @return name of the house
+   */
+  public String getName(){
+      return name;
+  }
+  
+  /***
+  * Introduce the name of the house
+  * @param name is a name of the house
+  */
+  public void setName(String name){
+      this.name = name;
+  }
 
   /***
    * Introduce one Character in the last index of characterList
@@ -48,8 +67,8 @@ public abstract class House {
   public void printCharacterList() {
 
     for (Character c : characterList) {
-      System.out.printf("character:<%s> <e: %f> <o: %f> <d: %f> <wand: %s (%s)>\n", c.getName(), c.getEnergyPoints(),
-          c.getOffensivePoints(), c.getDefensivePoints(), c.getWandName(), c.getWandType());
+      System.out.printf("character:<%s> <e: %.1f> <o: %.1f> <d: %.1f> <wand: %s (%s)>\n", c.getName(), c.getEnergyPoints(),
+          c.getAttackPoints(), c.getResistancePoints(), c.getWandName(), c.getWandType());
     }
 
   }

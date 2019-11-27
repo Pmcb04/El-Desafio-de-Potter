@@ -1,7 +1,9 @@
 #BlueJ class context
 comment0.target=Gryffindor
 comment0.text=\n\ Class\ Gryffindor\n\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 12/11/2019\n
-comment1.params=
-comment1.target=void\ orderCharacters()
-comment1.text=\n\ Order\ from\ less\ to\ high\ by\ the\ attribute\ resistencePoints\ the\ character\ of\n\ characterList\n
-numComments=2
+comment1.params=name
+comment1.target=Gryffindor(java.lang.String)
+comment2.params=
+comment2.target=void\ orderCharacters()
+comment2.text=\n\ Order\ from\ less\ to\ high\ by\ the\ attribute\ resistencePoints\ the\ character\ of\n\ characterList\n
+numComments=3

@@ -7,7 +7,11 @@ import java.util.*;
  * @version 12/11/2019
  */
 public class Hufflepuff extends House {
-
+  
+  public Hufflepuff (String name){
+        super(name);
+  }
+  
   /***
    * Order from less to high by the attribute attackPoints the character of
    * characterList

@@ -8,6 +8,10 @@ import java.util.*;
  */
 public class Slytherin extends House {
 
+  public Slytherin (String name){
+        super(name);
+  }   
+     
   /***
    * Order from high to less by the attribute attackPoints the character of
    * characterList

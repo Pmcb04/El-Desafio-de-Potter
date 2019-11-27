@@ -5,7 +5,7 @@
  * @author Pedro Miguel Carmona Broncano & Rubén Marín Lucas & Adrián Ruiz Parra
  * @version 26/11/2019
  */
-public class Character
+public abstract class Character
 {
     // instance variables - replace the example below with your own
     private String Name;
@@ -13,44 +13,31 @@ public class Character
     private float offensivePoints;
     private float defensivePoints;
     private Wand characterWand;
-    private String Type;
 
     /**
      * Constructor for objects of class Character
      */
-    public Character(String Name, String Type, Wand wand)
+    public Character(String Name)
     {
         this.Name = Name;
-        this.Type = Type;
-        characterWand = wand;
+        characterWand = null;
         energyPoints = 20;
         offensivePoints = 20;
         defensivePoints = 20;
-        checkType();
     }
     
     /**
      * Constructor for objects of class Character
      */
-    public Character(String Name, String Type, float energyPoints, float offensivePoints, float defensivePoints, Wand wand)
+    public Character(String Name, float energyPoints, float offensivePoints, float defensivePoints)
     {
         this.Name = Name;
-        this.Type = Type;
-        characterWand = wand;
+        characterWand = null;
         this.energyPoints = energyPoints;
         this.offensivePoints = offensivePoints;
         this.defensivePoints = defensivePoints;
-        checkType();
     }
 
-    /**
-     * Method that checks Character type and applies the type characterictics
-     */
-    public void checkType()
-    {
-        if (Type.equals("Offensive")) offensivePoints += 5;
-        if (Type.equals("Defensive")) defensivePoints += 5;
-    }
    
     /**
      * Changes the current wand into a new wand
@@ -125,4 +112,25 @@ public class Character
         
         if(balance>0) opponent.executeDamage(balance);
     }
+    
+    public void setOffensivePoints(float offensivePoints){
+     this.offensivePoints = offensivePoints;    
+    }
+    
+    public void setDefensivePoints(float defensivePoints){
+     this.defensivePoints = defensivePoints;    
+    }
+    
+    public void setEnergyPoints(float energyPoints){
+     this.energyPoints = energyPoints;    
+    }
+    
+    public float getOffensivePoints(){
+     return offensivePoints;    
+    }
+    
+    public float getDefensivePoints(){
+     return defensivePoints;    
+    }
+    
 }

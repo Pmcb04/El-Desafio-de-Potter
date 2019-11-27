@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.target=ResistencePointsComparator
+comment0.target=ResistancePointsComparator
 comment0.text=\n\ Creating\ a\ class\ which\ implements\ Comparator\ Interface\ (using\ resistencePoints)\n\ Order\ from\ less\ to\ high\ by\ the\ attribute\ resistencePoints\n
 comment1.params=c1\ c2
 comment1.target=int\ compare(Character,\ Character)

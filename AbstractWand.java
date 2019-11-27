@@ -20,7 +20,6 @@ public abstract class AbstractWand implements Wand
         this.Type = Type;
     }
     
-    
     /***
      * 
      */

@@ -8,13 +8,18 @@ import java.util.*;
  */
 public class Gryffindor extends House {
 
+  public Gryffindor (String name){
+        super(name);
+  }  
+    
+    
   /***
    * Order from less to high by the attribute resistencePoints the character of
    * characterList
    */
   @Override
   public void orderCharacters() {
-    Collections.sort(characterList, new ResistencePointsComparator());
+    Collections.sort(characterList, new ResistancePointsComparator());
   }
 
 }
