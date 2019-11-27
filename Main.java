@@ -10,25 +10,34 @@ public class Main
 {
     public static void main (String[] arg) throws IOException{
         
-         
-            FileReader fr = new FileReader("input.log")
-            
-        
+            /// cada casa puede tener un numero de personajes distintos
+            /// todos los personajes tienen una varita al inicio
+            FileReader fr = new FileReader("input.log");
             FileWriter fw = new FileWriter("output.log");
-            fw.write("Hola");
-            fw.close();
+            Scanner sc = new Scanner(fr);
             
+             String s;
+             while (sc.hasNextLine()){
+                 s = sc.nextLine();
+                 System.out.println(s);
+                 fw.write(s+"\n");
+             }
+          
            
         
-        /*House Gryffindor = new Gryffindor("Gryffindor");
+         House Gryffindor = new Gryffindor("Gryffindor");
          Wand harryW = new  HollyDefensive("HarryW");
-         Character harry = new Character("Harry Potter","Defensive", 20, 20, 30,harryW);       
+         Character harry = new OffensiveCharacter("Harry Potter", 20, 20, 30);    
+         harry.changeWand(harryW);
          Wand ronW = new OffensiveHawthron("RonW");
-         Character ron = new Character("Ron Weasley", "Defensive", 20, 26, 20,ronW);
+         Character ron = new DefensiveCharacter("Ron Weasley", 20, 26, 20);
+         ron.changeWand(ronW);
          Wand nevilleW = new OffensiveHawthron("NevilleW");
-         Character neville = new Character("Neville Long", "Offensive",20, 20, 28, nevilleW);
+         Character neville = new OffensiveCharacter("Neville Long",20, 20, 28 );
+         neville.changeWand(nevilleW);
          Wand hermioneW = new  HollyDefensive("HermioneW");
-         Character hermione = new Character("Hermiones Granger","Offensive" , 20,20,28, hermioneW);
+         Character hermione = new DefensiveCharacter("Hermiones Granger" , 20,20,28);
+         hermione.changeWand(hermioneW);
          
          Gryffindor.setCharacter(harry);
          Gryffindor.setCharacter(ron);
@@ -37,8 +46,9 @@ public class Main
          
          Gryffindor.orderCharacters();
  
-         Gryffindor.printCharacterList();*/
-        
+         Gryffindor.printCharacterList(fw);
+          
+          fw.close();
      
       
     }

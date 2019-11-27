@@ -11,18 +11,18 @@ public class DefensiveCharacter extends Character
     /**
      * Constructor for objects of class DefensiveCharacter
      */
-    public DefensiveCharacter(String Name)
+    public DefensiveCharacter(String Name, Wand wand)
     {
-        super(Name);
+        super(Name,wand);
         boostDefensivePoints();
     }
 
     /**
      * Constructor for objects of class DefensiveCharacter
      */
-    public DefensiveCharacter(String Name, float energyPoints, float offensivePoints, float defensivePoints)
+    public DefensiveCharacter(String Name, float energyPoints, float offensivePoints, float defensivePoints,Wand wand)
     {
-        super(Name,energyPoints,offensivePoints,defensivePoints);
+        super(Name,energyPoints,offensivePoints,defensivePoints,wand);
         boostDefensivePoints();
     }
     

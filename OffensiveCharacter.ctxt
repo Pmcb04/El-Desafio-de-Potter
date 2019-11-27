@@ -1,12 +1,12 @@
 #BlueJ class context
 comment0.target=OffensiveCharacter
-comment0.text=\n\ Write\ a\ description\ of\ class\ OffensiveCharacter\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=Name
-comment1.target=OffensiveCharacter(java.lang.String)
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ DefensiveCharacter\n
-comment2.params=Name\ energyPoints\ offensivePoints\ defensivePoints
-comment2.target=OffensiveCharacter(java.lang.String,\ float,\ float,\ float)
-comment2.text=\n\ Constructor\ for\ objects\ of\ class\ DefensiveCharacter\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ OffensiveCharacter\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=Name\ wand
+comment1.target=OffensiveCharacter(java.lang.String,\ Wand)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ DefensiveCharacter\r\n
+comment2.params=Name\ energyPoints\ offensivePoints\ defensivePoints\ wand
+comment2.target=OffensiveCharacter(java.lang.String,\ float,\ float,\ float,\ Wand)
+comment2.text=\r\n\ Constructor\ for\ objects\ of\ class\ DefensiveCharacter\r\n
 comment3.params=
 comment3.target=void\ boostOffensivePoints()
 numComments=4

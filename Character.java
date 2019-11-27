@@ -17,25 +17,26 @@ public abstract class Character
     /**
      * Constructor for objects of class Character
      */
-    public Character(String Name)
+    public Character(String Name, Wand wand)
     {
         this.Name = Name;
-        characterWand = null;
         energyPoints = 20;
         offensivePoints = 20;
         defensivePoints = 20;
+        characterWand = wand;
     }
     
     /**
      * Constructor for objects of class Character
      */
-    public Character(String Name, float energyPoints, float offensivePoints, float defensivePoints)
+    public Character(String Name, float energyPoints, float offensivePoints, float defensivePoints, Wand wand
+    )
     {
         this.Name = Name;
-        characterWand = null;
         this.energyPoints = energyPoints;
         this.offensivePoints = offensivePoints;
         this.defensivePoints = defensivePoints;
+        characterWand = wand;
     }
 
    
@@ -73,14 +74,14 @@ public abstract class Character
      * 
      */
     public float getAttackPoints(){
-        return characterWand.offensiveUse(offensivePoints, energyPoints);
+        return characterWand.offensiveUse(getOffensivePoints(), getEnergyPoints());
     }
     
     /***
      * 
      */
     public float getResistancePoints(){
-        return characterWand.defensiveUse(defensivePoints, energyPoints);
+        return characterWand.defensiveUse(getDefensivePoints(),getEnergyPoints());
     }
     
     /***
@@ -133,4 +134,7 @@ public abstract class Character
      return defensivePoints;    
     }
     
+    public Wand getWand(){
+     return characterWand;   
+    }
 }

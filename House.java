@@ -9,8 +9,8 @@ import java.io.*;
  */
 public abstract class House {
 
-  protected List<Character> characterList;
-  protected String name;
+  private List<Character> characterList;
+  private String name;
 
   /**
    * Constructor for objects of class House
@@ -29,7 +29,7 @@ public abstract class House {
    * Return the name of the house
    * @return name of the house
    */
-  public String getName(){
+  protected String getName(){
       return name;
   }
   
@@ -37,8 +37,16 @@ public abstract class House {
   * Introduce the name of the house
   * @param name is a name of the house
   */
-  public void setName(String name){
+  protected void setName(String name){
       this.name = name;
+  }
+  
+  /***
+  * Return the characterList
+  * @return the characterList
+  */
+  protected List<Character> getCharacterList(){
+      return characterList;
   }
 
   /***
@@ -56,19 +64,33 @@ public abstract class House {
    * @return Character
    */
   public Character getCharacter() {
-    Character c = characterList.get(0);
-    characterList.remove(0);
-    return c;
+    return characterList.get(0);
+  }
+  
+  /***
+   * 
+   */
+  public void checkCharacters(){
+      
+      if(getCharacter().getEnergyPoints() <= 0) characterList.remove(0);
+      else {
+          Character c  = getCharacter();
+          characterList.remove(0);
+          characterList.add(c);
+      }
   }
 
   /***
    * Print all character in characterList with him attributes
    */
-  public void printCharacterList() {
+  public void printCharacterList(FileWriter fw) throws IOException{
 
+    String s;
     for (Character c : characterList) {
-      System.out.printf("character:<%s> <e: %.1f> <o: %.1f> <d: %.1f> <wand: %s (%s)>\n", c.getName(), c.getEnergyPoints(),
-          c.getAttackPoints(), c.getResistancePoints(), c.getWandName(), c.getWandType());
+      s = String.format("character:<%s> <e: %.1f> <o: %.1f> <d: %.1f> <wand: %s (%s)>\n", c.getName(), c.getEnergyPoints(),
+            c.getOffensivePoints(),c.getDefensivePoints(), c.getWandName(), c.getWandType());
+      System.out.printf(s);
+      fw.write(s);
     }
 
   }
