@@ -8,9 +8,19 @@ import java.util.*;
  */
 public class Main
 {
-    public static void main (String[] arg){
+    public static void main (String[] arg) throws IOException{
         
-         /*House Gryffindor = new Gryffindor("Gryffindor");
+         
+            FileReader fr = new FileReader("input.log")
+            
+        
+            FileWriter fw = new FileWriter("output.log");
+            fw.write("Hola");
+            fw.close();
+            
+           
+        
+        /*House Gryffindor = new Gryffindor("Gryffindor");
          Wand harryW = new  HollyDefensive("HarryW");
          Character harry = new Character("Harry Potter","Defensive", 20, 20, 30,harryW);       
          Wand ronW = new OffensiveHawthron("RonW");
@@ -27,9 +37,9 @@ public class Main
          
          Gryffindor.orderCharacters();
  
-         Gryffindor.printCharacterList();
-         */
-       
+         Gryffindor.printCharacterList();*/
+        
+     
       
     }
 }
