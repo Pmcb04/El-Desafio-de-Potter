@@ -1,4 +1,29 @@
-character:<Ron Weasley> <e: 20.0> <o: 26.0> <d: 25.0> <wand: RonW (OffensiveHawthron)>
-character:<Neville Long> <e: 20.0> <o: 25.0> <d: 28.0> <wand: NevilleW (OffensiveHawthron)>
-character:<Harry Potter> <e: 20.0> <o: 25.0> <d: 30.0> <wand: HarryW (HollyDefensive)>
-character:<Hermiones Granger> <e: 20.0> <o: 20.0> <d: 33.0> <wand: HermioneW (HollyDefensive)>
+new Wands:
+----------
+wand: <Hazel (OffensiveHawthron)>
+wand: <Larch (HollyDefensive)>
+wand: <Laurel (OffensiveHawthron)>
+wand: <Rowan (HollyDefensive)>
+wand: <Spruce (OffensiveHawthron)>
+wand: <Tamarack (HollyDefensive)>
+
+houses:
+-------
+house:<Slytherin>
+character:<Pansy Parkinson> <e: 20.0> <o: 47.0> <d: 20.0> <wand: PansyW (OffensiveHawthron)>
+character:<Draco Malfoy> <e: 20.0> <o: 47.0> <d: 20.0> <wand: DracoW (OffensiveHawthron)>
+character:<Albus Severus Potter> <e: 20.0> <o: 21.5> <d: 40.0> <wand: AlbusW (HollyDefensive)>
+character:<Dolores Umbridge> <e: 20.0> <o: 20.0> <d: 45.5> <wand: DoloresW (HollyDefensive)>
+
+house:<Hufflepuff>
+character:<Nymphadora Tonks> <e: 20.0> <o: 20.0> <d: 45.5> <wand: NymphadoraW (HollyDefensive)>
+character:<Cedric Diggory> <e: 20.0> <o: 20.0> <d: 45.5> <wand: CedricW (HollyDefensive)>
+character:<Pomona Sprout> <e: 20.0> <o: 21.5> <d: 40.0> <wand: PomonaW (HollyDefensive)>
+character:<Rolf Scamander> <e: 20.0> <o: 47.0> <d: 20.0> <wand: RolfW (OffensiveHawthron)>
+
+house:<Gryffindor>
+character:<Ron Weasley> <e: 20.0> <o: 47.0> <d: 20.0> <wand: RonW (OffensiveHawthron)>
+character:<Hermione Granger> <e: 20.0> <o: 47.0> <d: 20.0> <wand: HermioneW (OffensiveHawthron)>
+character:<Neville Longbottom> <e: 20.0> <o: 40.0> <d: 21.0> <wand: NevilleW (OffensiveHawthron)>
+character:<Harry Potter> <e: 20.0> <o: 20.0> <d: 45.5> <wand: HarryW (HollyDefensive)>
+

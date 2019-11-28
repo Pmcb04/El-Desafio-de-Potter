@@ -88,9 +88,10 @@ public abstract class House {
     String s;
     for (Character c : characterList) {
       s = String.format("character:<%s> <e: %.1f> <o: %.1f> <d: %.1f> <wand: %s (%s)>\n", c.getName(), c.getEnergyPoints(),
-            c.getOffensivePoints(),c.getDefensivePoints(), c.getWandName(), c.getWandType());
+            c.getAttackPoints(),c.getResistancePoints(), c.getWandName(), c.getWandType());
       System.out.printf(s);
       fw.write(s);
+
     }
 
   }

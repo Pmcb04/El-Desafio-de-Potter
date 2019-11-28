@@ -83,14 +83,7 @@ public abstract class Character
     public float getResistancePoints(){
         return characterWand.defensiveUse(getDefensivePoints(),getEnergyPoints());
     }
-    
-    /***
-     * 
-     */
-    public float getEnergyPoints(){
-        return energyPoints;
-    }
-    
+       
     /***
      * 
      */
@@ -132,6 +125,13 @@ public abstract class Character
     
     public float getDefensivePoints(){
      return defensivePoints;    
+    }
+    
+    /***
+    * 
+    */
+    public float getEnergyPoints(){
+        return energyPoints;
     }
     
     public Wand getWand(){

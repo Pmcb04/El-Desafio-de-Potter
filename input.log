@@ -6,27 +6,28 @@ Rowan HollyDefensive
 Spruce OffensiveHawthron
 Tamarack HollyDefensive
 
+3
 
 4
 Gryffindor
-20 20 35 HarryW HollyDefensive Harry Potter
-20 26 25 RonW OffensiveHawthron Ron Weasley 
-20 25 28 HermioneW OffensiveHawthron Hermione Granger
-20 25 20 NevilleW OffensiveHawthron Neville Longbottom 
+HarryW HollyDefensive Defensive Harry Potter
+RonW OffensiveHawthron Offensive Ron Weasley
+HermioneW OffensiveHawthron Offensive Hermione Granger
+NevilleW OffensiveHawthron Defensive Neville Longbottom
 
 4
 Slytherin
-20 32.5 20 PansyW OffensiveHawthron Pansy Parkinson
-20 32.5 20 DracoW OffensiveHawthron Draco Malfoy 
-20 20 25 DoloresW HollyDefensive Dolores Umbridge
-20 20 25 AlbusW HollyDefensive Albus Severus Potter
+PansyW OffensiveHawthron Offensive Pansy Parkinson
+DracoW OffensiveHawthron Offensive Draco Malfoy
+DoloresW HollyDefensive Defensive Dolores Umbridge
+AlbusW HollyDefensive Offensive Albus Severus Potter
 
 4
 Hufflepuff
-20 20 25 NymphadoraW HollyDefensive Nymphadora Tonks
-20 20 25 RolfW OffensiveHawthron Rolf Scamander
-20 32.5 20 CedricW HollyDefensive Cedric Diggory
-20 32.5 20 PomonaW HollyDefensive Pomona Sprout
+NymphadoraW HollyDefensive Defensive Nymphadora Tonks
+RolfW OffensiveHawthron Offensive Rolf Scamander
+CedricW HollyDefensive Defensive Cedric Diggory
+PomonaW HollyDefensive Offensive Pomona Sprout
 
 
 

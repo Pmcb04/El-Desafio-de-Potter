@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.*; 
+import java.io.*;
+
 /**
  * Write a description of class Howarts here.
  *
@@ -15,6 +17,8 @@ public class Hogwarts
     private ArrayList<Character> currentCharacter;
     //Collection of Characters, they are in the dungeon
     private ArrayList<Character> dungeon;
+    //Collection of Wands
+    private TreeSet<Wand> newWandCollection;
 
     /**
      * Constructor for objects of class Hogwarts
@@ -23,6 +27,7 @@ public class Hogwarts
         houseCollection = new HashMap<String, House>();
         currentCharacter = new ArrayList<Character>();
         dungeon = new ArrayList<Character>();
+        newWandCollection = new TreeSet<Wand>(new NameWandComparator());
     }
     
     /**
@@ -55,6 +60,28 @@ public class Hogwarts
     }
     
     /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
+     */
+    public void insertWand(Wand w)
+    {
+        newWandCollection.add(w);
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
+     */
+    public void insertHouse(String nameHouse, House h)
+    {
+        houseCollection.put(nameHouse, h);
+    }
+
+    /**
      * Sorts the characters by his energy in ascending order
      *
      */
@@ -81,7 +108,7 @@ public class Hogwarts
         }
     }
     
-    /**
+     /**
      * An example of a method - replace this comment with your own
      *
      */
@@ -90,27 +117,103 @@ public class Hogwarts
         int index;
         while(it.hasNext()){
             Character c = it.next();
-            if(c.getEnergyPoints() == 0f){
-                sendToDungeon(c);
-               }else{
-                 sendToHouse(c);  
-              }
+            if(c.getEnergyPoints() <= 0f){
+               dungeon.add(c);
+            }
+            else{
+               giveWand(c);
+            }
          }
+        checkHouses();
     }
     
     /**
      * An example of a method - replace this comment with your own
      *
      */
-    public void sendToDungeon(Character c){
+    public void checkHouses(){
+        Iterator<String> it = houseCollection.keySet().iterator();
+        House h;
+        while(it.hasNext()){
+            String key = it.next();
+            String nameHouse = houseCollection.get(key).getName();
+            if (nameHouse != null){
+             h = houseCollection.get(key);
+             h.checkCharacters();
+            }
+        }
+    }
+    
+    /**
+     * An example of a method - replace this comment with your own
+     * Si nuestro conjunto no esta vacio le cambia la varita
+     */
+    public void giveWand(Character c){
+        if(!newWandCollection.isEmpty()){
+            Wand newWand = newWandCollection.first();
+            c.changeWand(newWand);
+            newWandCollection.remove(newWand);
+        }
     }
     
     /**
      * An example of a method - replace this comment with your own
      *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
      */
-    public void sendToHouse(Character c){
+    public void printWands(FileWriter fw) throws IOException
+    {
+      Iterator<Wand> it = newWandCollection.iterator();
+      String s;
+      Wand w;
+      while(it.hasNext()){
+          w = it.next();
+          s = String.format("wand: <%s (%s)>%n", w.getName(), w.getType());
+          System.out.printf(s);
+          fw.write(s);
+      }
+      
+      System.out.println();
+      fw.write("\n");
+      
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
+     */
+    public void printCharacters(FileWriter fw) throws IOException
+    {
+        Iterator<String> it = houseCollection.keySet().iterator();
+        House h;
+        String s;
+        while(it.hasNext()){
+            String key = it.next();
+            String nameHouse = houseCollection.get(key).getName();
+            if (nameHouse != null){
+             h = houseCollection.get(key);
+             s = String.format("house:<%s>%n", h.getName());
+             System.out.printf(s);
+             fw.write(s);
+             h.printCharacterList(fw);    
+             System.out.println();
+             fw.write("\n");
+            }
+        }
+      
+    }
+
+    
+    /***
+     * 
+     */
+    public void showResultDuel(){
+        
         
     }
+     
 }
 

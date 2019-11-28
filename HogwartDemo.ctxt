@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=HogwartDemo
+comment0.text=\n\ Write\ a\ description\ of\ class\ HogwartDemo\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=s\ fw
+comment1.target=void\ printString(java.lang.String,\ java.io.FileWriter)
+comment1.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\n
+comment2.params=arg
+comment2.target=void\ main(java.lang.String[])
+numComments=3
