@@ -14,7 +14,7 @@ public class Hogwarts
     //Collection of Houses
     private HashMap<String, House> houseCollection;
     //Collection of Characters, currently they are in the play 
-    private ArrayList<Character> currentCharacter;
+    private ArrayList<Character> currentCharacters;
     //Collection of Characters, they are in the dungeon
     private ArrayList<Character> dungeon;
     //Collection of Wands
@@ -25,7 +25,7 @@ public class Hogwarts
      */
     private Hogwarts(){
         houseCollection = new HashMap<String, House>();
-        currentCharacter = new ArrayList<Character>();
+        currentCharacters = new ArrayList<Character>();
         dungeon = new ArrayList<Character>();
         newWandCollection = new TreeSet<Wand>(new NameWandComparator());
     }
@@ -46,7 +46,7 @@ public class Hogwarts
      * An example of a method - replace this comment with your own
      *
      */
-    public void insertCharacter(){
+    public void insertCharacters(){
         Iterator<String> it = houseCollection.keySet().iterator();
         House h;
         while(it.hasNext()){
@@ -54,7 +54,8 @@ public class Hogwarts
             String nameHouse = houseCollection.get(key).getName();
             if (nameHouse != null){
              h = houseCollection.get(key);
-             currentCharacter.add(h.getCharacter());
+             if(h.howCharacters() > 0)
+                currentCharacters.add(h.getCharacter());
             }
         }
     }
@@ -86,7 +87,7 @@ public class Hogwarts
      *
      */
     public void orderCurrentCharacters(){
-        Collections.sort(currentCharacter, new EnergyComparator());  
+        Collections.sort(currentCharacters, new EnergyComparator());  
     }
     
     
@@ -94,37 +95,38 @@ public class Hogwarts
      * An example of a method - replace this comment with your own
      *
      */
-    public void attackCharacter(){
-       Iterator<Character> it1 = currentCharacter.iterator();
+    public void attackCharacters(FileWriter fw) throws IOException{
+       Iterator<Character> it1 = currentCharacters.iterator();
        while(it1.hasNext()){
            Character c1 = it1.next();
-           Iterator<Character> it2 = currentCharacter.iterator();
+           Iterator<Character> it2 = currentCharacters.iterator();
            while(it2.hasNext()){
                Character c2 = it2.next();
-               if(!(c1.getName().equals(c2.getName())) && c1.getEnergyPoints() > 0 && c2.getEnergyPoints() > 0){
-                 c1.fight(c2);
+               if(c1.getEnergyPoints() > 0 && c2.getEnergyPoints() > 0 && !(c1.getName().equals(c2.getName()))){
+                 c1.fight(c2, fw);
                }
            }
         }
     }
     
-     /**
+    /**
      * An example of a method - replace this comment with your own
      *
      */
-    public void sendCharacter(){
-        Iterator<Character> it = currentCharacter.iterator();
-        int index;
+    public void sendCharacters(FileWriter fw) throws IOException{
+        Iterator<Character> it = currentCharacters.iterator();
+        Character c;
         while(it.hasNext()){
-            Character c = it.next();
+            c = it.next();
             if(c.getEnergyPoints() <= 0f){
                dungeon.add(c);
             }
             else{
                giveWand(c);
             }
+            printResultDuels(c, fw);
+            it.remove();
          }
-        checkHouses();
     }
     
     /**
@@ -139,7 +141,8 @@ public class Hogwarts
             String nameHouse = houseCollection.get(key).getName();
             if (nameHouse != null){
              h = houseCollection.get(key);
-             h.checkCharacters();
+             if(h.howCharacters() > 0)
+                h.checkCharacters();
             }
         }
     }
@@ -185,7 +188,7 @@ public class Hogwarts
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public void printCharacters(FileWriter fw) throws IOException
+    public void printAllCharacters(FileWriter fw) throws IOException
     {
         Iterator<String> it = houseCollection.keySet().iterator();
         House h;
@@ -198,21 +201,50 @@ public class Hogwarts
              s = String.format("house:<%s>%n", h.getName());
              System.out.printf(s);
              fw.write(s);
-             h.printCharacterList(fw);    
+             if(h.howCharacters() > 0){
+                 h.printCharacterList(fw);
+             }
              System.out.println();
              fw.write("\n");
-            }
+           }
         }
       
     }
 
-    
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
+     */
+    public void printCurrentCharacters(FileWriter fw) throws IOException
+    {
+        for(Character c : currentCharacters){
+            c.printCharacter(fw);
+        }
+        
+        System.out.println();
+        fw.write("\n");
+    }
+
     /***
      * 
      */
-    public void showResultDuel(){
+    public void printResultDuels(Character c, FileWriter fw) throws IOException{
         
+        if(c.getEnergyPoints() < 0){
+          c.setEnergyPoints(0f);
+          c.printCharacter(fw);
+          System.out.println("goes to dungeon");
+          fw.write("goes to dungeon");
+        }else{
+          c.printCharacter(fw);
+          System.out.println("returns to the house");
+          fw.write("returns to the house"); 
+        }    
         
+        System.out.println();
+        fw.write("\n");
     }
      
 }

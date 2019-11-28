@@ -1,4 +1,4 @@
-
+import java.io.*;
 /**
  * Write a description of class AbstractWand here.
  *
@@ -47,5 +47,4 @@ public abstract class AbstractWand implements Wand
     public String getType(){
      return Type;
     }
-
 }

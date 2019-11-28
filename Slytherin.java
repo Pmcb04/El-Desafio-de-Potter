@@ -18,7 +18,7 @@ public class Slytherin extends House {
    */
   @Override
   public void orderCharacters() {
-    Collections.sort(getCharacterList(), Collections.reverseOrder(new AttackPointsComparator()));
+    Collections.sort(getCharacterList(), Collections.reverseOrder(new OffensivePointsComparator()));
   }
 
 }

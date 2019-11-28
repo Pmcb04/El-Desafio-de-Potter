@@ -23,17 +23,18 @@ public class initData
        FileReader fr = new FileReader("input.log");  
        Scanner sc = new Scanner(fr);
        String [] vS;
-       int num, numHouses, cont;
-       Wand w = new HollyDefensive("");
-       Character c = new DefensiveCharacter("", w);
+       int num, numHouses, cont, j;
+       Wand w = new HollyDefensive("ERROR");
+       Character c = new DefensiveCharacter("ERROR", w);
+       
        
        num = sc.nextInt(); 
        sc.nextLine(); 
        
        for(int i = 0; i < num; i++){
-           vS = sc.nextLine().split(" "); 
+           vS = sc.nextLine().split(","); 
            if(vS[1].equalsIgnoreCase("HollyDefensive")){
-               w = new HollyDefensive(vS[0]);;
+               w = new HollyDefensive(vS[0]);
            }else if (vS[1].equalsIgnoreCase("OffensiveHawthron")){
                w = new OffensiveHawthron(vS[0]);
            }
@@ -67,13 +68,13 @@ public class initData
                 break;
             
                 default:
-                    h  = new Gryffindor("");
+                    h  = new Gryffindor("ERROR");
                 break;
             }
           
        
             for(int i = 0; i < num; i++){
-                vS = sc.nextLine().split(" ", 4);
+                vS = sc.nextLine().split(",");
                 if(vS[1].equalsIgnoreCase("HollyDefensive")){
                     w = new HollyDefensive(vS[0]);
                 }else if (vS[1].equalsIgnoreCase("OffensiveHawthron")){
@@ -85,7 +86,19 @@ public class initData
                 }else if (vS[2].equalsIgnoreCase("Offensive")){
                     c = new OffensiveCharacter(vS[3], w);
                 }
-           
+                
+                j = 4;
+                
+                while(j < vS.length && !vS[j].equalsIgnoreCase("endPotion")){
+
+                    if(vS[j].equalsIgnoreCase("invigorationPotion")){
+                        c = new InvigorationPotion(c);
+                    }else if (vS[j].equalsIgnoreCase("felixFelicisPotion")){
+                        c = new FelixFelicisPotion(c);
+                    }
+                    j++;
+                }
+   
                 h.setCharacter(c);
           
             }

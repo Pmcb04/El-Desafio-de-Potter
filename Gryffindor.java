@@ -19,7 +19,7 @@ public class Gryffindor extends House {
    */
   @Override
   public void orderCharacters() {
-    Collections.sort(getCharacterList(), new ResistancePointsComparator());
+    Collections.sort(getCharacterList(), new DefensivePointsComparator());
   }
 
 }

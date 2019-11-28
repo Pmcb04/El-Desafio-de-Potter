@@ -1,33 +1,33 @@
 6
-Hazel OffensiveHawthron
-Larch HollyDefensive
-Laurel OffensiveHawthron
-Rowan HollyDefensive
-Spruce OffensiveHawthron
-Tamarack HollyDefensive
+Hazel,OffensiveHawthron
+Larch,HollyDefensive
+Laurel,OffensiveHawthron
+Rowan,HollyDefensive
+Spruce,OffensiveHawthron
+Tamarack,HollyDefensive
 
 3
 
 4
 Gryffindor
-HarryW HollyDefensive Defensive Harry Potter
-RonW OffensiveHawthron Offensive Ron Weasley
-HermioneW OffensiveHawthron Offensive Hermione Granger
-NevilleW OffensiveHawthron Defensive Neville Longbottom
+HarryW,HollyDefensive,Defensive,Harry Potter, endPotion
+RonW,OffensiveHawthron,Offensive,Ron Weasley, felixFelicisPotion, felixFelicisPotion, endPotion
+HermioneW,OffensiveHawthron,Offensive,Hermione Granger, endPotion
+NevilleW,OffensiveHawthron,Defensive,Neville Longbottom, invigorationPotion, endPotion
 
 4
 Slytherin
-PansyW OffensiveHawthron Offensive Pansy Parkinson
-DracoW OffensiveHawthron Offensive Draco Malfoy
-DoloresW HollyDefensive Defensive Dolores Umbridge
-AlbusW HollyDefensive Offensive Albus Severus Potter
+PansyW,OffensiveHawthron,Offensive,Pansy Parkinson, endPotion
+DracoW,OffensiveHawthron,Offensive,Draco Malfoy, felixFelicisPotion, endPotion
+DoloresW,HollyDefensive,Defensive,Dolores Umbridge, endPotion
+AlbusW,HollyDefensive,Offensive,Albus Severus Potter, endPotion
 
 4
 Hufflepuff
-NymphadoraW HollyDefensive Defensive Nymphadora Tonks
-RolfW OffensiveHawthron Offensive Rolf Scamander
-CedricW HollyDefensive Defensive Cedric Diggory
-PomonaW HollyDefensive Offensive Pomona Sprout
+NymphadoraW,HollyDefensive,Defensive,Nymphadora Tonks, invigorationpotion, felixFelicisPotion, endPotion
+RolfW,OffensiveHawthron,Offensive,Rolf Scamander, endPotion
+CedricW,HollyDefensive,Defensive,Cedric Diggory, endPotion
+PomonaW,HollyDefensive,Offensive,Pomona Sprout, endPotion
 
 
 

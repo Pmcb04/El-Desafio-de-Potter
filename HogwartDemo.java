@@ -1,14 +1,14 @@
- import java.io.*;
-import java.util.*;
-/**
- * Write a description of class HogwartDemo here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
-public class HogwartDemo
-{
-   
+    import java.io.*;
+    import java.util.*;
+    /**
+    * Write a description of class HogwartDemo here.
+    *
+    * @author (your name)
+    * @version (a version number or a date)
+    */
+    public class HogwartDemo
+    {
+    private final static int totalTurns = 10;
     private static Hogwarts hogwarts = Hogwarts.getInstance();
     
     /**
@@ -17,7 +17,7 @@ public class HogwartDemo
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public static void printString(String s, FileWriter fw) throws IOException
+    private static void printString(String s, FileWriter fw) throws IOException
     {
        s += ":";
        System.out.println(s);
@@ -31,47 +31,53 @@ public class HogwartDemo
         System.out.println();
         fw.write("\n");
     }
-
+    
     public static void main (String[] arg) throws IOException{
         
-            /// cada casa puede tener un numero de personajes distintos
-            /// todos los personajes tienen una varita al inicio
-            
-         FileWriter fw = new FileWriter("output.log");
-         
-           /* String s;
-
-         House Gryffindor = new Gryffindor("Gryffindor");
-         Wand harryW = new  HollyDefensive("HarryW");
-         Character harry = new OffensiveCharacter("Harry Potter", 20, 20, 30, harryW);  
-         Wand ronW = new OffensiveHawthron("RonW");
-         Character ron = new DefensiveCharacter("Ron Weasley", 20, 26, 20, ronW);
-         Wand nevilleW = new OffensiveHawthron("NevilleW");
-         Character neville = new OffensiveCharacter("Neville Long",20, 20, 28, nevilleW);
-         Wand hermioneW = new  HollyDefensive("HermioneW");
-         Character hermione = new DefensiveCharacter("Hermiones Granger" , 20,20,28, hermioneW);
-         
-         Gryffindor.setCharacter(harry);
-         Gryffindor.setCharacter(ron);
-         Gryffindor.setCharacter(neville);
-         Gryffindor.setCharacter(hermione);
-         
-         Gryffindor.orderCharacters();
- 
-         Gryffindor.printCharacterList(fw);
-          
-          
-          
-          Hogwarts hg = Hogwarts.getInstance();*/
-          
+          FileWriter fw = new FileWriter("output.log");
           initData id = new initData();
-          printString("new Wands", fw);
-          hogwarts.printWands(fw);
-        
+    
+          int turns = 0; 
+          boolean endSimulation = false;
           printString("houses", fw);
-          hogwarts.printCharacters(fw);
+          hogwarts.printAllCharacters(fw);
           
-            fw.close();
+          printString("new wands", fw);
+          hogwarts.printWands(fw);
+          
+          while(!endSimulation && turns < 10){
+             String turnS = String.format("turn:<%d>%n", turns);
+             System.out.printf(turnS);
+             fw.write(turnS);
+             
+             printString("characters who are going to duel", fw);
+             hogwarts.insertCharacters();
+             hogwarts.printCurrentCharacters(fw);
+             
+             printString("duels", fw);  
+             hogwarts.attackCharacters(fw);
+            
+             printString("duel results", fw);
+             hogwarts.sendCharacters(fw);
+             hogwarts.checkHouses();
+
+             turns++;
+          }
+          
+          printString("end of the simulation", fw);
+          printString("houses", fw);
+          hogwarts.printAllCharacters(fw);
+          
+          printString("new wands", fw);
+          hogwarts.printWands(fw);
+          
+          printString("dungeon characters", fw);
+          // method printDungeon
+          
+          printString("the winner house is", fw);
+          // method winnerHouse
+          
+          fw.close();
      
       
     }

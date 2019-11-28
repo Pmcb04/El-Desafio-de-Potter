@@ -40,6 +40,18 @@ public abstract class House {
   protected void setName(String name){
       this.name = name;
   }
+   
+  /**
+  * An example of a method - replace this comment with your own
+  *
+  * @param  y  a sample parameter for a method
+  * @return    the sum of x and y
+  */
+  public int howCharacters()
+  {
+     return characterList.size();
+  }
+
   
   /***
   * Return the characterList
@@ -85,13 +97,8 @@ public abstract class House {
    */
   public void printCharacterList(FileWriter fw) throws IOException{
 
-    String s;
     for (Character c : characterList) {
-      s = String.format("character:<%s> <e: %.1f> <o: %.1f> <d: %.1f> <wand: %s (%s)>\n", c.getName(), c.getEnergyPoints(),
-            c.getAttackPoints(),c.getResistancePoints(), c.getWandName(), c.getWandType());
-      System.out.printf(s);
-      fw.write(s);
-
+        c.printCharacter(fw);
     }
 
   }
