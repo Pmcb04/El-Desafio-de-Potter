@@ -18,7 +18,7 @@ public class Hufflepuff extends House {
    */
   @Override
   public void orderCharacters() {
-    Collections.sort(getCharacterList(), new OffensivePointsComparator());
+    Collections.sort(getCharacterList(),Collections.reverseOrder( new OffensivePointsComparator() ));
   }
 
 }

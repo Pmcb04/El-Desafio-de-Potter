@@ -1,112 +1,74 @@
 houses:
 -------
 house:<Hufflepuff>
-character:<Pomona Sprout> <e: 20.0> <o: 57.5> <d: 20.0> <wand: PomonaW (OffensiveHawthron)>
-character:<Rolf Scamander> <e: 20.0> <o: 40.0> <d: 21.0> <wand: RolfW (OffensiveHawthron)>
-character:<Nymphadora Tonks> <e: 20.0> <o: 40.0> <d: 21.0> <wand: NymphadoraW (OffensiveHawthron)>
-character:<Cedric Diggory> <e: 20.0> <o: 40.0> <d: 23.0> <wand: CedricW (OffensiveHawthron)>
+character:<Cedric Diggory> <e: 20.0> <o: 20.0> <d: 35.0> <wand: CedricW (OffensiveHawthron)>
+character:<Nymphadora Tonks> <e: 20.0> <o: 20.0> <d: 25.0> <wand: NymphadoraW (OffensiveHawthron)>
+character:<Rolf Scamander> <e: 20.0> <o: 20.0> <d: 25.0> <wand: RolfW (OffensiveHawthron)>
+character:<Pomona Sprout> <e: 20.0> <o: 32.5> <d: 20.0> <wand: PomonaW (OffensiveHawthron)>
 
 house:<Slytherin>
-character:<Draco Malfoy> <e: 20.0> <o: 20.0> <d: 45.5> <wand: DracoW (HollyDefensive)>
-character:<Albus Severus Potter> <e: 20.0> <o: 21.5> <d: 40.0> <wand: AlbusW (HollyDefensive)>
-character:<Dolores Umbridge> <e: 20.0> <o: 21.5> <d: 40.0> <wand: DoloresW (HollyDefensive)>
-character:<Pansy Parkinson> <e: 20.0> <o: 57.5> <d: 20.0> <wand: PansyW (OffensiveHawthron)>
+character:<Pansy Parkinson> <e: 20.0> <o: 32.5> <d: 20.0> <wand: PansyW (OffensiveHawthron)>
+character:<Dolores Umbridge> <e: 20.0> <o: 25.0> <d: 20.0> <wand: DoloresW (HollyDefensive)>
+character:<Albus Severus Potter> <e: 20.0> <o: 25.0> <d: 20.0> <wand: AlbusW (HollyDefensive)>
+character:<Draco Malfoy> <e: 20.0> <o: 20.0> <d: 25.0> <wand: DracoW (HollyDefensive)>
 
 house:<Gryffindor>
-character:<Hermione Granger> <e: 20.0> <o: 20.0> <d: 45.5> <wand: HermioneW (HollyDefensive)>
-character:<Neville Longbottom> <e: 20.0> <o: 40.0> <d: 21.0> <wand: NevilleW (OffensiveHawthron)>
-character:<Ron Weasley> <e: 20.0> <o: 48.4> <d: 21.0> <wand: RonW (OffensiveHawthron)>
-character:<Harry Potter> <e: 20.0> <o: 57.5> <d: 21.6> <wand: HarryW (OffensiveHawthron)>
+character:<Neville Longbottom> <e: 20.0> <o: 20.0> <d: 25.0> <wand: NevilleW (OffensiveHawthron)>
+character:<Ron Weasley> <e: 20.0> <o: 26.0> <d: 25.0> <wand: RonW (OffensiveHawthron)>
+character:<Harry Potter> <e: 20.0> <o: 32.5> <d: 28.0> <wand: HarryW (OffensiveHawthron)>
+character:<Hermione Granger> <e: 20.0> <o: 20.0> <d: 35.0> <wand: HermioneW (HollyDefensive)>
 
 new wands:
 ----------
 wand: <Hazel (OffensiveHawthron)>
 wand: <Ivy (OffensiveHawthron)>
+wand: <Larch (OffensiveHawthron)>
 wand: <Laurel (OffensiveHawthron)>
 wand: <Pear (OffensiveHawthron)>
 wand: <Pine (OffensiveHawthron)>
 wand: <Rowan (HollyDefensive)>
 wand: <Spruce (OffensiveHawthron)>
 wand: <Tamarack (HollyDefensive)>
+wand: <Yew (OffensiveHawthron)>
 
 turn:<0>
 characters who are going to duel:
 ---------------------------------
-character:<Pomona Sprout> <e: 20.0> <o: 57.5> <d: 20.0> <wand: PomonaW (OffensiveHawthron)>
-character:<Draco Malfoy> <e: 20.0> <o: 20.0> <d: 45.5> <wand: DracoW (HollyDefensive)>
-character:<Hermione Granger> <e: 20.0> <o: 20.0> <d: 45.5> <wand: HermioneW (HollyDefensive)>
+character:<Cedric Diggory> <e: 20.0> <o: 20.0> <d: 35.0> <wand: CedricW (OffensiveHawthron)>
+character:<Pansy Parkinson> <e: 20.0> <o: 32.5> <d: 20.0> <wand: PansyW (OffensiveHawthron)>
+character:<Neville Longbottom> <e: 20.0> <o: 20.0> <d: 25.0> <wand: NevilleW (OffensiveHawthron)>
 
 duels:
 ------
-<Pomona Sprout> is dueling against <Draco Malfoy>
-attack points of <Pomona Sprout> are: <32.5>
-resistance points of <Draco Malfoy> are: <25.0>
-the remaining energy of <Draco Malfoy> after the duel are: <12.0>
+<Cedric Diggory> is dueling against <Pansy Parkinson>
+attack points of <Cedric Diggory> are: <20.0>
+resistance points of <Pansy Parkinson> are: <20.0>
+the remaining energy of <Pansy Parkinson> after the duel are: <20.0>
 
-<Pomona Sprout> is dueling against <Hermione Granger>
-attack points of <Pomona Sprout> are: <32.5>
-resistance points of <Hermione Granger> are: <25.0>
-the remaining energy of <Hermione Granger> after the duel are: <12.0>
+<Cedric Diggory> is dueling against <Neville Longbottom>
+attack points of <Cedric Diggory> are: <20.0>
+resistance points of <Neville Longbottom> are: <25.0>
+the remaining energy of <Neville Longbottom> after the duel are: <19.0>
 
-<Draco Malfoy> is dueling against <Pomona Sprout>
-
-<Draco Malfoy> is dueling against <Hermione Granger>
-
-<Hermione Granger> is dueling against <Pomona Sprout>
-
-<Hermione Granger> is dueling against <Draco Malfoy>
+<Neville Longbottom> is dueling against <Cedric Diggory>
+attack points of <Neville Longbottom> are: <20.0>
+resistance points of <Cedric Diggory> are: <35.0>
+the remaining energy of <Cedric Diggory> after the duel are: <5.6>
 
 duel results:
 -------------
-character:<Pomona Sprout> <e: 20.0> <o: 57.5> <d: 20.0> <wand: Hazel (OffensiveHawthron)>
+character:<Cedric Diggory> <e: 14.4> <o: 20.0> <d: 35.0> <wand: Hazel (OffensiveHawthron)>
 returns to the house
-character:<Draco Malfoy> <e: 8.0> <o: 32.8> <d: 11.4> <wand: Ivy (OffensiveHawthron)>
+character:<Pansy Parkinson> <e: 0.0> <o: 32.5> <d: 20.0> <wand: PansyW (OffensiveHawthron)>
 returns to the house
-character:<Hermione Granger> <e: 8.0> <o: 32.8> <d: 11.4> <wand: Laurel (OffensiveHawthron)>
+character:<Neville Longbottom> <e: 1.0> <o: 20.0> <d: 25.0> <wand: Ivy (OffensiveHawthron)>
 returns to the house
 turn:<1>
 characters who are going to duel:
 ---------------------------------
-character:<Rolf Scamander> <e: 20.0> <o: 40.0> <d: 21.0> <wand: RolfW (OffensiveHawthron)>
-character:<Albus Severus Potter> <e: 20.0> <o: 21.5> <d: 40.0> <wand: AlbusW (HollyDefensive)>
-character:<Neville Longbottom> <e: 20.0> <o: 40.0> <d: 21.0> <wand: NevilleW (OffensiveHawthron)>
-
-duels:
-------
-<Rolf Scamander> is dueling against <Albus Severus Potter>
-attack points of <Rolf Scamander> are: <20.0>
-resistance points of <Albus Severus Potter> are: <20.0>
-the remaining energy of <Albus Severus Potter> after the duel are: <0.0>
-
-<Rolf Scamander> is dueling against <Neville Longbottom>
-attack points of <Rolf Scamander> are: <20.0>
-resistance points of <Neville Longbottom> are: <25.0>
-the remaining energy of <Neville Longbottom> after the duel are: <19.0>
-
-<Albus Severus Potter> is dueling against <Rolf Scamander>
-attack points of <Albus Severus Potter> are: <25.0>
-resistance points of <Rolf Scamander> are: <25.0>
-the remaining energy of <Rolf Scamander> after the duel are: <0.5>
-
-<Albus Severus Potter> is dueling against <Neville Longbottom>
-attack points of <Albus Severus Potter> are: <25.0>
-resistance points of <Neville Longbottom> are: <25.0>
-the remaining energy of <Neville Longbottom> after the duel are: <15.7>
-
-duel results:
--------------
-character:<Rolf Scamander> <e: 19.5> <o: 39.7> <d: 20.6> <wand: Pear (OffensiveHawthron)>
-returns to the house
-character:<Albus Severus Potter> <e: 20.0> <o: 47.0> <d: 20.0> <wand: Pine (OffensiveHawthron)>
-returns to the house
-character:<Neville Longbottom> <e: 0.0> <o: 28.0> <d: 5.0> <wand: NevilleW (OffensiveHawthron)>
-goes to dungeon
-turn:<2>
-characters who are going to duel:
----------------------------------
-character:<Nymphadora Tonks> <e: 20.0> <o: 40.0> <d: 21.0> <wand: NymphadoraW (OffensiveHawthron)>
-character:<Dolores Umbridge> <e: 20.0> <o: 21.5> <d: 40.0> <wand: DoloresW (HollyDefensive)>
-character:<Ron Weasley> <e: 20.0> <o: 48.4> <d: 21.0> <wand: RonW (OffensiveHawthron)>
+character:<Nymphadora Tonks> <e: 20.0> <o: 20.0> <d: 25.0> <wand: NymphadoraW (OffensiveHawthron)>
+character:<Dolores Umbridge> <e: 20.0> <o: 25.0> <d: 20.0> <wand: DoloresW (HollyDefensive)>
+character:<Ron Weasley> <e: 20.0> <o: 26.0> <d: 25.0> <wand: RonW (OffensiveHawthron)>
 
 duels:
 ------
@@ -132,215 +94,272 @@ the remaining energy of <Ron Weasley> after the duel are: <15.7>
 
 duel results:
 -------------
-character:<Nymphadora Tonks> <e: 19.5> <o: 19.6> <d: 45.0> <wand: Rowan (HollyDefensive)>
+character:<Nymphadora Tonks> <e: 19.5> <o: 20.0> <d: 25.0> <wand: Larch (OffensiveHawthron)>
 returns to the house
-character:<Dolores Umbridge> <e: 20.0> <o: 47.0> <d: 20.0> <wand: Spruce (OffensiveHawthron)>
+character:<Dolores Umbridge> <e: 20.0> <o: 25.0> <d: 20.0> <wand: Laurel (OffensiveHawthron)>
 returns to the house
-character:<Ron Weasley> <e: 0.0> <o: 36.4> <d: 5.0> <wand: RonW (OffensiveHawthron)>
+character:<Ron Weasley> <e: 0.0> <o: 26.0> <d: 25.0> <wand: RonW (OffensiveHawthron)>
 goes to dungeon
-turn:<3>
+turn:<2>
 characters who are going to duel:
 ---------------------------------
-character:<Cedric Diggory> <e: 20.0> <o: 40.0> <d: 23.0> <wand: CedricW (OffensiveHawthron)>
-character:<Pansy Parkinson> <e: 20.0> <o: 57.5> <d: 20.0> <wand: PansyW (OffensiveHawthron)>
-character:<Harry Potter> <e: 20.0> <o: 57.5> <d: 21.6> <wand: HarryW (OffensiveHawthron)>
-
-duels:
-------
-<Cedric Diggory> is dueling against <Pansy Parkinson>
-attack points of <Cedric Diggory> are: <20.0>
-resistance points of <Pansy Parkinson> are: <20.0>
-the remaining energy of <Pansy Parkinson> after the duel are: <20.0>
-
-<Cedric Diggory> is dueling against <Harry Potter>
-attack points of <Cedric Diggory> are: <20.0>
-resistance points of <Harry Potter> are: <28.0>
-the remaining energy of <Harry Potter> after the duel are: <18.4>
-
-<Harry Potter> is dueling against <Cedric Diggory>
-attack points of <Harry Potter> are: <32.5>
-resistance points of <Cedric Diggory> are: <35.0>
-the remaining energy of <Cedric Diggory> after the duel are: <23.5>
-
-duel results:
--------------
-character:<Cedric Diggory> <e: 0.0> <o: 28.0> <d: 7.0> <wand: CedricW (OffensiveHawthron)>
-goes to dungeon
-character:<Pansy Parkinson> <e: 0.0> <o: 45.5> <d: 4.0> <wand: PansyW (OffensiveHawthron)>
-returns to the house
-character:<Harry Potter> <e: 1.6> <o: 10.9> <d: 32.2> <wand: Tamarack (HollyDefensive)>
-returns to the house
-turn:<4>
-characters who are going to duel:
----------------------------------
-character:<Pomona Sprout> <e: 20.0> <o: 57.5> <d: 20.0> <wand: Hazel (OffensiveHawthron)>
-character:<Draco Malfoy> <e: 8.0> <o: 32.8> <d: 11.4> <wand: Ivy (OffensiveHawthron)>
-character:<Hermione Granger> <e: 8.0> <o: 32.8> <d: 11.4> <wand: Laurel (OffensiveHawthron)>
-
-duels:
-------
-<Pomona Sprout> is dueling against <Draco Malfoy>
-attack points of <Pomona Sprout> are: <32.5>
-resistance points of <Draco Malfoy> are: <25.0>
-the remaining energy of <Draco Malfoy> after the duel are: <46.1>
-
-<Pomona Sprout> is dueling against <Hermione Granger>
-attack points of <Pomona Sprout> are: <32.5>
-resistance points of <Hermione Granger> are: <25.0>
-the remaining energy of <Hermione Granger> after the duel are: <46.1>
-
-duel results:
--------------
-character:<Pomona Sprout> <e: 20.0> <o: 57.5> <d: 20.0> <wand: Hazel (OffensiveHawthron)>
-returns to the house
-character:<Draco Malfoy> <e: 0.0> <o: 28.0> <d: 5.0> <wand: Ivy (OffensiveHawthron)>
-goes to dungeon
-character:<Hermione Granger> <e: 0.0> <o: 28.0> <d: 5.0> <wand: Laurel (OffensiveHawthron)>
-goes to dungeon
-turn:<5>
-characters who are going to duel:
----------------------------------
-character:<Rolf Scamander> <e: 19.5> <o: 39.7> <d: 20.6> <wand: Pear (OffensiveHawthron)>
-character:<Albus Severus Potter> <e: 20.0> <o: 47.0> <d: 20.0> <wand: Pine (OffensiveHawthron)>
-character:<Harry Potter> <e: 1.6> <o: 10.9> <d: 32.2> <wand: Tamarack (HollyDefensive)>
+character:<Rolf Scamander> <e: 20.0> <o: 20.0> <d: 25.0> <wand: RolfW (OffensiveHawthron)>
+character:<Albus Severus Potter> <e: 20.0> <o: 25.0> <d: 20.0> <wand: AlbusW (HollyDefensive)>
+character:<Harry Potter> <e: 20.0> <o: 32.5> <d: 28.0> <wand: HarryW (OffensiveHawthron)>
 
 duels:
 ------
 <Rolf Scamander> is dueling against <Albus Severus Potter>
 attack points of <Rolf Scamander> are: <20.0>
 resistance points of <Albus Severus Potter> are: <20.0>
-the remaining energy of <Albus Severus Potter> after the duel are: <19.7>
+the remaining energy of <Albus Severus Potter> after the duel are: <0.0>
 
 <Rolf Scamander> is dueling against <Harry Potter>
 attack points of <Rolf Scamander> are: <20.0>
 resistance points of <Harry Potter> are: <28.0>
-the remaining energy of <Harry Potter> after the duel are: <7.5>
+the remaining energy of <Harry Potter> after the duel are: <18.4>
 
 <Albus Severus Potter> is dueling against <Rolf Scamander>
 attack points of <Albus Severus Potter> are: <25.0>
 resistance points of <Rolf Scamander> are: <25.0>
-the remaining energy of <Rolf Scamander> after the duel are: <14.6>
+the remaining energy of <Rolf Scamander> after the duel are: <0.5>
+
+<Albus Severus Potter> is dueling against <Harry Potter>
+attack points of <Albus Severus Potter> are: <25.0>
+resistance points of <Harry Potter> are: <28.0>
+the remaining energy of <Harry Potter> after the duel are: <14.6>
 
 duel results:
 -------------
-character:<Rolf Scamander> <e: 4.9> <o: 31.0> <d: 8.9> <wand: Pear (OffensiveHawthron)>
+character:<Rolf Scamander> <e: 19.5> <o: 20.0> <d: 25.0> <wand: Pear (OffensiveHawthron)>
 returns to the house
-character:<Albus Severus Potter> <e: 0.3> <o: 35.2> <d: 4.2> <wand: Pine (OffensiveHawthron)>
+character:<Albus Severus Potter> <e: 20.0> <o: 25.0> <d: 20.0> <wand: Pine (OffensiveHawthron)>
 returns to the house
-character:<Harry Potter> <e: 0.0> <o: 9.8> <d: 30.8> <wand: Tamarack (HollyDefensive)>
+character:<Harry Potter> <e: 0.0> <o: 32.5> <d: 28.0> <wand: HarryW (OffensiveHawthron)>
 goes to dungeon
-turn:<6>
+turn:<3>
 characters who are going to duel:
 ---------------------------------
-character:<Nymphadora Tonks> <e: 19.5> <o: 19.6> <d: 45.0> <wand: Rowan (HollyDefensive)>
-character:<Dolores Umbridge> <e: 20.0> <o: 47.0> <d: 20.0> <wand: Spruce (OffensiveHawthron)>
+character:<Pomona Sprout> <e: 20.0> <o: 32.5> <d: 20.0> <wand: PomonaW (OffensiveHawthron)>
+character:<Draco Malfoy> <e: 20.0> <o: 20.0> <d: 25.0> <wand: DracoW (HollyDefensive)>
+character:<Hermione Granger> <e: 20.0> <o: 20.0> <d: 35.0> <wand: HermioneW (HollyDefensive)>
 
 duels:
 ------
-<Nymphadora Tonks> is dueling against <Dolores Umbridge>
+<Pomona Sprout> is dueling against <Draco Malfoy>
+attack points of <Pomona Sprout> are: <32.5>
+resistance points of <Draco Malfoy> are: <25.0>
+the remaining energy of <Draco Malfoy> after the duel are: <12.0>
 
-<Dolores Umbridge> is dueling against <Nymphadora Tonks>
-attack points of <Dolores Umbridge> are: <25.0>
-resistance points of <Nymphadora Tonks> are: <25.0>
-the remaining energy of <Nymphadora Tonks> after the duel are: <2.0>
+<Pomona Sprout> is dueling against <Hermione Granger>
+attack points of <Pomona Sprout> are: <32.5>
+resistance points of <Hermione Granger> are: <35.0>
+the remaining energy of <Hermione Granger> after the duel are: <1.0>
+
+<Draco Malfoy> is dueling against <Pomona Sprout>
+
+<Draco Malfoy> is dueling against <Hermione Granger>
+
+<Hermione Granger> is dueling against <Pomona Sprout>
+
+<Hermione Granger> is dueling against <Draco Malfoy>
 
 duel results:
 -------------
-character:<Nymphadora Tonks> <e: 17.5> <o: 18.3> <d: 43.3> <wand: Rowan (HollyDefensive)>
+character:<Pomona Sprout> <e: 20.0> <o: 32.5> <d: 20.0> <wand: Rowan (HollyDefensive)>
 returns to the house
-character:<Dolores Umbridge> <e: 20.0> <o: 47.0> <d: 20.0> <wand: Spruce (OffensiveHawthron)>
+character:<Draco Malfoy> <e: 8.0> <o: 20.0> <d: 25.0> <wand: Spruce (OffensiveHawthron)>
+returns to the house
+character:<Hermione Granger> <e: 19.0> <o: 20.0> <d: 35.0> <wand: Tamarack (HollyDefensive)>
+returns to the house
+turn:<4>
+characters who are going to duel:
+---------------------------------
+character:<Cedric Diggory> <e: 14.4> <o: 20.0> <d: 35.0> <wand: Hazel (OffensiveHawthron)>
+character:<Dolores Umbridge> <e: 20.0> <o: 25.0> <d: 20.0> <wand: Laurel (OffensiveHawthron)>
+character:<Neville Longbottom> <e: 1.0> <o: 20.0> <d: 25.0> <wand: Ivy (OffensiveHawthron)>
+
+duels:
+------
+<Cedric Diggory> is dueling against <Dolores Umbridge>
+attack points of <Cedric Diggory> are: <20.0>
+resistance points of <Dolores Umbridge> are: <20.0>
+the remaining energy of <Dolores Umbridge> after the duel are: <16.6>
+
+<Cedric Diggory> is dueling against <Neville Longbottom>
+attack points of <Cedric Diggory> are: <20.0>
+resistance points of <Neville Longbottom> are: <25.0>
+the remaining energy of <Neville Longbottom> after the duel are: <30.8>
+
+<Dolores Umbridge> is dueling against <Cedric Diggory>
+attack points of <Dolores Umbridge> are: <25.0>
+resistance points of <Cedric Diggory> are: <35.0>
+the remaining energy of <Cedric Diggory> after the duel are: <18.5>
+
+duel results:
+-------------
+character:<Cedric Diggory> <e: 0.0> <o: 20.0> <d: 35.0> <wand: Hazel (OffensiveHawthron)>
+goes to dungeon
+character:<Dolores Umbridge> <e: 3.4> <o: 25.0> <d: 20.0> <wand: Yew (OffensiveHawthron)>
+returns to the house
+character:<Neville Longbottom> <e: 0.0> <o: 20.0> <d: 25.0> <wand: Ivy (OffensiveHawthron)>
+goes to dungeon
+turn:<5>
+characters who are going to duel:
+---------------------------------
+character:<Nymphadora Tonks> <e: 19.5> <o: 20.0> <d: 25.0> <wand: Larch (OffensiveHawthron)>
+character:<Albus Severus Potter> <e: 20.0> <o: 25.0> <d: 20.0> <wand: Pine (OffensiveHawthron)>
+character:<Hermione Granger> <e: 19.0> <o: 20.0> <d: 35.0> <wand: Tamarack (HollyDefensive)>
+
+duels:
+------
+<Nymphadora Tonks> is dueling against <Albus Severus Potter>
+attack points of <Nymphadora Tonks> are: <20.0>
+resistance points of <Albus Severus Potter> are: <20.0>
+the remaining energy of <Albus Severus Potter> after the duel are: <19.7>
+
+<Nymphadora Tonks> is dueling against <Hermione Granger>
+
+<Albus Severus Potter> is dueling against <Nymphadora Tonks>
+attack points of <Albus Severus Potter> are: <25.0>
+resistance points of <Nymphadora Tonks> are: <25.0>
+the remaining energy of <Nymphadora Tonks> after the duel are: <14.6>
+
+<Albus Severus Potter> is dueling against <Hermione Granger>
+
+<Hermione Granger> is dueling against <Nymphadora Tonks>
+attack points of <Hermione Granger> are: <20.0>
+resistance points of <Nymphadora Tonks> are: <25.0>
+the remaining energy of <Nymphadora Tonks> after the duel are: <10.4>
+
+<Hermione Granger> is dueling against <Albus Severus Potter>
+attack points of <Hermione Granger> are: <20.0>
+resistance points of <Albus Severus Potter> are: <20.0>
+the remaining energy of <Albus Severus Potter> after the duel are: <15.1>
+
+duel results:
+-------------
+character:<Nymphadora Tonks> <e: 0.0> <o: 20.0> <d: 25.0> <wand: Larch (OffensiveHawthron)>
+goes to dungeon
+character:<Albus Severus Potter> <e: 0.0> <o: 25.0> <d: 20.0> <wand: Pine (OffensiveHawthron)>
+goes to dungeon
+character:<Hermione Granger> <e: 19.0> <o: 20.0> <d: 35.0> <wand: Tamarack (HollyDefensive)>
+returns to the house
+turn:<6>
+characters who are going to duel:
+---------------------------------
+character:<Rolf Scamander> <e: 19.5> <o: 20.0> <d: 25.0> <wand: Pear (OffensiveHawthron)>
+character:<Draco Malfoy> <e: 8.0> <o: 20.0> <d: 25.0> <wand: Spruce (OffensiveHawthron)>
+character:<Hermione Granger> <e: 19.0> <o: 20.0> <d: 35.0> <wand: Tamarack (HollyDefensive)>
+
+duels:
+------
+<Rolf Scamander> is dueling against <Draco Malfoy>
+attack points of <Rolf Scamander> are: <20.0>
+resistance points of <Draco Malfoy> are: <25.0>
+the remaining energy of <Draco Malfoy> after the duel are: <28.3>
+
+<Rolf Scamander> is dueling against <Hermione Granger>
+
+<Hermione Granger> is dueling against <Rolf Scamander>
+
+duel results:
+-------------
+character:<Rolf Scamander> <e: 19.5> <o: 20.0> <d: 25.0> <wand: Pear (OffensiveHawthron)>
+returns to the house
+character:<Draco Malfoy> <e: 0.0> <o: 20.0> <d: 25.0> <wand: Spruce (OffensiveHawthron)>
+goes to dungeon
+character:<Hermione Granger> <e: 19.0> <o: 20.0> <d: 35.0> <wand: Tamarack (HollyDefensive)>
 returns to the house
 turn:<7>
 characters who are going to duel:
 ---------------------------------
-character:<Pomona Sprout> <e: 20.0> <o: 57.5> <d: 20.0> <wand: Hazel (OffensiveHawthron)>
-character:<Albus Severus Potter> <e: 0.3> <o: 35.2> <d: 4.2> <wand: Pine (OffensiveHawthron)>
+character:<Pomona Sprout> <e: 20.0> <o: 32.5> <d: 20.0> <wand: Rowan (HollyDefensive)>
+character:<Dolores Umbridge> <e: 3.4> <o: 25.0> <d: 20.0> <wand: Yew (OffensiveHawthron)>
+character:<Hermione Granger> <e: 19.0> <o: 20.0> <d: 35.0> <wand: Tamarack (HollyDefensive)>
 
 duels:
 ------
-<Pomona Sprout> is dueling against <Albus Severus Potter>
+<Pomona Sprout> is dueling against <Dolores Umbridge>
 attack points of <Pomona Sprout> are: <32.5>
-resistance points of <Albus Severus Potter> are: <20.0>
-the remaining energy of <Albus Severus Potter> after the duel are: <53.3>
+resistance points of <Dolores Umbridge> are: <20.0>
+the remaining energy of <Dolores Umbridge> after the duel are: <17.1>
+
+<Pomona Sprout> is dueling against <Hermione Granger>
+
+<Hermione Granger> is dueling against <Pomona Sprout>
 
 duel results:
 -------------
-character:<Pomona Sprout> <e: 20.0> <o: 57.5> <d: 20.0> <wand: Hazel (OffensiveHawthron)>
+character:<Pomona Sprout> <e: 20.0> <o: 32.5> <d: 20.0> <wand: Rowan (HollyDefensive)>
 returns to the house
-character:<Albus Severus Potter> <e: 0.0> <o: 35.0> <d: 4.0> <wand: Pine (OffensiveHawthron)>
+character:<Dolores Umbridge> <e: 0.0> <o: 25.0> <d: 20.0> <wand: Yew (OffensiveHawthron)>
 goes to dungeon
+character:<Hermione Granger> <e: 19.0> <o: 20.0> <d: 35.0> <wand: Tamarack (HollyDefensive)>
+returns to the house
 turn:<8>
 characters who are going to duel:
 ---------------------------------
-character:<Rolf Scamander> <e: 4.9> <o: 31.0> <d: 8.9> <wand: Pear (OffensiveHawthron)>
-character:<Dolores Umbridge> <e: 20.0> <o: 47.0> <d: 20.0> <wand: Spruce (OffensiveHawthron)>
+character:<Rolf Scamander> <e: 19.5> <o: 20.0> <d: 25.0> <wand: Pear (OffensiveHawthron)>
+character:<Hermione Granger> <e: 19.0> <o: 20.0> <d: 35.0> <wand: Tamarack (HollyDefensive)>
 
 duels:
 ------
-<Rolf Scamander> is dueling against <Dolores Umbridge>
-attack points of <Rolf Scamander> are: <20.0>
-resistance points of <Dolores Umbridge> are: <20.0>
-the remaining energy of <Dolores Umbridge> after the duel are: <11.0>
+<Rolf Scamander> is dueling against <Hermione Granger>
 
-<Dolores Umbridge> is dueling against <Rolf Scamander>
-attack points of <Dolores Umbridge> are: <25.0>
-resistance points of <Rolf Scamander> are: <25.0>
-the remaining energy of <Rolf Scamander> after the duel are: <31.5>
+<Hermione Granger> is dueling against <Rolf Scamander>
 
 duel results:
 -------------
-character:<Rolf Scamander> <e: 0.0> <o: 28.0> <d: 5.0> <wand: Pear (OffensiveHawthron)>
-goes to dungeon
-character:<Dolores Umbridge> <e: 9.0> <o: 40.4> <d: 11.2> <wand: Spruce (OffensiveHawthron)>
+character:<Rolf Scamander> <e: 19.5> <o: 20.0> <d: 25.0> <wand: Pear (OffensiveHawthron)>
+returns to the house
+character:<Hermione Granger> <e: 19.0> <o: 20.0> <d: 35.0> <wand: Tamarack (HollyDefensive)>
 returns to the house
 turn:<9>
 characters who are going to duel:
 ---------------------------------
-character:<Nymphadora Tonks> <e: 17.5> <o: 18.3> <d: 43.3> <wand: Rowan (HollyDefensive)>
-character:<Dolores Umbridge> <e: 9.0> <o: 40.4> <d: 11.2> <wand: Spruce (OffensiveHawthron)>
+character:<Pomona Sprout> <e: 20.0> <o: 32.5> <d: 20.0> <wand: Rowan (HollyDefensive)>
+character:<Hermione Granger> <e: 19.0> <o: 20.0> <d: 35.0> <wand: Tamarack (HollyDefensive)>
 
 duels:
 ------
-<Nymphadora Tonks> is dueling against <Dolores Umbridge>
-attack points of <Nymphadora Tonks> are: <20.0>
-resistance points of <Dolores Umbridge> are: <20.0>
-the remaining energy of <Dolores Umbridge> after the duel are: <7.0>
+<Pomona Sprout> is dueling against <Hermione Granger>
 
-<Dolores Umbridge> is dueling against <Nymphadora Tonks>
+<Hermione Granger> is dueling against <Pomona Sprout>
 
 duel results:
 -------------
-character:<Nymphadora Tonks> <e: 17.5> <o: 18.3> <d: 43.3> <wand: Rowan (HollyDefensive)>
+character:<Pomona Sprout> <e: 20.0> <o: 32.5> <d: 20.0> <wand: Rowan (HollyDefensive)>
 returns to the house
-character:<Dolores Umbridge> <e: 2.0> <o: 36.2> <d: 5.6> <wand: Spruce (OffensiveHawthron)>
+character:<Hermione Granger> <e: 19.0> <o: 20.0> <d: 35.0> <wand: Tamarack (HollyDefensive)>
 returns to the house
 end of the simulation:
 ----------------------
 houses:
 -------
 house:<Hufflepuff>
-character:<Pomona Sprout> <e: 20.0> <o: 57.5> <d: 20.0> <wand: Hazel (OffensiveHawthron)>
-character:<Nymphadora Tonks> <e: 17.5> <o: 18.3> <d: 43.3> <wand: Rowan (HollyDefensive)>
+character:<Rolf Scamander> <e: 19.5> <o: 20.0> <d: 25.0> <wand: Pear (OffensiveHawthron)>
+character:<Pomona Sprout> <e: 20.0> <o: 32.5> <d: 20.0> <wand: Rowan (HollyDefensive)>
 
 house:<Slytherin>
-character:<Dolores Umbridge> <e: 2.0> <o: 36.2> <d: 5.6> <wand: Spruce (OffensiveHawthron)>
 
 house:<Gryffindor>
+character:<Hermione Granger> <e: 19.0> <o: 20.0> <d: 35.0> <wand: Tamarack (HollyDefensive)>
 
 new wands:
 ----------
 
 dungeon characters:
 -------------------
-character:<Neville Longbottom> <e: 0.0> <o: 28.0> <d: 5.0> <wand: NevilleW (OffensiveHawthron)>
-character:<Ron Weasley> <e: 0.0> <o: 36.4> <d: 5.0> <wand: RonW (OffensiveHawthron)>
-character:<Cedric Diggory> <e: 0.0> <o: 28.0> <d: 7.0> <wand: CedricW (OffensiveHawthron)>
-character:<Pansy Parkinson> <e: 0.0> <o: 45.5> <d: 4.0> <wand: PansyW (OffensiveHawthron)>
-character:<Draco Malfoy> <e: 0.0> <o: 28.0> <d: 5.0> <wand: Ivy (OffensiveHawthron)>
-character:<Hermione Granger> <e: 0.0> <o: 28.0> <d: 5.0> <wand: Laurel (OffensiveHawthron)>
-character:<Harry Potter> <e: 0.0> <o: 9.8> <d: 30.8> <wand: Tamarack (HollyDefensive)>
-character:<Albus Severus Potter> <e: 0.0> <o: 35.0> <d: 4.0> <wand: Pine (OffensiveHawthron)>
-character:<Rolf Scamander> <e: 0.0> <o: 28.0> <d: 5.0> <wand: Pear (OffensiveHawthron)>
+character:<Pansy Parkinson> <e: 0.0> <o: 32.5> <d: 20.0> <wand: PansyW (OffensiveHawthron)>
+character:<Ron Weasley> <e: 0.0> <o: 26.0> <d: 25.0> <wand: RonW (OffensiveHawthron)>
+character:<Harry Potter> <e: 0.0> <o: 32.5> <d: 28.0> <wand: HarryW (OffensiveHawthron)>
+character:<Cedric Diggory> <e: 0.0> <o: 20.0> <d: 35.0> <wand: Hazel (OffensiveHawthron)>
+character:<Neville Longbottom> <e: 0.0> <o: 20.0> <d: 25.0> <wand: Ivy (OffensiveHawthron)>
+character:<Nymphadora Tonks> <e: 0.0> <o: 20.0> <d: 25.0> <wand: Larch (OffensiveHawthron)>
+character:<Albus Severus Potter> <e: 0.0> <o: 25.0> <d: 20.0> <wand: Pine (OffensiveHawthron)>
+character:<Draco Malfoy> <e: 0.0> <o: 20.0> <d: 25.0> <wand: Spruce (OffensiveHawthron)>
+character:<Dolores Umbridge> <e: 0.0> <o: 25.0> <d: 20.0> <wand: Yew (OffensiveHawthron)>
 
 the winner house is:
 --------------------

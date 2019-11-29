@@ -1,8 +1,8 @@
 10
 Ivy,OffensiveHawthron
-Larch,OffensiveHawtron
+Larch,OffensiveHawthron
 Rowan,HollyDefensive
-Yew, OffensiveHawthron
+Yew,OffensiveHawthron
 Hazel,OffensiveHawthron
 Pine,OffensiveHawthron
 Tamarack,HollyDefensive
@@ -15,7 +15,7 @@ Laurel,OffensiveHawthron
 4
 Gryffindor
 HarryW,OffensiveHawthron,Offensive,Harry Potter,invigorationPotion,felixFelicisPotion
-HermioneW,Hollydefensive,Defensive,Hermione Granger, invigorationPotion
+HermioneW,HollyDefensive,Defensive,Hermione Granger,invigorationPotion
 RonW,OffensiveHawthron,Defensive,Ron Weasley,felixFelicisPotion
 NevilleW,OffensiveHawthron,Defensive,Neville Longbottom
 

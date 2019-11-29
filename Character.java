@@ -166,11 +166,11 @@ public abstract class Character
     * 
     */
     public float getEnergyPoints(){
-        return energyPoints;
+      return energyPoints;
     }
     
     public Wand getWand(){
-     return characterWand;   
+       return characterWand;   
     }
     
     /**
@@ -182,7 +182,7 @@ public abstract class Character
     public void printCharacter(FileWriter fw) throws IOException
     {
       String s = String.format("character:<%s> <e: %.1f> <o: %.1f> <d: %.1f> <wand: %s (%s)>\n", getName(), getEnergyPoints(),
-                            getAttackPoints(),getResistancePoints(), getWandName(), getWandType());
+                            getOffensivePoints(),getDefensivePoints(), getWandName(), getWandType());
       System.out.printf(s);
       fw.write(s);
     }
