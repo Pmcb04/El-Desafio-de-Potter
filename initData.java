@@ -89,7 +89,7 @@ public class initData
                 
                 j = 4;
                 
-                while(j < vS.length && !vS[j].equalsIgnoreCase("endPotion")){
+                while(j < vS.length){
 
                     if(vS[j].equalsIgnoreCase("invigorationPotion")){
                         c = new InvigorationPotion(c);

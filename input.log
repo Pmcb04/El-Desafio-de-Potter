@@ -1,33 +1,39 @@
-6
-Hazel,OffensiveHawthron
-Larch,HollyDefensive
-Laurel,OffensiveHawthron
+10
+Ivy,OffensiveHawthron
+Larch,OffensiveHawtron
 Rowan,HollyDefensive
-Spruce,OffensiveHawthron
+Yew, OffensiveHawthron
+Hazel,OffensiveHawthron
+Pine,OffensiveHawthron
 Tamarack,HollyDefensive
+Spruce,OffensiveHawthron
+Pear,OffensiveHawthron
+Laurel,OffensiveHawthron
 
 3
 
 4
 Gryffindor
-HarryW,HollyDefensive,Defensive,Harry Potter, endPotion
-RonW,OffensiveHawthron,Offensive,Ron Weasley, felixFelicisPotion, felixFelicisPotion, endPotion
-HermioneW,OffensiveHawthron,Offensive,Hermione Granger, endPotion
-NevilleW,OffensiveHawthron,Defensive,Neville Longbottom, invigorationPotion, endPotion
-
-4
-Slytherin
-PansyW,OffensiveHawthron,Offensive,Pansy Parkinson, endPotion
-DracoW,OffensiveHawthron,Offensive,Draco Malfoy, felixFelicisPotion, endPotion
-DoloresW,HollyDefensive,Defensive,Dolores Umbridge, endPotion
-AlbusW,HollyDefensive,Offensive,Albus Severus Potter, endPotion
+HarryW,OffensiveHawthron,Offensive,Harry Potter,invigorationPotion,felixFelicisPotion
+HermioneW,Hollydefensive,Defensive,Hermione Granger, invigorationPotion
+RonW,OffensiveHawthron,Defensive,Ron Weasley,felixFelicisPotion
+NevilleW,OffensiveHawthron,Defensive,Neville Longbottom
 
 4
 Hufflepuff
-NymphadoraW,HollyDefensive,Defensive,Nymphadora Tonks, invigorationpotion, felixFelicisPotion, endPotion
-RolfW,OffensiveHawthron,Offensive,Rolf Scamander, endPotion
-CedricW,HollyDefensive,Defensive,Cedric Diggory, endPotion
-PomonaW,HollyDefensive,Offensive,Pomona Sprout, endPotion
+CedricW,OffensiveHawthron,Defensive,Cedric Diggory,invigorationPotion
+NymphadoraW,OffensiveHawthron,Defensive,Nymphadora Tonks
+PomonaW,OffensiveHawthron,Offensive,Pomona Sprout,felixFelicisPotion
+RolfW,OffensiveHawthron,Defensive,Rolf Scamander
+
+4
+Slytherin
+DracoW,HollyDefensive,Defensive,Draco Malfoy
+DoloresW,HollyDefensive,Offensive,Dolores Umbridge
+PansyW,OffensiveHawthron,Offensive,Pansy Parkinson,felixFelicisPotion
+AlbusW,HollyDefensive,Offensive,Albus Severus Potter
+
+
 
 
 
