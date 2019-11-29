@@ -104,12 +104,12 @@ public abstract class Character
         
         balance = attackPoints - resistancePoints;
         
-        printDuel(opponent, balance, fw);
         
         if(balance >= 0)
             opponent.executeDamage(balance);
             
-        
+         printDuel(opponent, resistancePoints, balance, fw);
+
     }
     
     /**
@@ -118,19 +118,19 @@ public abstract class Character
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public void printDuel(Character opponent, float balance, FileWriter fw) throws IOException
+    public void printDuel(Character opponent, float opponentResistancePoints, float balance, FileWriter fw) throws IOException
     {
         
        
         String s1 = String.format("<%s> is dueling against <%s>%n", 
                                    getName(), opponent.getName());
         String s2 = String.format("attack points of <%s> are: <%.1f>%nresistance points of <%s> are: <%.1f>%nthe remaining energy of <%s> after the duel are: <%.1f>%n",
-                                   getName(), getAttackPoints(), opponent.getName(), opponent.getResistancePoints(), 
-                                   opponent.getName(), balance);
+                                   getName(), getAttackPoints(), opponent.getName(), opponentResistancePoints, 
+                                   opponent.getName(), opponent.getEnergyPoints());
        
      
         
-        if(balance < 0){ 
+       if(balance < 0){ 
             System.out.printf(s1);
             fw.write(s1);
         }else{
