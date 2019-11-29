@@ -58,6 +58,9 @@ public class Hogwarts
                 currentCharacters.add(h.getCharacter());
             }
         }
+        
+        orderCurrentCharacters();
+        
     }
     
     /**
@@ -446,7 +449,7 @@ public class Hogwarts
      */
     public void printResultDuels(Character c, FileWriter fw) throws IOException{
         
-        if(c.getEnergyPoints() < 0){
+        if(c.getEnergyPoints() <= 0){
           c.setEnergyPoints(0f);
           c.printCharacter(fw);
           System.out.println("goes to dungeon");

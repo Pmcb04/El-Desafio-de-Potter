@@ -104,10 +104,12 @@ public abstract class Character
         
         balance = attackPoints - resistancePoints;
         
+        printDuel(opponent, balance, fw);
+        
         if(balance >= 0)
             opponent.executeDamage(balance);
             
-        printDuel(opponent, balance, fw);
+        
     }
     
     /**
@@ -123,7 +125,7 @@ public abstract class Character
         String s1 = String.format("<%s> is dueling against <%s>%n", 
                                    getName(), opponent.getName());
         String s2 = String.format("attack points of <%s> are: <%.1f>%nresistance points of <%s> are: <%.1f>%nthe remaining energy of <%s> after the duel are: <%.1f>%n",
-                                   getName(), getOffensivePoints(), opponent.getName(), opponent.getDefensivePoints(), 
+                                   getName(), getAttackPoints(), opponent.getName(), opponent.getResistancePoints(), 
                                    opponent.getName(), balance);
        
      
