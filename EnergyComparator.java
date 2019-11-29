@@ -15,7 +15,7 @@ class EnergyComparator implements Comparator<Character>
      */
     public int compare(Character c1, Character c2){
         if(c1.getEnergyPoints() == c2.getEnergyPoints())  
-            return 0;  
+            return c1.getName().compareTo(c2.getName());  
         else if(c1.getEnergyPoints() > c2.getEnergyPoints())  
             return 1;  
         else  

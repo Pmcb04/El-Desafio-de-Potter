@@ -60,7 +60,8 @@
              printString("duel results", fw);
              hogwarts.sendCharacters(fw);
              hogwarts.checkHouses();
-
+             
+             endSimulation = hogwarts.endSimulation();
              turns++;
           }
           
@@ -72,7 +73,7 @@
           hogwarts.printWands(fw);
           
           printString("dungeon characters", fw);
-          // method printDungeon
+          hogwarts.printDungeon(fw);
           
           printString("the winner house is", fw);
           // method winnerHouse

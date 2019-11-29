@@ -54,7 +54,7 @@ public class Hogwarts
             String nameHouse = houseCollection.get(key).getName();
             if (nameHouse != null){
              h = houseCollection.get(key);
-             if(h.howCharacters() > 0)
+             if(h.howManyCharacters() > 0)
                 currentCharacters.add(h.getCharacter());
             }
         }
@@ -64,7 +64,6 @@ public class Hogwarts
      * An example of a method - replace this comment with your own
      *
      * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
      */
     public void insertWand(Wand w)
     {
@@ -75,7 +74,6 @@ public class Hogwarts
      * An example of a method - replace this comment with your own
      *
      * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
      */
     public void insertHouse(String nameHouse, House h)
     {
@@ -96,12 +94,8 @@ public class Hogwarts
      *
      */
     public void attackCharacters(FileWriter fw) throws IOException{
-       Iterator<Character> it1 = currentCharacters.iterator();
-       while(it1.hasNext()){
-           Character c1 = it1.next();
-           Iterator<Character> it2 = currentCharacters.iterator();
-           while(it2.hasNext()){
-               Character c2 = it2.next();
+       for(Character c1 : currentCharacters){
+           for(Character c2 : currentCharacters){
                if(c1.getEnergyPoints() > 0 && c2.getEnergyPoints() > 0 && !(c1.getName().equals(c2.getName()))){
                  c1.fight(c2, fw);
                }
@@ -115,9 +109,8 @@ public class Hogwarts
      */
     public void sendCharacters(FileWriter fw) throws IOException{
         Iterator<Character> it = currentCharacters.iterator();
-        Character c;
         while(it.hasNext()){
-            c = it.next();
+            Character c = it.next();
             if(c.getEnergyPoints() <= 0f){
                dungeon.add(c);
             }
@@ -135,13 +128,13 @@ public class Hogwarts
      */
     public void checkHouses(){
         Iterator<String> it = houseCollection.keySet().iterator();
-        House h;
+        
         while(it.hasNext()){
             String key = it.next();
             String nameHouse = houseCollection.get(key).getName();
             if (nameHouse != null){
-             h = houseCollection.get(key);
-             if(h.howCharacters() > 0)
+             House h = houseCollection.get(key);
+             if(h.howManyCharacters() > 0)
                 h.checkCharacters();
             }
         }
@@ -157,6 +150,208 @@ public class Hogwarts
             c.changeWand(newWand);
             newWandCollection.remove(newWand);
         }
+    } 
+    
+    /**
+     * An example of a method - replace this comment with your own
+     * Cuando solo existe una casa con personajes
+     * @return
+     */
+    public boolean endSimulation(){
+        Iterator<String> it = houseCollection.keySet().iterator(); 
+        House h; boolean found = false; int count = 0;
+        while(it.hasNext()){
+          String key = it.next();
+          String nameHouse = houseCollection.get(key).getName();
+          if (nameHouse != null){
+             h = houseCollection.get(key);
+             if(h.howManyCharacters() < 0){
+                count++;
+             }
+          }
+        }
+        if(count == 1){
+           found = true;
+        }
+        return found;
+       }
+
+    /**
+     * An example of a method - replace this comment with your own
+     * Comprueba que todas las casas tienen distinto numero de personajes, pero no devuelve true si hay dos casas con 0
+     * @return
+     */
+    public boolean checkDifferentNumberCharacters(){
+        Iterator<String> it1 = houseCollection.keySet().iterator(); 
+        House h1; House h2; boolean found = true;
+        while(it1.hasNext()){
+         String key1 = it1.next();
+         String nameHouse1 = houseCollection.get(key1).getName();
+         if (nameHouse1 != null){
+            h1 = houseCollection.get(key1);
+         
+           if(h1.howManyCharacters() < 0){//Para que no me cuente los iguales a 0
+             Iterator<String> it2 = houseCollection.keySet().iterator(); 
+             while(it2.hasNext() && found){
+                 String key2 = it2.next();
+                 String nameHouse2 = houseCollection.get(key2).getName();
+                 if (nameHouse2 != null){
+                    h2 = houseCollection.get(key2);
+                    if(!(h1.getName().equals(h2.getName())) && (h1.howManyCharacters() == h2.howManyCharacters())){
+                           found = false;//Si alguno es igual no son distintos
+                    } 
+                }
+             }
+           } 
+         }
+       }
+       
+       return found;
+    }
+    
+    /**
+     * An example of a method - replace this comment with your own
+     * Comprueba que todas las casas tienen distinto puntos de energia
+     * @return
+     */
+    public boolean checkDifferentEnergyPoints(){
+        Iterator<String> it1 = houseCollection.keySet().iterator(); 
+        House h1; House h2; boolean found = true;
+        while(it1.hasNext()){
+         String key1 = it1.next();
+         String nameHouse1 = houseCollection.get(key1).getName();
+          if (nameHouse1 != null){
+            h1 = houseCollection.get(key1);
+          
+         Iterator<String> it2 = houseCollection.keySet().iterator(); 
+         while(it2.hasNext() && found){
+             String key2 = it2.next();
+             String nameHouse2 = houseCollection.get(key2).getName();
+             if (nameHouse2 != null){
+                h2 = houseCollection.get(key2);
+                if(!(h1.getName().equals(h2.getName())) && (h1.getTotalEnergyPoints() == h2.getTotalEnergyPoints())){
+                 found = false;//Si alguno es igual no son distintos
+                } 
+             }
+         }
+        }
+       }
+       return found;
+    }
+    
+    
+     /**
+     * An example of a method - replace this comment with your own
+     * Comprueba que todas las cosas tienen distinto puntos de energia
+     * @return
+     */
+    public boolean checkDifferentDefensiveOffensivePoints(){
+        Iterator<String> it1 = houseCollection.keySet().iterator(); 
+        House h1; House h2; boolean found = true;
+        while(it1.hasNext()){
+         String key1 = it1.next();
+         String nameHouse1 = houseCollection.get(key1).getName();
+         if (nameHouse1 != null){
+            h1 = houseCollection.get(key1);
+         
+         Iterator<String> it2 = houseCollection.keySet().iterator(); 
+         while(it2.hasNext() && found){
+             String key2 = it2.next();
+             String nameHouse2 = houseCollection.get(key2).getName();
+             if (nameHouse2 != null){
+                h2 = houseCollection.get(key2);
+                if(!(h1.getName().equals(h2.getName())) && 
+                (h1.getTotalDefensiveOffensivePoints() == h2.getTotalDefensiveOffensivePoints())){
+                      found = false;//Si alguno es igual no son distintos
+                } 
+             }
+         }
+        }
+       }
+       return found;
+    }
+    
+    /**
+     * An example of a method - replace this comment with your own
+     * Devuelve la casa con mayor numero de personajes
+     * @return
+     */
+    public House maxNumberCharacters(){
+      Iterator<String> it = houseCollection.keySet().iterator(); 
+      House h1; House h2; String key, nameHouse;
+      
+      key = it.next(); 
+      h1 = houseCollection.get(key);//Primer elemento, mayor hasta ahora
+      nameHouse = houseCollection.get(key).getName();
+      if (nameHouse != null){
+     while(it.hasNext()){
+       key = it.next();
+       nameHouse = houseCollection.get(key).getName();
+       if (nameHouse != null){
+         h2 = houseCollection.get(key);
+         if(h2.howManyCharacters() > h1.howManyCharacters()){
+             h1 = h2;
+         }
+       }
+     }  
+    }
+      return h1;
+      
+   }
+    
+    /**
+     * An example of a method - replace this comment with your own
+     * Devuelve la casa con mayor numero de puntos de energia
+     * @return
+     */
+    public House maxEnergyPoints(){
+      Iterator<String> it = houseCollection.keySet().iterator(); 
+      House h1; House h2; String key, nameHouse;
+        
+      key = it.next(); 
+      h1 = houseCollection.get(key);//Primer elemento, mayor hasta ahora
+      nameHouse = houseCollection.get(key).getName();
+      if (nameHouse != null){
+        while(it.hasNext()){
+         key = it.next();
+         nameHouse = houseCollection.get(key).getName();
+         if (nameHouse != null){
+           h2 = houseCollection.get(key);
+           if(h2.getTotalEnergyPoints() > h1.getTotalEnergyPoints()){
+                h1 = h2;
+           }
+         }
+      }
+     } 
+      
+       return h1;
+    }
+    
+    /**
+     * An example of a method - replace this comment with your own
+     * Devuelve la casa con mayor numero de puntos de energia
+     * @return
+     */
+    public House minDefensiveOffensivePoints(){
+      Iterator<String> it = houseCollection.keySet().iterator(); 
+      House h1; House h2; boolean found = true; String key, nameHouse;
+        
+      key = it.next(); 
+      h1 = houseCollection.get(key);//Primer elemento, menor hasta ahora
+      nameHouse = houseCollection.get(key).getName();
+      if (nameHouse != null){
+        while(it.hasNext()){
+         key = it.next();
+         nameHouse = houseCollection.get(key).getName();
+         if (nameHouse != null){
+            h2 = houseCollection.get(key);
+            if(h2.getTotalEnergyPoints() < h1.getTotalEnergyPoints()){
+                h1 = h2;
+            }
+         }
+       }
+      }
+       return h1;
     }
     
     /**
@@ -201,7 +396,7 @@ public class Hogwarts
              s = String.format("house:<%s>%n", h.getName());
              System.out.printf(s);
              fw.write(s);
-             if(h.howCharacters() > 0){
+             if(h.howManyCharacters() > 0){
                  h.printCharacterList(fw);
              }
              System.out.println();
@@ -226,6 +421,25 @@ public class Hogwarts
         System.out.println();
         fw.write("\n");
     }
+    
+    
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
+     */
+    public void printDungeon(FileWriter fw) throws IOException
+    {
+        for(Character c : dungeon){
+            c.setEnergyPoints(0f);
+            c.printCharacter(fw);
+        }
+        
+        System.out.println();
+        fw.write("\n");
+    }
+
 
     /***
      * 

@@ -349,5 +349,10 @@ new wands:
 
 dungeon characters:
 -------------------
+character:<Hermione Granger> <e: 0.0> <o: 35.0> <d: 4.0> <wand: HermioneW (OffensiveHawthron)>
+character:<Ron Weasley> <e: 0.0> <o: 35.0> <d: 4.0> <wand: RonW (OffensiveHawthron)>
+character:<Neville Longbottom> <e: 0.0> <o: 28.0> <d: 5.0> <wand: NevilleW (OffensiveHawthron)>
+character:<Harry Potter> <e: 0.0> <o: 6.0> <d: 27.5> <wand: HarryW (HollyDefensive)>
+
 the winner house is:
 --------------------

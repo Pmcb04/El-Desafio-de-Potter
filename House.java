@@ -47,7 +47,7 @@ public abstract class House {
   * @param  y  a sample parameter for a method
   * @return    the sum of x and y
   */
-  public int howCharacters()
+  public int howManyCharacters()
   {
      return characterList.size();
   }
@@ -91,7 +91,39 @@ public abstract class House {
           characterList.add(c);
       }
   }
-
+  
+  /**
+  * An example of a method - replace this comment with your own
+  *
+  * @param  y  a sample parameter for a method
+  * @return    the sum of x and y
+  */
+  public int getTotalEnergyPoints()
+  {
+    int totalEnergy = 0;
+    
+    for(Character c : characterList)
+        totalEnergy += c.getEnergyPoints();
+        
+    return totalEnergy;
+  }
+  
+    /**
+  * An example of a method - replace this comment with your own
+  *
+  * @param  y  a sample parameter for a method
+  * @return    the sum of x and y
+  */
+  public int getTotalDefensiveOffensivePoints()
+  {
+    int totalPoints = 0;
+    
+    for(Character c : characterList)
+        totalPoints += c.getOffensivePoints() + c.getDefensivePoints();
+        
+    return totalPoints;
+  }
+  
   /***
    * Print all character in characterList with him attributes
    */
