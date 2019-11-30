@@ -89,6 +89,7 @@ public abstract class Character
      */
     public void executeDamage(float damage){
         energyPoints -= damage;
+        if(energyPoints<0) energyPoints = 0;
     }
     
     /***
@@ -122,25 +123,16 @@ public abstract class Character
     {
         
        
-        String s1 = String.format("<%s> is dueling against <%s>%n", 
-                                   getName(), opponent.getName());
-        String s2 = String.format("attack points of <%s> are: <%.1f>%nresistance points of <%s> are: <%.1f>%nthe remaining energy of <%s> after the duel are: <%.1f>%n",
+        String s2 = String.format("attack points of <%s> are: <%.2f>%nresistance points of <%s> are: <%.2f>%nthe remaining energy of <%s> after the duel are: <%.2f>%n",
                                    getName(), getAttackPoints(), opponent.getName(), opponentResistancePoints, 
                                    opponent.getName(), opponent.getEnergyPoints());
        
      
-        
-       if(balance < 0){ 
-            System.out.printf(s1);
-            fw.write(s1);
-        }else{
-           System.out.printf(s1 + s2);  
-           fw.write(s1 + s2);
-        }
+         System.out.printf(s2);  
+         fw.write(s2);
         
          System.out.println();
         fw.write("\n");
-
     }
 
     

@@ -97,14 +97,29 @@ public class Hogwarts
      *
      */
     public void attackCharacters(FileWriter fw) throws IOException{
+       String s1;
        for(Character c1 : currentCharacters){
            for(Character c2 : currentCharacters){
-               if(c1.getEnergyPoints() > 0 && c2.getEnergyPoints() > 0 && !(c1.getName().equals(c2.getName()))){
-                 c1.fight(c2, fw);
+               if(!(c1.getName().equals(c2.getName()))){
+                 printAttackCharacters(c1,c2,fw);
+                 if(c1.getEnergyPoints()>0&&c2.getEnergyPoints()>0)  c1.fight(c2, fw);
                }
            }
         }
+        fw.write("\n");
     }
+    
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     */
+    public void printAttackCharacters(Character c1, Character c2,FileWriter fw) throws IOException{
+                 String s1;
+                 s1 = String.format("<%s> is dueling against <%s>%n", 
+                                   c1.getName(), c2.getName());
+                 fw.write(s1);
+                 System.out.printf(s1);
+               }
     
     /**
      * An example of a method - replace this comment with your own
@@ -114,13 +129,15 @@ public class Hogwarts
         Iterator<Character> it = currentCharacters.iterator();
         while(it.hasNext()){
             Character c = it.next();
+            printResultDuels(c, fw);
             if(c.getEnergyPoints() <= 0f){
                dungeon.add(c);
             }
             else{
-               giveWand(c);
+               giveWand(c, fw);
             }
-            printResultDuels(c, fw);
+            System.out.println();
+            fw.write("\n");
             it.remove();
          }
     }
@@ -147,13 +164,28 @@ public class Hogwarts
      * An example of a method - replace this comment with your own
      * Si nuestro conjunto no esta vacio le cambia la varita
      */
-    public void giveWand(Character c){
+    public void giveWand(Character c, FileWriter fw) throws IOException{
         if(!newWandCollection.isEmpty()){
             Wand newWand = newWandCollection.first();
             c.changeWand(newWand);
+             printGiveWand(newWand, fw);
             newWandCollection.remove(newWand);
         }
     } 
+    
+    
+    /**
+     * An example of a method - replace this comment with your own
+     * Si nuestro conjunto no esta vacio le cambia la varita
+     */
+    public void printGiveWand(Wand w, FileWriter fw) throws IOException{
+        String s;
+        s = String.format("new wand assigned: <%s (class %s)>%n", w.getName(), w.getType());
+        
+        System.out.printf(s);
+        fw.write(s);
+    } 
+    
     
     /**
      * An example of a method - replace this comment with your own
@@ -168,7 +200,7 @@ public class Hogwarts
           String nameHouse = houseCollection.get(key).getName();
           if (nameHouse != null){
              h = houseCollection.get(key);
-             if(h.howManyCharacters() < 0){
+             if(h.howManyCharacters() > 0){
                 count++;
              }
           }
@@ -227,7 +259,7 @@ public class Hogwarts
             h1 = houseCollection.get(key1);
           
          Iterator<String> it2 = houseCollection.keySet().iterator(); 
-         while(it2.hasNext() && found){
+          while(it2.hasNext() && found){
              String key2 = it2.next();
              String nameHouse2 = houseCollection.get(key2).getName();
              if (nameHouse2 != null){
@@ -359,6 +391,51 @@ public class Hogwarts
     
     /**
      * An example of a method - replace this comment with your own
+     * Devuelve la casa que tiene personajes
+     * @return
+     */
+    public House winnerHouse(){
+        Iterator<String> it = houseCollection.keySet().iterator(); 
+        House h; boolean found = false; int count = 0; String nameHouse; String key;
+        while(it.hasNext() && !found){
+          key = it.next();
+          nameHouse = houseCollection.get(key).getName();
+          if (nameHouse != null){
+             h = houseCollection.get(key);
+             if(h.howManyCharacters() > 0){
+                found = true;
+                return h;
+             }
+          }
+        }
+        return null;
+    }
+
+        /**
+     * An example of a method - replace this comment with your own
+     * Devuelve la casa ganadora
+     * @return
+     */
+    public House getWinnerHouse(){
+        if(endSimulation()){
+            return this.winnerHouse();  
+        }
+        else{
+            if(checkDifferentNumberCharacters()){
+                return maxNumberCharacters();
+            }
+            else if(checkDifferentEnergyPoints()){
+                return maxEnergyPoints();
+            }
+            else if(checkDifferentNumberCharacters()){
+                return minDefensiveOffensivePoints();
+            }
+        }
+        return null;
+    }
+    
+    /**
+     * An example of a method - replace this comment with your own
      *
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
@@ -420,9 +497,6 @@ public class Hogwarts
         for(Character c : currentCharacters){
             c.printCharacter(fw);
         }
-        
-        System.out.println();
-        fw.write("\n");
     }
     
     
@@ -459,9 +533,6 @@ public class Hogwarts
           System.out.println("returns to the house");
           fw.write("returns to the house"); 
         }    
-        
-        System.out.println();
-        fw.write("\n");
     }
      
 }

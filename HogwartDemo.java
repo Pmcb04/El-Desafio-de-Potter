@@ -20,6 +20,7 @@
     private static void printString(String s, FileWriter fw) throws IOException
     {
        s += ":";
+
        System.out.println(s);
        fw.write(s + "\n");
        
@@ -54,9 +55,15 @@
              hogwarts.insertCharacters();
              hogwarts.printCurrentCharacters(fw);
              
+                    
+             System.out.println();
+             fw.write("\n");
              printString("duels", fw);  
              hogwarts.attackCharacters(fw);
             
+                    
+             System.out.println();
+             fw.write("\n");
              printString("duel results", fw);
              hogwarts.sendCharacters(fw);
              hogwarts.checkHouses();
@@ -76,7 +83,10 @@
           hogwarts.printDungeon(fw);
           
           printString("the winner house is", fw);
-          // method winnerHouse
+          House winnerHouse = hogwarts.getWinnerHouse();
+          System.out.printf("house:<%s>%n", winnerHouse.getName());
+          winnerHouse.printCharacterList(fw);
+          
           
           fw.close();
      

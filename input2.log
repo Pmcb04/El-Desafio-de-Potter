@@ -1,0 +1,40 @@
+15
+Ivy,OffensiveHawthron
+Larch,OffensiveHawthron
+Rowan,HollyDefensive
+Yew,OffensiveHawthron
+Hazel,OffensiveHawthron
+Pine,OffensiveHawthron
+Tamarack,HollyDefensive
+Spruce,OffensiveHawthron
+Pear,OffensiveHawthron
+Laurel,OffensiveHawthron
+Cypress,HollyDefensive
+Ebony,HollyDefensive
+Reed,OffensiveHawthron
+Aspen,HollyDefensive
+Walnut,OffensiveHawthron
+
+3
+
+3
+Gryffindor
+HarryW,HollyDefensive,Offensive,Harry Potter,invigorationPotion,felixFelicisPotion
+HermioneW,HollyDefensive,Offensive,Hermione Granger,felixFelicisPotion,invigorationPotion
+RonW,HollyDefensive,Offensive,Ron Weasley,felixFelicisPotion
+
+8
+Hufflepuff
+CedricW,OffensiveHawthron,Defensive,Cedric Diggory,invigorationPotion
+NymphadoraW,OffensiveHawthron,Defensive,Nymphadora Tonks
+PomonaW,OffensiveHawthron,Defensive,Pomona Sprout,felixFelicisPotion
+RolfW,OffensiveHawthron,Defensive,Rolf Scamander
+SilvanusW,OffensiveHawthon,Defensive,Silvanus Kettleburn,felixFelicisPotion
+SusanW,OffensiveHawthron,Defensive,Susan Bones
+NewtonW,OffensiveHawthron,Defensive,Newton Scamander
+HannahW,OffensiveHawthron,Defensive,Hannah Abbott,felixFelicisPotion
+
+1
+Slytherin
+DracoW,HollyDefensive,Defensive,Draco Malfoy,felixFelicisPotion
+
