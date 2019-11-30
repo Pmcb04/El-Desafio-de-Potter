@@ -84,7 +84,9 @@
           
           printString("the winner house is", fw);
           House winnerHouse = hogwarts.getWinnerHouse();
-          System.out.printf("house:<%s>%n", winnerHouse.getName());
+          String s = String.format("house:<%s>%n", winnerHouse.getName());
+          System.out.println(s);
+          fw.write(s);
           winnerHouse.printCharacterList(fw);
           
           

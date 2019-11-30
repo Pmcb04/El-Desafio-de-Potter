@@ -175,7 +175,7 @@ public abstract class Character
      */
     public void printCharacter(FileWriter fw) throws IOException
     {
-      String s = String.format("character:<%s> <e: %.1f> <o: %.1f> <d: %.1f> <wand: %s (%s)>\n", getName(), getEnergyPoints(),
+      String s = String.format("character:<%s> <e: %.2f> <o: %.2f> <d: %.2f> <wand: %s (%s)>\n", getName(), getEnergyPoints(),
                             getOffensivePoints(),getDefensivePoints(), getWandName(), getWandType());
       System.out.printf(s);
       fw.write(s);
