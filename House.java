@@ -14,6 +14,8 @@ public abstract class House {
 
   /**
    * Constructor for objects of class House
+   * 
+   * @param name Name of the house
    */
   public House(String name) {
     this.name = name;
@@ -26,7 +28,7 @@ public abstract class House {
   public abstract void orderCharacters();
 
   /***
-   * Return the name of the house
+   * Returns the name of the house
    * @return name of the house
    */
   protected String getName(){
@@ -34,18 +36,16 @@ public abstract class House {
   }
   
   /***
-  * Introduce the name of the house
-  * @param name is a name of the house
+  * Introduces the name of the house
+  * @param name Name of the house
   */
   protected void setName(String name){
       this.name = name;
   }
    
   /**
-  * An example of a method - replace this comment with your own
-  *
-  * @param  y  a sample parameter for a method
-  * @return    the sum of x and y
+  * Returns the number of elements of characterList
+  * @return  size of characterList
   */
   public int howManyCharacters()
   {
@@ -64,7 +64,7 @@ public abstract class House {
   /***
    * Introduce one Character in the last index of characterList
    *
-   * @param character is a character that it will introduce in characterList
+   * @param character Is a character that it will introduce in characterList
    */
   public void setCharacter(Character character) {
     characterList.add(character);
@@ -73,14 +73,15 @@ public abstract class House {
   /***
    * Return the first character in characterList
    *
-   * @return Character
+   * @return the first character of characterList
    */
   public Character getCharacter() {
     return characterList.get(0);
   }
   
   /***
-   * 
+   * Checks if the first Character of characterList is eliminated, if it is eliminated it gets deleted from
+   * characterList, if it isn't eliminated it gets moved to the last position of character List
    */
   public void checkCharacters(){
       
@@ -93,10 +94,9 @@ public abstract class House {
   }
   
   /**
-  * An example of a method - replace this comment with your own
-  *
-  * @param  y  a sample parameter for a method
-  * @return    the sum of x and y
+  * Calculated the total of energy points of all characters of characterList
+  * 
+  * @return total of energy points
   */
   public int getTotalEnergyPoints()
   {
@@ -108,11 +108,10 @@ public abstract class House {
     return totalEnergy;
   }
   
-    /**
-  * An example of a method - replace this comment with your own
-  *
-  * @param  y  a sample parameter for a method
-  * @return    the sum of x and y
+  /**
+  * Calculated the total of defensive points and offensive of all characters of characterList
+  * 
+  * @return total of defnsive points and offensive points
   */
   public int getTotalDefensiveOffensivePoints()
   {

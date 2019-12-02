@@ -1,13 +1,13 @@
 #BlueJ class context
 comment0.target=DefensiveCharacter
-comment0.text=\n\ Class\ DefensiveCharacter\n\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 26/11/2019\n
+comment0.text=\r\n\ Class\ DefensiveCharacter\r\n\r\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\r\n\ @version\ 26/11/2019\r\n
 comment1.params=Name\ wand
 comment1.target=DefensiveCharacter(java.lang.String,\ Wand)
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ DefensiveCharacter\ (default\ mode)\n\ @param\ Name\ Name\ given\ for\ the\ character\n\ @param\ Wand\ Wand\ assigned\ to\ the\ character\n
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ DefensiveCharacter\ (default\ mode)\r\n\ @param\ Name\ Name\ given\ for\ the\ character\r\n\ @param\ Wand\ Wand\ assigned\ to\ the\ character\r\n
 comment2.params=Name\ energyPoints\ offensivePoints\ defensivePoints\ wand
 comment2.target=DefensiveCharacter(java.lang.String,\ float,\ float,\ float,\ Wand)
-comment2.text=\n\ Constructor\ for\ objects\ of\ class\ DefensiveCharacter\ (custom\ mode)\n\ @param\ Name\ Name\ given\ for\ the\ character\n\ @param\ Wand\ Wand\ assigned\ to\ the\ character\n\ @param\ energyPoints\ Character's\ energy\ points\n\ @param\ offensivePoints\ Character's\ offensive\ points\n\ @param\ defensivePoints\ Character's\ defensive\ points\n
+comment2.text=\r\n\ Constructor\ for\ objects\ of\ class\ DefensiveCharacter\ (custom\ mode)\r\n\ @param\ Name\ Name\ given\ for\ the\ character\r\n\ @param\ Wand\ Wand\ assigned\ to\ the\ character\r\n\ @param\ energyPoints\ Character's\ energy\ points\r\n\ @param\ offensivePoints\ Character's\ offensive\ points\r\n\ @param\ defensivePoints\ Character's\ defensive\ points\r\n
 comment3.params=
 comment3.target=void\ boostDefensivePoints()
-comment3.text=\n\ Method\ that\ boosts\ the\ defensive\ points\ from\ the\ character\n
+comment3.text=\r\n\ Method\ that\ boosts\ the\ defensive\ points\ from\ the\ character\r\n
 numComments=4

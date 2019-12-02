@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=InvigorationPotionTest
+comment0.text=\n\ The\ test\ class\ InvigorationPotionTest.\n\n\ @author\ \ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 26/11/2019\n
+comment1.params=
+comment1.target=InvigorationPotionTest()
+comment1.text=\n\ Default\ constructor\ for\ test\ class\ InvigorationPotionTest\n
+comment2.params=
+comment2.target=void\ setUp()
+comment2.text=\n\ Sets\ up\ the\ test\ fixture.\n\n\ Called\ before\ every\ test\ case\ method.\n
+comment3.params=
+comment3.target=void\ tearDown()
+comment3.text=\n\ Tears\ down\ the\ test\ fixture.\n\n\ Called\ after\ every\ test\ case\ method.\n
+comment4.params=
+comment4.target=void\ testGetOffensivePoints()
+comment5.params=
+comment5.target=void\ testGetDefensivePoints()
+numComments=6

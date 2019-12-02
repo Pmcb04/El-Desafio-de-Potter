@@ -30,10 +30,10 @@ public abstract class Character
     /**
      * Constructor for objects of class Character (custom mode)
      * @param Name Name given for the character
-     * @param Wand Wand assigned to the character
      * @param energyPoints Character's energy points
      * @param offensivePoints Character's offensive points
      * @param defensivePoints Character's defensive points
+     * @param Wand Wand assigned to the character
      */
     public Character(String Name, float energyPoints, float offensivePoints, float defensivePoints, Wand wand
     )

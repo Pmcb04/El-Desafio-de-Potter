@@ -1,13 +1,13 @@
 #BlueJ class context
 comment0.target=AbstractPotionExtra
-comment0.text=\n\ Class\ AbstractPotionExtra\n\ Decorator\ Pattern\n\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 26/11/2019\n
+comment0.text=\r\n\ Class\ AbstractPotionExtra\r\n\ Decorator\ Pattern\r\n\r\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\r\n\ @version\ 26/11/2019\r\n
 comment1.params=character
 comment1.target=AbstractPotionExtra(Character)
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ AbstractPotionExtra\n\ @param\ character\ Character\ that\ will\ be\ decorated\n
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ AbstractPotionExtra\r\n\ @param\ character\ Character\ that\ will\ be\ decorated\r\n
 comment2.params=
 comment2.target=float\ getDefensivePoints()
-comment2.text=\n\ Get\ method\ for\ getting\ defensive\ points\n\ @return\ Defensive\ points\n
+comment2.text=\r\n\ Get\ method\ for\ getting\ defensive\ points\r\n\ @return\ Defensive\ points\r\n
 comment3.params=
 comment3.target=float\ getOffensivePoints()
-comment3.text=\n\ Get\ method\ for\ getting\ offensive\ points\n\ @return\ Offensive\ points\n
+comment3.text=\r\n\ Get\ method\ for\ getting\ offensive\ points\r\n\ @return\ Offensive\ points\r\n
 numComments=4

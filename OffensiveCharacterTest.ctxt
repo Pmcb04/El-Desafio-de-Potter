@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=OffensiveCharacterTest
+comment0.text=\n\ The\ test\ class\ OffensiveCharacterTest.\n\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 26/11/2019\n
+comment1.params=
+comment1.target=OffensiveCharacterTest()
+comment1.text=\n\ Default\ constructor\ for\ test\ class\ OffensiveCharacterTest\n
+comment2.params=
+comment2.target=void\ setUp()
+comment2.text=\n\ Sets\ up\ the\ test\ fixture.\n\n\ Called\ before\ every\ test\ case\ method.\n
+comment3.params=
+comment3.target=void\ tearDown()
+comment3.text=\n\ Tears\ down\ the\ test\ fixture.\n\n\ Called\ after\ every\ test\ case\ method.\n
+comment4.params=
+comment4.target=void\ testDefaultConstructor()
+comment5.params=
+comment5.target=void\ testCustomCharacter()
+comment6.params=
+comment6.target=void\ testChangeWand()
+comment7.params=
+comment7.target=void\ testSetMethods()
+comment8.params=
+comment8.target=void\ testGetAttackPoints()
+comment9.params=
+comment9.target=void\ getResistancePoints()
+numComments=10

@@ -7,14 +7,19 @@ import java.util.*;
  * @version 12/11/2019
  */
 public class Hufflepuff extends House {
-  
+
+  /**
+   * Constructor for objects of class Hufflepuff
+   * 
+   * @param name Name of the Hufflepuff
+   */
   public Hufflepuff (String name){
         super(name);
   }
   
   /***
-   * Order from less to high by the attribute attackPoints the character of
-   * characterList
+   * Order from less to high by the attribute attackPoints the 
+   * character of characterList
    */
   @Override
   public void orderCharacters() {
