@@ -7,7 +7,6 @@ import java.io.*;
  */
 public abstract class Character
 {
-    // instance variables - replace the example below with your own
     private String Name;
     private float energyPoints;
     private float offensivePoints;
@@ -15,7 +14,9 @@ public abstract class Character
     private Wand characterWand;
 
     /**
-     * Constructor for objects of class Character
+     * Constructor for objects of class Character (default mode)
+     * @param Name Name given for the character
+     * @param Wand Wand assigned to the character
      */
     public Character(String Name, Wand wand)
     {
@@ -27,7 +28,12 @@ public abstract class Character
     }
     
     /**
-     * Constructor for objects of class Character
+     * Constructor for objects of class Character (custom mode)
+     * @param Name Name given for the character
+     * @param Wand Wand assigned to the character
+     * @param energyPoints Character's energy points
+     * @param offensivePoints Character's offensive points
+     * @param defensivePoints Character's defensive points
      */
     public Character(String Name, float energyPoints, float offensivePoints, float defensivePoints, Wand wand
     )
@@ -42,7 +48,7 @@ public abstract class Character
    
     /**
      * Changes the current wand into a new wand
-     * 
+     * @param Wand The new wand wanted to assign
      */
     public void changeWand(Wand newWand)
     {
@@ -50,42 +56,49 @@ public abstract class Character
     }
     
     /***
-     * 
+     * Returns the name of the character
+     * @return The name of the character
      */
     public String getName(){
         return Name;
     }
     
      /***
-     * 
+     * Returns the character's assigned wand
+     * @return Character's wand
      */
     public String getWandName(){
         return characterWand.getName();
     }
     
-    /***
-     * 
+     /***
+     * Returns the character's assigned wand type
+     * @return Character's wand type
      */
     public String getWandType(){
         return characterWand.getType();
     }
     
-    /***
-     * 
+    
+     /***
+     * Uses the wand in a offensive way in order to get the attack points 
+     * @return Character's attack points
      */
     public float getAttackPoints(){
         return characterWand.offensiveUse(getOffensivePoints(), getEnergyPoints());
     }
     
-    /***
-     * 
+     /***
+     * Uses the wand in a defensive way in order to get the resistance points 
+     * @return Character's resistance points
      */
     public float getResistancePoints(){
         return characterWand.defensiveUse(getDefensivePoints(),getEnergyPoints());
     }
        
-    /***
-     * 
+     /***
+     * Damages the character's energy points
+     * @param damage Amount of damage the character has taken
      */
     public void executeDamage(float damage){
         energyPoints -= damage;
@@ -93,7 +106,9 @@ public abstract class Character
     }
     
     /***
-     * 
+     * Fights an opponent and calls a method to print the results
+     * @param opponent Character that will be the opponent
+     * @param fw The FileWriter that will be written
      */
     public void fight(Character opponent, FileWriter fw) throws IOException{
         float attackPoints;
@@ -109,20 +124,18 @@ public abstract class Character
         if(balance >= 0)
             opponent.executeDamage(balance);
             
-         printDuel(opponent, resistancePoints, balance, fw);
-
+        printDuel(opponent, resistancePoints, fw);
     }
     
     /**
-     * An example of a method - replace this comment with your own
+     * Prints the fight that has called this method
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param opponent The opponent that has been fought
+     * @param opponentResistancePoints The resistance points that the opponent had while the fight
+     * @param fw The FileWriter where the fights will be writen
      */
-    public void printDuel(Character opponent, float opponentResistancePoints, float balance, FileWriter fw) throws IOException
+    public void printDuel(Character opponent, float opponentResistancePoints, FileWriter fw) throws IOException
     {
-        
-       
         String s2 = String.format("attack points of <%s> are: <%.2f>%nresistance points of <%s> are: <%.2f>%nthe remaining energy of <%s> after the duel are: <%.2f>%n",
                                    getName(), getAttackPoints(), opponent.getName(), opponentResistancePoints, 
                                    opponent.getName(), opponent.getEnergyPoints());
@@ -136,48 +149,73 @@ public abstract class Character
     }
 
     
+    /**
+     * Set method for setting new offensive points
+     * @param offensivePoints New offensive points
+     */
     public void setOffensivePoints(float offensivePoints){
      this.offensivePoints = offensivePoints;    
     }
     
+    /**
+     * Set method for setting new defensive points
+     * @param offensivePoints New defensive points
+     */
     public void setDefensivePoints(float defensivePoints){
      this.defensivePoints = defensivePoints;    
     }
     
+    /**
+     * Set method for setting new energy points
+     * @param offensivePoints New energy points
+     */
     public void setEnergyPoints(float energyPoints){
      this.energyPoints = energyPoints;    
     }
     
+    
+    /**
+     * Get method for getting offensive points
+     * @return Offensive points
+     */
     public float getOffensivePoints(){
      return offensivePoints;    
     }
     
+    /**
+     * Get method for getting defensive points
+     * @return Defensive points
+     */
     public float getDefensivePoints(){
      return defensivePoints;    
     }
     
-    /***
-    * 
-    */
+    /**
+     * Get method for getting energy points
+     * @return Energy points
+     */
     public float getEnergyPoints(){
       return energyPoints;
     }
     
+    
+    /**
+     * Get method for getting the character's wand
+     * @return Character's wand
+     */
     public Wand getWand(){
        return characterWand;   
     }
     
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Print method to print the character info
+     * @param fw FileWriter where the info will be written
      */
     public void printCharacter(FileWriter fw) throws IOException
     {
-      String s = String.format("character:<%s> <e: %.2f> <o: %.2f> <d: %.2f> <wand: %s (%s)>\n", getName(), getEnergyPoints(),
+      String s = String.format("character:<%s> <e: %.2f> <o: %.2f> <d: %.2f> <wand: %s (%s)>", getName(), getEnergyPoints(),
                             getOffensivePoints(),getDefensivePoints(), getWandName(), getWandType());
-      System.out.printf(s);
+      System.out.println(s);
       fw.write(s);
     }
 

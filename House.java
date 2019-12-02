@@ -131,6 +131,7 @@ public abstract class House {
 
     for (Character c : characterList) {
         c.printCharacter(fw);
+        fw.write("\n");
     }
 
   }

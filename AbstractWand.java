@@ -1,9 +1,10 @@
 import java.io.*;
 /**
- * Write a description of class AbstractWand here.
+ * Class AbstractWand
+ * Strategy Pattern
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Pedro Miguel Carmona Broncano & Rubén Marín Lucas & Adrián Ruiz Parra
+ * @version 26/11/2019
  */
 public abstract class AbstractWand implements Wand
 {
@@ -13,6 +14,8 @@ public abstract class AbstractWand implements Wand
 
     /**
      * Constructor for objects of class AbstractWand
+     * @param Name Name given for the wand
+     * @param Type Wand type
      */
     public AbstractWand(String Name, String Type)
     {
@@ -20,28 +23,37 @@ public abstract class AbstractWand implements Wand
         this.Type = Type;
     }
     
-    /***
-     * 
-     */
+    /**
+    * Uses the wand and returns the attack points
+    * @param characterOffensivePoints The offensive points from the character that uses the wand
+    * @param characterEnergyPoints The energy points from the character that uses the wand
+    * @return Attack points
+    */
     @Override
     public abstract float offensiveUse(float characterOffensivePoints, float characterEnergyPoints);
     
-    /***
-     * 
-     */
+    
+    /**
+    * Uses the wand and returns the resistance points
+    * @param characterDefensivePoints The defensive points from the character that uses the wand
+    * @param characterEnergyPoints The energy points from the character that uses the wand
+    * @return Resistance points
+    */
     @Override
     public abstract float defensiveUse(float characterdefensivePoints, float characterEnergyPoints);
     
-    /***
-     * 
+    /**
+     * Get method for getting the wand's name
+     * @return Wand's name
      */
     @Override
     public String getName(){
      return Name;   
     }
     
-    /***
-     * 
+    /**
+     * Get method for getting the wand's type
+     * @return Wand's type
      */
     @Override
     public String getType(){

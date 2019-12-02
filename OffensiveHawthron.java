@@ -1,9 +1,9 @@
-
 /**
- * Write a description of class OffensiveHawthron here.
+ * Class OffensiveHawthron
+ * Strategy Pattern
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Pedro Miguel Carmona Broncano & Rubén Marín Lucas & Adrián Ruiz Parra
+ * @version 26/11/2019
  */
 public class OffensiveHawthron extends AbstractWand
 {
@@ -14,6 +14,7 @@ public class OffensiveHawthron extends AbstractWand
 
     /**
      * Constructor for objects of class OffensiveHawthron
+     * @param Name Name given for the wand
      */
     public OffensiveHawthron(String Name)
     {
@@ -24,12 +25,26 @@ public class OffensiveHawthron extends AbstractWand
         defensiveEnergyMultiplier = 0.8f;
         
     }
-
+    
+    
+    /**
+    * Uses the wand and returns the attack points
+    * @param characterOffensivePoints The offensive points from the character that uses the wand
+    * @param characterEnergyPoints The energy points from the character that uses the wand
+    * @return Attack points
+    */
     @Override
     public float offensiveUse(float characterOffensivePoints, float characterEnergyPoints){
         return (offensiveEnergyMultiplier * characterEnergyPoints + offensivePointsMultiplier * characterOffensivePoints);   
     }
 
+    
+    /**
+    * Uses the wand and returns the resistance points
+    * @param characterDefensivePoints The defensive points from the character that uses the wand
+    * @param characterEnergyPoints The energy points from the character that uses the wand
+    * @return Resistance points
+    */
     @Override
     public float defensiveUse(float characterdefensivePoints, float characterEnergyPoints){
         return (defensiveEnergyMultiplier * characterEnergyPoints + defensivePointsMultiplier * characterdefensivePoints);   

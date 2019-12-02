@@ -1,0 +1,102 @@
+/**
+ * Class to init data of the simulation. 
+ * It could be used alto to write finals results.
+ * 
+ * @author profesores DP 
+ * @version 19/20
+ */
+public class InitData1
+{
+    private Hogwarts hogwarts = … //hogwarts must be a unique instance
+
+    /**
+     * Constructor for objects of class InitData
+     */
+    public InitData1()
+    {
+        initData1();
+    }
+    
+     private void initData1()
+    {
+        //New wands
+        //-----------------------
+        hogwarts.newWand(new HawthornWandBehavior("Ivy"), ...);
+        hogwarts.newWand(new HawthornWandBehavior("Larch"), ...);
+        hogwarts.newWand(new HollyWandBehavior("Rowan"), ...);
+        hogwarts.newWand(new HawthornWandBehavior("Yew"), ...);
+        hogwarts.newWand(new HawthornWandBehavior("Hazel"), ...);
+        hogwarts.newWand(new HawthornWandBehavior("Pine"), ...);
+        hogwarts.newWand(new HollyWandBehavior("Tamarack"), ...);
+        hogwarts.newWand(new HawthornWandBehavior("Spruce"), ...);
+        hogwarts.newWand(new HawthornWandBehavior("Pear"), ...);
+        hogwarts.newWand(new HawthornWandBehavior("Laurel"), ...);
+
+       //Griffindor's characters
+       //-----------------------------
+       House gryffindor = new House("Gryffindor" … );
+       Character harry = new OffensiveCharacter("Harry Potter"  … );
+       ->assign Wand (name: “HarryW”, type: “HawthornWandBehavior”) to harry
+       ->assign  InvigorationPotion to harry 
+       ->assign  FelixFelicisPotion to harry 
+       Character hermione = new DefensiveCharacter("Hermione Granger"  … );
+       ->assign Wand (name: “HermioneW”, type: “HollyWandBehavior”) to hermione
+       ->assign  InvigorationPotion to hermione 
+       Character ron = new DefensiveCharacter("Ron Weasley" … );
+       ->assign Wand (name: “RonW”, type: “HawthornWandBehavior”) to ron
+       ->assign  FelixFelicisPotion to ron 
+       Character neville = new DefensiveCharacter("Neville Longbottom" … );
+       ->assign Wand (name: “NevilleW”, type: “HawthornWandBehavior”) to neville
+        gryffindor.addMember(harry);
+        gryffindor.addMember(hermione);
+        gryffindor.addMember(ron);
+        gryffindor.addMember(neville);
+        ->sort gryffindor’s members
+        hogwarts.newHouse( gryffindor);
+
+
+        //Hufflepuff's characters
+        //------------------------------
+        House hufflepuff = new House("Hufflepuff" … );
+        Character cedric = new DefensiveCharacter("Cedric Diggory"  … );
+       ->assign Wand (name: “CedricW”, type: “HawthornWandBehavior”) to cedric
+       ->assign  InvigorationPotionPotion to cedric
+        Character nymphadora = new DefensiveCharacter("Nymphadora Tonks" … );
+       ->assign Wand (name: “NymphadoraW”, type: “HawthornWandBehavior”) to nymphadora
+        Character pomona = new OffensiveCharacter("Pomona Sprout" … );
+       ->assign Wand (name: “PomonaW”, type: “HawthornWandBehavior”) to pomona
+       ->assign  FelixFelicisPotion to pomona
+        Character rolf = new DefensiveCharacter("Rolf Scamander" … );
+       ->assign Wand (name: “RolfW”, type: “HawthornWandBehavior”) to rolf
+        hufflepuff.addMember(cedric);
+        hufflepuff.addMember(nymphadora);
+        hufflepuff.addMember(pomona);
+        hufflepuff.addMember(rolf);
+        hufflepuff.sortMembers();
+        ->sort hufflepuff’s members
+        hogwarts.newHouse(hufflepuff);
+
+
+        //Slytherin's characters
+        //----------------------
+        House slytherin = new House("Slytherin" … );
+        Character draco = new DefensiveCharacter("Draco Malfoy" … );
+       ->assign Wand (name: “DracoW”, type: “HollyWandBehavior”) to draco
+        Character dolores = new OffensiveCharacter("Dolores Umbridge" … );
+       ->assign Wand (name: “DoloresW”, type: “HollyWandBehavior”) to dolores
+        Character pansy = new OffensiveCharacter("Pansy Parkinson" … );
+       ->assign Wand (name: “PansyW”, type: “HawthornWandBehavior”) to pansy
+       ->assign  FelixFelicisPotion to pansy
+        Character albus = new OffensiveCharacter("Albus Severus Potter" … );
+       ->assign Wand (name: “AlbusW”, type: “HollyWandBehavior”) to albus
+        slytherin.addMember(draco);
+        slytherin.addMember(dolores);
+        slytherin.addMember(pansy);
+        slytherin.addMember(albus);
+        ->sort slytherin’s members
+        hogwarts.newHouse(slytherin);
+
+    }
+
+}
+

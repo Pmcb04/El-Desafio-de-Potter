@@ -1,4 +1,4 @@
-15
+10
 Ivy,OffensiveHawthron
 Larch,OffensiveHawthron
 Rowan,HollyDefensive
@@ -9,32 +9,31 @@ Tamarack,HollyDefensive
 Spruce,OffensiveHawthron
 Pear,OffensiveHawthron
 Laurel,OffensiveHawthron
-Cypress,HollyDefensive
-Ebony,HollyDefensive
-Reed,OffensiveHawthron
-Aspen,HollyDefensive
-Walnut,OffensiveHawthron
 
 3
 
-3
+4
 Gryffindor
-HarryW,HollyDefensive,Offensive,Harry Potter,invigorationPotion,felixFelicisPotion
-HermioneW,HollyDefensive,Offensive,Hermione Granger,felixFelicisPotion,invigorationPotion
-RonW,HollyDefensive,Offensive,Ron Weasley,felixFelicisPotion
+HarryW,OffensiveHawthron,Offensive,Harry Potter,invigorationPotion,felixFelicisPotion
+HermioneW,HollyDefensive,Defensive,Hermione Granger,invigorationPotion
+RonW,OffensiveHawthron,Defensive,Ron Weasley,felixFelicisPotion
+NevilleW,OffensiveHawthron,Defensive,Neville Longbottom
 
-8
+4
 Hufflepuff
 CedricW,OffensiveHawthron,Defensive,Cedric Diggory,invigorationPotion
 NymphadoraW,OffensiveHawthron,Defensive,Nymphadora Tonks
-PomonaW,OffensiveHawthron,Defensive,Pomona Sprout,felixFelicisPotion
+PomonaW,OffensiveHawthron,Offensive,Pomona Sprout,felixFelicisPotion
 RolfW,OffensiveHawthron,Defensive,Rolf Scamander
-SilvanusW,OffensiveHawthon,Defensive,Silvanus Kettleburn,felixFelicisPotion
-SusanW,OffensiveHawthron,Defensive,Susan Bones
-NewtonW,OffensiveHawthron,Defensive,Newton Scamander
-HannahW,OffensiveHawthron,Defensive,Hannah Abbott,felixFelicisPotion
 
-1
+4
 Slytherin
-DracoW,HollyDefensive,Defensive,Draco Malfoy,felixFelicisPotion
+DracoW,HollyDefensive,Defensive,Draco Malfoy
+DoloresW,HollyDefensive,Offensive,Dolores Umbridge
+PansyW,OffensiveHawthron,Offensive,Pansy Parkinson,felixFelicisPotion
+AlbusW,HollyDefensive,Offensive,Albus Severus Potter
+
+
+
+
 

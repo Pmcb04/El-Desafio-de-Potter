@@ -58,9 +58,7 @@ public class Hogwarts
                 currentCharacters.add(h.getCharacter());
             }
         }
-        
         orderCurrentCharacters();
-        
     }
     
     /**
@@ -113,6 +111,20 @@ public class Hogwarts
      * An example of a method - replace this comment with your own
      *
      */
+    public void printAttackCharacters(Character c1, Character c2,FileWriter fw) throws IOException{
+                 String s1;
+                 s1 = String.format("<%s> is dueling against <%s>%n", 
+                                   c1.getName(), c2.getName());
+                 fw.write(s1);
+                 System.out.printf(s1);
+               }
+    
+    
+    
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     */
     public void sendCharacters(FileWriter fw) throws IOException{
         Iterator<Character> it = currentCharacters.iterator();
         while(it.hasNext()){
@@ -122,12 +134,11 @@ public class Hogwarts
                dungeon.add(c);
             }
             else{
-               giveWand(c, fw);
+               giveWand(c,fw);
             }
-            System.out.println();
-            fw.write("\n\n");
             it.remove();
          }
+            fw.write("\n");
     }
     
     /**
@@ -152,15 +163,25 @@ public class Hogwarts
      * An example of a method - replace this comment with your own
      * Si nuestro conjunto no esta vacio le cambia la varita
      */
-    public void giveWand(Character c, FileWriter fw) throws IOException{
+    public void giveWand(Character c,  FileWriter fw) throws IOException{
         if(!newWandCollection.isEmpty()){
             Wand newWand = newWandCollection.first();
             c.changeWand(newWand);
-             printGiveWand(newWand, fw);
+            printGiveWand(newWand, fw);
             newWandCollection.remove(newWand);
         }
     } 
     
+    
+    /**
+     * An example of a method - replace this comment with your own
+     * Si nuestro conjunto no esta vacio le cambia la varita
+     */
+    public void printGiveWand(Wand w, FileWriter fw) throws IOException{
+        String s;
+        s = String.format("new wand assigned: <%s (class %s)>%n", w.getName(), w.getType());
+        fw.write(s);
+    } 
     
     /**
      * An example of a method - replace this comment with your own
@@ -175,12 +196,12 @@ public class Hogwarts
           String nameHouse = houseCollection.get(key).getName();
           if (nameHouse != null){
              h = houseCollection.get(key);
-             if(h.howManyCharacters() > 0){
+             if(h.howManyCharacters() == 0){
                 count++;
              }
           }
         }
-        if(count == 1){
+        if(count >= houseCollection.size()-1){
            found = true;
         }
         return found;
@@ -234,7 +255,7 @@ public class Hogwarts
             h1 = houseCollection.get(key1);
           
          Iterator<String> it2 = houseCollection.keySet().iterator(); 
-          while(it2.hasNext() && found){
+         while(it2.hasNext() && found){
              String key2 = it2.next();
              String nameHouse2 = houseCollection.get(key2).getName();
              if (nameHouse2 != null){
@@ -364,6 +385,7 @@ public class Hogwarts
        return h1;
     }
     
+    
     /**
      * An example of a method - replace this comment with your own
      * Devuelve la casa que tiene personajes
@@ -382,29 +404,6 @@ public class Hogwarts
                 return h;
              }
           }
-        }
-        return null;
-    }
-
-        /**
-     * An example of a method - replace this comment with your own
-     * Devuelve la casa ganadora
-     * @return
-     */
-    public House getWinnerHouse(){
-        if(endSimulation()){
-            return this.winnerHouse();  
-        }
-        else{
-            if(checkDifferentNumberCharacters()){
-                return maxNumberCharacters();
-            }
-            else if(checkDifferentEnergyPoints()){
-                return maxEnergyPoints();
-            }
-            else if(checkDifferentNumberCharacters()){
-                return minDefensiveOffensivePoints();
-            }
         }
         return null;
     }
@@ -432,18 +431,31 @@ public class Hogwarts
       
     }
     
-    /**
-     * An example of a method - replace this comment with your own
-     * Si nuestro conjunto no esta vacio le cambia la varita
-     */
-    public void printGiveWand(Wand w, FileWriter fw) throws IOException{
-        String s;
-        s = String.format("new wand assigned: <%s (class %s)>%n", w.getName(), w.getType());
-        
-        System.out.printf(s);
-        fw.write("\n" + s);
-    } 
+    
 
+        /**
+     * An example of a method - replace this comment with your own
+     * Devuelve la casa ganadora
+     * @return
+     */
+    public House getWinnerHouse(){
+        if(endSimulation()){
+            return this.winnerHouse();  
+        }
+        else{
+            if(checkDifferentNumberCharacters()){
+                return maxNumberCharacters();
+            }
+            else if(checkDifferentEnergyPoints()){
+                return maxEnergyPoints();
+            }
+            else if(checkDifferentNumberCharacters()){
+                return minDefensiveOffensivePoints();
+            }
+        }
+        return null;
+    }
+    
     /**
      * An example of a method - replace this comment with your own
      *
@@ -483,20 +495,13 @@ public class Hogwarts
     {
         for(Character c : currentCharacters){
             c.printCharacter(fw);
+            fw.write("\n");
         }
+        
+        System.out.println();
+        fw.write("\n");
     }
     
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     */
-    public void printAttackCharacters(Character c1, Character c2,FileWriter fw) throws IOException{
-                 String s1;
-                 s1 = String.format("<%s> is dueling against <%s>%n", 
-                                   c1.getName(), c2.getName());
-                 fw.write(s1);
-                 System.out.printf(s1);
-    }
     
     /**
      * An example of a method - replace this comment with your own
@@ -509,6 +514,7 @@ public class Hogwarts
         for(Character c : dungeon){
             c.setEnergyPoints(0f);
             c.printCharacter(fw);
+            fw.write("\n");
         }
         
         System.out.println();
@@ -524,14 +530,18 @@ public class Hogwarts
         if(c.getEnergyPoints() <= 0){
           c.setEnergyPoints(0f);
           c.printCharacter(fw);
-          System.out.println("goes to dungeon");
-          fw.write("goes to dungeon");
+          System.out.println(" goes to dungeon");
+          fw.write(" goes to dungeon");
         }else{
           c.printCharacter(fw);
-          System.out.println("returns to the house");
-          fw.write("returns to the house"); 
+          System.out.println(" returns to the house");
+          fw.write(" returns to the house"); 
         }    
+        
+        System.out.println();
+        fw.write("\n");
     }
+    
      
 }
 

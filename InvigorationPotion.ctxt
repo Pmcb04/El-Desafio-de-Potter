@@ -1,8 +1,9 @@
 #BlueJ class context
 comment0.target=InvigorationPotion
-comment0.text=\n\ Write\ a\ description\ of\ class\ InvigorationPotion\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Class\ InvigorationPotion\n\ Decorator\ Pattern\n\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 26/11/2019\n
 comment1.params=character
 comment1.target=InvigorationPotion(Character)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ InvigorationPotion\n\ @param\ character\ Character\ that\ will\ be\ decorated\n
 comment2.params=
 comment2.target=float\ getDefensivePoints()
 numComments=3
