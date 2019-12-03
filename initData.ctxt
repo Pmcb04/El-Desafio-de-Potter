@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=initData
-comment0.text=\n\ Write\ a\ description\ of\ class\ initData\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Class\ initData\n\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 12/11/2019\n
 comment1.params=
 comment1.target=initData()
 comment2.params=
 comment2.target=void\ initData()
-comment2.text=\n\ \n
+comment2.text=\n\ Reads\ the\ input\ file\n
 numComments=3

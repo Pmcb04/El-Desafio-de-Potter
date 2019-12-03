@@ -13,8 +13,8 @@ public class Gryffindor extends House {
    * 
    * @param name Name of the Gryffindor
    */
-  public Gryffindor (String name){
-        super(name);
+  public Gryffindor (){
+        super("Gryffindor");
   }  
     
     

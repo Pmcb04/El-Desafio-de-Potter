@@ -13,8 +13,8 @@ public class Slytherin extends House {
    * 
    * @param name Name of the Slytherin
    */
-  public Slytherin (String name){
-        super(name);
+  public Slytherin (){
+        super("Slytherin");
   }   
      
   /***
@@ -23,7 +23,7 @@ public class Slytherin extends House {
    */
   @Override
   public void orderCharacters() {
-    Collections.sort(getCharacterList(), new OffensivePointsComparator());
+    Collections.sort(getCharacterList(), Collections.reverseOrder(new OffensivePointsComparator()));
   }
 
 }

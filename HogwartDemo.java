@@ -1,21 +1,21 @@
     import java.io.*;
     import java.util.*;
     /**
-    * Write a description of class HogwartDemo here.
+    * Class HogwartsDemo
     *
-    * @author (your name)
-    * @version (a version number or a date)
+    * @author Pedro Miguel Carmona Broncano & Rubén Marín Lucas & Adrián Ruiz Parra
+    * @version 12/11/2019
     */
     public class HogwartDemo
     {
     private final static int totalTurns = 10;
     private static Hogwarts hogwarts = Hogwarts.getInstance();
     
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+
+    /***
+     * Prints string s
+     * @param s String that will be printed
+     * @param fw FileWriter
      */
     private static void printString(String s, FileWriter fw) throws IOException
     {

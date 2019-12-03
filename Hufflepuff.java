@@ -13,8 +13,8 @@ public class Hufflepuff extends House {
    * 
    * @param name Name of the Hufflepuff
    */
-  public Hufflepuff (String name){
-        super(name);
+  public Hufflepuff (){
+        super("Hufflepuff");
   }
   
   /***
@@ -23,7 +23,7 @@ public class Hufflepuff extends House {
    */
   @Override
   public void orderCharacters() {
-    Collections.sort(getCharacterList(),Collections.reverseOrder( new OffensivePointsComparator() ));
+    Collections.sort(getCharacterList(),new OffensivePointsComparator());
   }
 
 }

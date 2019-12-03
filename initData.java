@@ -1,10 +1,10 @@
  import java.io.*;
-import java.util.*;
+ import java.util.*;
 /**
- * Write a description of class initData here.
+ * Class initData
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Pedro Miguel Carmona Broncano & Rubén Marín Lucas & Adrián Ruiz Parra
+ * @version 12/11/2019
  */
 public class initData
 {
@@ -16,7 +16,7 @@ public class initData
     
     
     /***
-     * 
+     * Reads the input file
      */
     private void initData() throws IOException{
         
@@ -44,6 +44,7 @@ public class initData
        sc.nextLine();
        numHouses = sc.nextInt();
        cont = numHouses - 1;
+       String s;
   
        while(cont >= 0){
            
@@ -51,27 +52,13 @@ public class initData
           num = sc.nextInt();
           sc.nextLine();
           House h;
+          s = sc.nextLine();
           
-          
-            switch(numHouses - cont){
-            
-                case 1:
-                    h = new Gryffindor(sc.nextLine());
-                break;
-                
-                case 2:
-                     h = new Slytherin(sc.nextLine());
-                break;
-                
-                case 3:
-                     h = new Hufflepuff(sc.nextLine());
-                break;
-            
-                default:
-                    h  = new Gryffindor("ERROR");
-                break;
-            }
-          
+            if(s.equalsIgnoreCase("Gryffindor")) h = new Gryffindor();
+            else if(s.equalsIgnoreCase("Hufflepuff")) h = new Hufflepuff();
+            else if(s.equalsIgnoreCase("Slytherin")) h = new Slytherin();
+            else h = new Gryffindor();
+  
        
             for(int i = 0; i < num; i++){
                 vS = sc.nextLine().split(",");
