@@ -50,32 +50,32 @@ duels:
 <Cedric Diggory> is dueling against <Draco Malfoy>
 attack points of <Cedric Diggory> are : <40.0>
 resistance points of <Draco Malfoy> are: <45.5>
-the remaining points of : <Draco Malfoy after the duel are <20.0>
+the remaining energy of : <Draco Malfoy after the duel are <20.0>
 
 <Cedric Diggory> is dueling against <Ron Weasley>
 attack points of <Cedric Diggory> are : <40.0>
 resistance points of <Ron Weasley> are: <40.0>
-the remaining points of : <Ron Weasley after the duel are <20.0>
+the remaining energy of : <Ron Weasley after the duel are <20.0>
 
 <Draco Malfoy> is dueling against <Cedric Diggory>
 attack points of <Draco Malfoy> are : <21.8>
 resistance points of <Cedric Diggory> are: <23.0>
-the remaining points of : <Cedric Diggory after the duel are <20.0>
+the remaining energy of : <Cedric Diggory after the duel are <20.0>
 
 <Draco Malfoy> is dueling against <Ron Weasley>
 attack points of <Draco Malfoy> are : <21.8>
 resistance points of <Ron Weasley> are: <40.0>
-the remaining points of : <Ron Weasley after the duel are <20.0>
+the remaining energy of : <Ron Weasley after the duel are <20.0>
 
 <Ron Weasley> is dueling against <Cedric Diggory>
 attack points of <Ron Weasley> are : <23.75>
 resistance points of <Cedric Diggory> are: <23.0>
-the remaining points of : <Cedric Diggory after the duel are <19.25>
+the remaining energy of : <Cedric Diggory after the duel are <19.25>
 
 <Ron Weasley> is dueling against <Draco Malfoy>
 attack points of <Ron Weasley> are : <23.75>
 resistance points of <Draco Malfoy> are: <45.5>
-the remaining points of : <Draco Malfoy after the duel are <20.0>
+the remaining energy of : <Draco Malfoy after the duel are <20.0>
 
 
 duel results:
@@ -100,32 +100,32 @@ duels:
 <Draco Malfoy> is dueling against <Harry Potter>
 attack points of <Draco Malfoy> are : <21.8>
 resistance points of <Harry Potter> are: <48.8>
-the remaining points of : <Harry Potter after the duel are <20.0>
+the remaining energy of : <Harry Potter after the duel are <20.0>
 
 <Draco Malfoy> is dueling against <Newton Scamander>
 attack points of <Draco Malfoy> are : <21.8>
 resistance points of <Newton Scamander> are: <21.0>
-the remaining points of : <Newton Scamander after the duel are <19.2>
+the remaining energy of : <Newton Scamander after the duel are <19.2>
 
 <Harry Potter> is dueling against <Draco Malfoy>
 attack points of <Harry Potter> are : <23.75>
 resistance points of <Draco Malfoy> are: <45.5>
-the remaining points of : <Draco Malfoy after the duel are <20.0>
+the remaining energy of : <Draco Malfoy after the duel are <20.0>
 
 <Harry Potter> is dueling against <Newton Scamander>
 attack points of <Harry Potter> are : <23.75>
 resistance points of <Newton Scamander> are: <20.36>
-the remaining points of : <Newton Scamander after the duel are <15.81>
+the remaining energy of : <Newton Scamander after the duel are <15.81>
 
 <Newton Scamander> is dueling against <Draco Malfoy>
 attack points of <Newton Scamander> are : <37.49>
 resistance points of <Draco Malfoy> are: <45.5>
-the remaining points of : <Draco Malfoy after the duel are <20.0>
+the remaining energy of : <Draco Malfoy after the duel are <20.0>
 
 <Newton Scamander> is dueling against <Harry Potter>
 attack points of <Newton Scamander> are : <37.49>
 resistance points of <Harry Potter> are: <48.8>
-the remaining points of : <Harry Potter after the duel are <20.0>
+the remaining energy of : <Harry Potter after the duel are <20.0>
 
 
 duel results:
@@ -150,17 +150,17 @@ duels:
 <Draco Malfoy> is dueling against <Hermione Granger>
 attack points of <Draco Malfoy> are : <48.4>
 resistance points of <Hermione Granger> are: <48.8>
-the remaining points of : <Hermione Granger after the duel are <20.0>
+the remaining energy of : <Hermione Granger after the duel are <20.0>
 
 <Draco Malfoy> is dueling against <Nymphadora Tonks>
 attack points of <Draco Malfoy> are : <48.4>
 resistance points of <Nymphadora Tonks> are: <21.0>
-the remaining points of : <Nymphadora Tonks after the duel are <0.0>
+the remaining energy of : <Nymphadora Tonks after the duel are <0.0>
 
 <Hermione Granger> is dueling against <Draco Malfoy>
 attack points of <Hermione Granger> are : <23.75>
 resistance points of <Draco Malfoy> are: <21.0>
-the remaining points of : <Draco Malfoy after the duel are <17.25>
+the remaining energy of : <Draco Malfoy after the duel are <17.25>
 
 <Hermione Granger> is dueling against <Nymphadora Tonks>
 <Nymphadora Tonks> is dueling against <Draco Malfoy>
@@ -187,19 +187,19 @@ duels:
 <Draco Malfoy> is dueling against <Rolf Scamander>
 attack points of <Draco Malfoy> are : <46.75>
 resistance points of <Rolf Scamander> are: <21.0>
-the remaining points of : <Rolf Scamander after the duel are <0.0>
+the remaining energy of : <Rolf Scamander after the duel are <0.0>
 
 <Draco Malfoy> is dueling against <Ron Weasley>
 attack points of <Draco Malfoy> are : <46.75>
 resistance points of <Ron Weasley> are: <40.0>
-the remaining points of : <Ron Weasley after the duel are <13.25>
+the remaining energy of : <Ron Weasley after the duel are <13.25>
 
 <Rolf Scamander> is dueling against <Draco Malfoy>
 <Rolf Scamander> is dueling against <Ron Weasley>
 <Ron Weasley> is dueling against <Draco Malfoy>
 attack points of <Ron Weasley> are : <19.03>
 resistance points of <Draco Malfoy> are: <18.8>
-the remaining points of : <Draco Malfoy after the duel are <17.03>
+the remaining energy of : <Draco Malfoy after the duel are <17.03>
 
 <Ron Weasley> is dueling against <Rolf Scamander>
 
@@ -224,12 +224,12 @@ duels:
 <Draco Malfoy> is dueling against <Harry Potter>
 attack points of <Draco Malfoy> are : <46.62>
 resistance points of <Harry Potter> are: <21.6>
-the remaining points of : <Harry Potter after the duel are <0.0>
+the remaining energy of : <Harry Potter after the duel are <0.0>
 
 <Draco Malfoy> is dueling against <Susan Bones>
 attack points of <Draco Malfoy> are : <46.62>
 resistance points of <Susan Bones> are: <21.0>
-the remaining points of : <Susan Bones after the duel are <0.0>
+the remaining energy of : <Susan Bones after the duel are <0.0>
 
 <Harry Potter> is dueling against <Draco Malfoy>
 <Harry Potter> is dueling against <Susan Bones>
@@ -256,22 +256,22 @@ duels:
 <Draco Malfoy> is dueling against <Hannah Abbott>
 attack points of <Draco Malfoy> are : <19.72>
 resistance points of <Hannah Abbott> are: <21.0>
-the remaining points of : <Hannah Abbott after the duel are <20.0>
+the remaining energy of : <Hannah Abbott after the duel are <20.0>
 
 <Draco Malfoy> is dueling against <Hermione Granger>
 attack points of <Draco Malfoy> are : <19.72>
 resistance points of <Hermione Granger> are: <21.6>
-the remaining points of : <Hermione Granger after the duel are <20.0>
+the remaining energy of : <Hermione Granger after the duel are <20.0>
 
 <Hannah Abbott> is dueling against <Draco Malfoy>
 attack points of <Hannah Abbott> are : <48.4>
 resistance points of <Draco Malfoy> are: <42.82>
-the remaining points of : <Draco Malfoy after the duel are <11.45>
+the remaining energy of : <Draco Malfoy after the duel are <11.45>
 
 <Hannah Abbott> is dueling against <Hermione Granger>
 attack points of <Hannah Abbott> are : <48.4>
 resistance points of <Hermione Granger> are: <21.6>
-the remaining points of : <Hermione Granger after the duel are <0.0>
+the remaining energy of : <Hermione Granger after the duel are <0.0>
 
 <Hermione Granger> is dueling against <Draco Malfoy>
 <Hermione Granger> is dueling against <Hannah Abbott>
@@ -297,12 +297,12 @@ duels:
 <Draco Malfoy> is dueling against <Ron Weasley>
 attack points of <Draco Malfoy> are : <43.27>
 resistance points of <Ron Weasley> are: <14.6>
-the remaining points of : <Ron Weasley after the duel are <0.0>
+the remaining energy of : <Ron Weasley after the duel are <0.0>
 
 <Draco Malfoy> is dueling against <Pomona Sprout>
 attack points of <Draco Malfoy> are : <43.27>
 resistance points of <Pomona Sprout> are: <21.0>
-the remaining points of : <Pomona Sprout after the duel are <0.0>
+the remaining energy of : <Pomona Sprout after the duel are <0.0>
 
 <Ron Weasley> is dueling against <Draco Malfoy>
 <Ron Weasley> is dueling against <Pomona Sprout>
@@ -328,7 +328,7 @@ duels:
 <Draco Malfoy> is dueling against <Silvanus Kettleburn>
 attack points of <Draco Malfoy> are : <43.27>
 resistance points of <Silvanus Kettleburn> are: <21.0>
-the remaining points of : <Silvanus Kettleburn after the duel are <0.0>
+the remaining energy of : <Silvanus Kettleburn after the duel are <0.0>
 
 <Silvanus Kettleburn> is dueling against <Draco Malfoy>
 
@@ -350,12 +350,12 @@ duels:
 <Draco Malfoy> is dueling against <Cedric Diggory>
 attack points of <Draco Malfoy> are : <43.27>
 resistance points of <Cedric Diggory> are: <55.82>
-the remaining points of : <Cedric Diggory after the duel are <19.25>
+the remaining energy of : <Cedric Diggory after the duel are <19.25>
 
 <Cedric Diggory> is dueling against <Draco Malfoy>
 attack points of <Cedric Diggory> are : <19.47>
 resistance points of <Draco Malfoy> are: <14.16>
-the remaining points of : <Draco Malfoy after the duel are <6.13>
+the remaining energy of : <Draco Malfoy after the duel are <6.13>
 
 
 duel results:
@@ -375,7 +375,7 @@ duels:
 <Draco Malfoy> is dueling against <Newton Scamander>
 attack points of <Draco Malfoy> are : <40.08>
 resistance points of <Newton Scamander> are: <17.65>
-the remaining points of : <Newton Scamander after the duel are <0.0>
+the remaining energy of : <Newton Scamander after the duel are <0.0>
 
 <Newton Scamander> is dueling against <Draco Malfoy>
 
@@ -399,9 +399,9 @@ house:<Gryffindor>
 
 new wands:
 ----------
-
 dungeon characters:
 -------------------
+
 character:<Nymphadora Tonks> <e: 0.0> <o: 20.0> <d: 25.0> <wand: NymphadoraW (OffensiveHawthron)>
 character:<Rolf Scamander> <e: 0.0> <o: 20.0> <d: 25.0> <wand: RolfW (OffensiveHawthron)>
 character:<Harry Potter> <e: 0.0> <o: 32.5> <d: 28.0> <wand: Ivy (OffensiveHawthron)>

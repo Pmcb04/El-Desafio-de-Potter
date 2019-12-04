@@ -142,7 +142,7 @@ public abstract class Character
         float ep = Math.round(opponent.getEnergyPoints() * 100f) / 100f;
         
         String s = "attack points of <" + getName() + "> are : <" + ap + ">\nresistance points of <" + opponent.getName() + "> are: <" +
-            rp +  ">\nthe remaining points of : <" + opponent.getName() + " after the duel are <" + ep + ">\n"; 
+            rp +  ">\nthe remaining energy of : <" + opponent.getName() + " after the duel are <" + ep + ">\n"; 
        
      
          System.out.printf(s);  

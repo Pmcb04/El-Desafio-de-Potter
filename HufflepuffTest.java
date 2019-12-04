@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Class HufflepuffTest
+ * The test class HufflepuffTest
  *
  * @author Pedro Miguel Carmona Broncano & Rubén Marín Lucas & Adrián Ruiz Parra
  * @version 12/11/2019

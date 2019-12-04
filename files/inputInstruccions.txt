@@ -1,0 +1,52 @@
+numberOfWands = NW
+nameWand1,typeWand1
+nameWand2,typeWand2
+nameWand3,typeWand3
+nameWand4,typeWand4
+nameWand5,typeWand5
+.
+.
+.
+nameWandNW,typeWandNW
+[space]
+numberOfHouses
+[space]
+numberOfCharactersGryffindor = NG
+Gryffindor
+nameWandCharacter1,typeWand1,typeCharacter1,nameCharacter1,[potions]
+nameWandCharacter2,typeWand2,typeCharacter2,nameCharacter4,[potions]
+nameWandCharacter3,typeWand3,typeCharacter3,nameCharacter4,[potions]
+.
+.
+.
+nameWandCharacternNG,typeWandNG,typeCharacterNG,nameCharacterNG,[potions]
+[space]
+numberOfCharactersHufflepuff = NH
+Hufflepuff
+nameWandCharacter1,typeWand1,typeCharacter1,nameCharacter1,[potions]
+nameWandCharacter2,typeWand2,typeCharacter2,nameCharacter4,[potions]
+nameWandCharacter3,typeWand3,typeCharacter3,nameCharacter4,[potions]
+.
+.
+.
+nameWandCharacternNH,typeWandNH,typeCharacterNH,nameCharacterNH,[potions]
+[space]
+numberCharactersSlytherin = NS
+Slytherin
+nameWandCharacter1,typeWand1,typeCharacter1,nameCharacter1,[potions]
+nameWandCharacter2,typeWand2,typeCharacter2,nameCharacter4,[potions]
+nameWandCharacter3,typeWand3,typeCharacter3,nameCharacter4,[potions]
+.
+.
+.
+nameWandCharacternNS,typeWandNS,typeCharacterNS,nameCharacterNS,[potions]
+
+
+************************************************
+
+potions = { felixFelicisPotion , invigorationPotion }
+typeWand = { Hollydefensive , OffensiveHawthron }
+typeCharacter = { Defensive , Offensive }
+
+************************************************
+

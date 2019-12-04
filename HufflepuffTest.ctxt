@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=HufflepuffTest
-comment0.text=\n\ Class\ HufflepuffTest\n\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 12/11/2019\n
+comment0.text=\n\ The\ test\ class\ HufflepuffTest\n\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 12/11/2019\n
 comment1.params=
 comment1.target=HufflepuffTest()
 comment1.text=\n\ Default\ constructor\ for\ test\ class\ HufflepuffTest\n

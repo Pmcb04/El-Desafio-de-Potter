@@ -12,8 +12,11 @@ AUTHORS:
     Ruben Marin Lucas
     Adrian Ruiz Parra
 USER INSTRUCTIONS
+    - You must rename the inputX.log file to input.log before run the project, You can find this
+      file in 'files' folder
     - To run this project, you must run the main method of HogwartDemo class
-    - The output of this emulation will be printed in the output.log file and terminal
-    - In Hogwarts class we used a Singlenton Desing Pattern
-    - In AbstractPotionExtra class we used a Decorator Desing Pattern
-    - In AbstractWand class we used a Strategy Design Pattern
+    - The output of this emulation will be printed in terminal and in a output.log file in the'files' folder.
+    - We used Singlenton Pattern in Hogwarts class 
+    - We used Decorator Pattern in AbstractPotionExtra class 
+    - We used Strategy Pattern in AbstractWand class
+    - We used JUnit integrated in BlueJ to make test classes

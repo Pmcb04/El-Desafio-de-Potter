@@ -34,7 +34,7 @@
     
     public static void main (String[] arg) throws IOException{
         
-          FileWriter fw = new FileWriter("output.log");
+          FileWriter fw = new FileWriter("files/output.log");
           initData id = new initData();
     
           int turns = 0; 
@@ -47,7 +47,10 @@
           printString("new wands", fw);
           hogwarts.printWands(fw);
           
-          while(!endSimulation && turns < 10){
+          fw.write("\n");
+          System.out.println();
+          
+          while(!endSimulation && turns < totalTurns){
              String turnS = String.format("turn:<%d>%n", turns);
              System.out.printf(turnS);
              fw.write(turnS);
@@ -77,6 +80,11 @@
           hogwarts.printWands(fw);
           
           printString("dungeon characters", fw);
+          
+          fw.write("\n");
+          System.out.println();
+          
+          
           hogwarts.printDungeon(fw);
           
           printString("the winner house is", fw);

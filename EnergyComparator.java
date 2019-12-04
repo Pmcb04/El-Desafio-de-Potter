@@ -1,9 +1,10 @@
 import java.util.*;
 /**
- * Write a description of class EnergyComparator here.
+ * Class EnergyComparator
+ * Sorts by energyPoints in an ascending order. If defensivePoints are equal, it sorts by name
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Pedro Miguel Carmona Broncano & Rubén Marín Lucas & Adrián Ruiz Parra
+ * @version 12/11/2019
  */
 class EnergyComparator implements Comparator<Character>
 {

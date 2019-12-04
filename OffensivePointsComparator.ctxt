@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=OffensivePointsComparator
-comment0.text=\n\ Creating\ a\ class\ which\ implements\ Comparator\ Interface\ (using\ attackPoints)\n\ Order\ from\ less\ to\ high\ by\ the\ attribute\ attackPoints\n
+comment0.text=\n\ Class\ OffensivePointsComparator\n\ Sorts\ by\ attackPoints\ in\ an\ ascending\ order.\ If\ attackPoints\ are\ equal,\ it\ sorts\ by\ name\n\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 12/11/2019\n
 comment1.params=c1\ c2
 comment1.target=int\ compare(Character,\ Character)
 numComments=2

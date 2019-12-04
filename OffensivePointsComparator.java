@@ -1,8 +1,11 @@
 import java.util.*;
 
 /**
- * Creating a class which implements Comparator Interface (using attackPoints)
- * Order from less to high by the attribute attackPoints
+ * Class OffensivePointsComparator
+ * Sorts by attackPoints in an ascending order. If attackPoints are equal, it sorts by name
+ *
+ * @author Pedro Miguel Carmona Broncano & Rubén Marín Lucas & Adrián Ruiz Parra
+ * @version 12/11/2019
  */
 class OffensivePointsComparator implements Comparator<Character> {
   public int compare(Character c1, Character c2) {

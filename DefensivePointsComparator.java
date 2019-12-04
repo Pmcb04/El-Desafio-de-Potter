@@ -1,7 +1,11 @@
 import java.util.*;
+
 /**
- * Creating a class which implements Comparator Interface (using resistencePoints)
- * Order from less to high by the attribute resistencePoints
+ * Class DefensivePointsComparator
+ * Sorts by defensivePoints in an ascending order. If defensivePoints are equal, it sorts by name
+ * 
+ * @author Pedro Miguel Carmona Broncano & Rubén Marín Lucas & Adrián Ruiz Parra
+ * @version 12/11/2019
  */
 class DefensivePointsComparator implements Comparator<Character> {
   public int compare(Character c1, Character c2) {

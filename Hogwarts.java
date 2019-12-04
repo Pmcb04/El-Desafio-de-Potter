@@ -9,6 +9,7 @@ import java.io.*;
  * on their energy points. Besides, when a student is being sent to his house they are provided with a new wand 
  * if the collection of wands isn't empty.
  * 
+ * Class Hogwarts
  * Singleton Pattern
  *
  * @author Pedro Miguel Carmona Broncano & Rubén Marín Lucas & Adrián Ruiz Parra
@@ -471,8 +472,6 @@ public class Hogwarts
           System.out.printf(s);
           fw.write(s);
       }
-      System.out.println();
-      fw.write("\n");
     }
     
     

@@ -1,10 +1,11 @@
-
 import java.util.*;
+
 /**
- * Write a description of class EnergyComparator here.
+ * Class NameWandComparator
+ * Sorts by name of Wand in an ascending order. If defensivePoints are equal, it sorts by name
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Pedro Miguel Carmona Broncano & Rubén Marín Lucas & Adrián Ruiz Parra
+ * @version 12/11/2019
  */
 class NameWandComparator implements Comparator<Wand>
 {
