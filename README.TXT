@@ -12,8 +12,8 @@ AUTHORS:
     Ruben Marin Lucas
     Adrian Ruiz Parra
 USER INSTRUCTIONS
-    - To run this project, you should run the main method of HogwartDemo class
-    - The output of this emulation of Harry Potter can be watched in the output.log file
-    - In the Hogwarts class we used a Singlenton Desing Pattern
-    - In the AbstractPotion class we used a Decorator Desing Pattern
-    - In the AbstractWand class we used a Strategy Design Pattern
+    - To run this project, you must run the main method of HogwartDemo class
+    - The output of this emulation will be printed in the output.log file and terminal
+    - In Hogwarts class we used a Singlenton Desing Pattern
+    - In AbstractPotionExtra class we used a Decorator Desing Pattern
+    - In AbstractWand class we used a Strategy Design Pattern

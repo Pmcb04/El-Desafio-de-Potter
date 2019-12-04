@@ -230,7 +230,7 @@ public class Hogwarts
     public void printGiveWand(Wand w, FileWriter fw) throws IOException{
         String s;
         s = String.format("new wand assigned: <%s (class %s)>%n", w.getName(), w.getType());
-        System.out.println(s);
+        System.out.printf(s);
         fw.write(s);
     } 
     

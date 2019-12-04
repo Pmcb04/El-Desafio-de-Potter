@@ -56,6 +56,7 @@
              hogwarts.insertCharacters();
              hogwarts.printCurrentCharacters(fw);
              fw.write("\n");
+             System.out.println();
              
              printString("duels", fw);  
              hogwarts.attackCharacters(fw);
