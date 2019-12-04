@@ -136,13 +136,17 @@ public abstract class Character
      */
     public void printDuel(Character opponent, float opponentResistancePoints, FileWriter fw) throws IOException
     {
-        String s2 = String.format("attack points of <%s> are: <%.2f>%nresistance points of <%s> are: <%.2f>%nthe remaining energy of <%s> after the duel are: <%.2f>%n",
-                                   getName(), getAttackPoints(), opponent.getName(), opponentResistancePoints, 
-                                   opponent.getName(), opponent.getEnergyPoints());
+        
+        float ap = Math.round(getAttackPoints() * 100f) / 100f;
+        float rp = Math.round(opponentResistancePoints * 100f) / 100f;
+        float ep = Math.round(opponent.getEnergyPoints() * 100f) / 100f;
+        
+        String s = "attack points of <" + getName() + "> are : <" + ap + ">\nresistance points of <" + opponent.getName() + "> are: <" +
+            rp +  ">\nthe remaining points of : <" + opponent.getName() + " after the duel are <" + ep + ">\n"; 
        
      
-         System.out.printf(s2);  
-         fw.write(s2);
+         System.out.printf(s);  
+         fw.write(s);
         
          System.out.println();
         fw.write("\n");
@@ -213,9 +217,16 @@ public abstract class Character
      */
     public void printCharacter(FileWriter fw) throws IOException
     {
-      String s = String.format("character:<%s> <e: %.2f> <o: %.2f> <d: %.2f> <wand: %s (%s)>", getName(), getEnergyPoints(),
-                            getOffensivePoints(),getDefensivePoints(), getWandName(), getWandType());
-      System.out.println(s);
+       
+        float op = Math.round(getOffensivePoints() * 100f) / 100f;
+        float dp = Math.round(getDefensivePoints() * 100f) / 100f;
+        float ep = Math.round(getEnergyPoints() * 100f) / 100f;
+        
+        String s = "character:<" + getName() + "> <e: " + ep + "> <o: " + op + "> <d: " +
+            dp + "> <wand: " + getWandName() + " (" + getWandType() + ")>"; 
+         
+
+      System.out.printf(s);
       fw.write(s);
     }
 

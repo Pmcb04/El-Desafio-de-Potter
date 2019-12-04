@@ -40,6 +40,7 @@
           int turns = 0; 
           boolean endSimulation = false;
           fw.write("\n");
+          System.out.println();
           printString("houses", fw);
           hogwarts.printAllCharacters(fw);
           
@@ -58,8 +59,7 @@
              
              printString("duels", fw);  
              hogwarts.attackCharacters(fw);
-            
-             System.out.println();
+
              printString("duel results", fw);
              hogwarts.sendCharacters(fw);
              hogwarts.checkHouses();
@@ -86,6 +86,7 @@
           fw.write("\n");   
           winnerHouse.printCharacterList(fw);
           fw.write("\n");
+          System.out.println();
           
           
           fw.close();

@@ -4,9 +4,16 @@ Tell the reader (someone who does not know anything about this project)
 all he/she needs to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
+PROJECT TITLE: El Desafio De Potter (DP)
+VERSION or DATE: 5/12/2019
+THIS PROJECT STARTED: 12/11/2019
 AUTHORS:
-USER INSTRUCTIONS:
+    Pedro Miguel Carmona Broncano
+    Ruben Marin Lucas
+    Adrian Ruiz Parra
+USER INSTRUCTIONS
+    - To run this project, you should run the main method of HogwartDemo class
+    - The output of this emulation of Harry Potter can be watched in the output.log file
+    - In the Hogwarts class we used a Singlenton Desing Pattern
+    - In the AbstractPotion class we used a Decorator Desing Pattern
+    - In the AbstractWand class we used a Strategy Design Pattern

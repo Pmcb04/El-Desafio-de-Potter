@@ -1,19 +1,19 @@
 #BlueJ class context
 comment0.target=AbstractWand
-comment0.text=\n\ Class\ AbstractWand\n\ Strategy\ Pattern\n\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 26/11/2019\n
+comment0.text=\r\n\ Class\ AbstractWand\r\n\ Strategy\ Pattern\r\n\r\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\r\n\ @version\ 26/11/2019\r\n
 comment1.params=Name\ Type
 comment1.target=AbstractWand(java.lang.String,\ java.lang.String)
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ AbstractWand\n\ @param\ Name\ Name\ given\ for\ the\ wand\n\ @param\ Type\ Wand\ type\n
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ AbstractWand\r\n\ @param\ Name\ Name\ given\ for\ the\ wand\r\n\ @param\ Type\ Wand\ type\r\n
 comment2.params=characterOffensivePoints\ characterEnergyPoints
 comment2.target=float\ offensiveUse(float,\ float)
-comment2.text=\n\ Uses\ the\ wand\ and\ returns\ the\ attack\ points\n\ @param\ characterOffensivePoints\ The\ offensive\ points\ from\ the\ character\ that\ uses\ the\ wand\n\ @param\ characterEnergyPoints\ The\ energy\ points\ from\ the\ character\ that\ uses\ the\ wand\n\ @return\ Attack\ points\n
+comment2.text=\r\n\ Uses\ the\ wand\ and\ returns\ the\ attack\ points\r\n\ @param\ characterOffensivePoints\ The\ offensive\ points\ from\ the\ character\ that\ uses\ the\ wand\r\n\ @param\ characterEnergyPoints\ The\ energy\ points\ from\ the\ character\ that\ uses\ the\ wand\r\n\ @return\ Attack\ points\r\n
 comment3.params=characterdefensivePoints\ characterEnergyPoints
 comment3.target=float\ defensiveUse(float,\ float)
-comment3.text=\n\ Uses\ the\ wand\ and\ returns\ the\ resistance\ points\n\ @param\ characterDefensivePoints\ The\ defensive\ points\ from\ the\ character\ that\ uses\ the\ wand\n\ @param\ characterEnergyPoints\ The\ energy\ points\ from\ the\ character\ that\ uses\ the\ wand\n\ @return\ Resistance\ points\n
+comment3.text=\r\n\ Uses\ the\ wand\ and\ returns\ the\ resistance\ points\r\n\ @param\ characterDefensivePoints\ The\ defensive\ points\ from\ the\ character\ that\ uses\ the\ wand\r\n\ @param\ characterEnergyPoints\ The\ energy\ points\ from\ the\ character\ that\ uses\ the\ wand\r\n\ @return\ Resistance\ points\r\n
 comment4.params=
 comment4.target=java.lang.String\ getName()
-comment4.text=\n\ Get\ method\ for\ getting\ the\ wand's\ name\n\ @return\ Wand's\ name\n
+comment4.text=\r\n\ Get\ method\ for\ getting\ the\ wand's\ name\r\n\ @return\ Wand's\ name\r\n
 comment5.params=
 comment5.target=java.lang.String\ getType()
-comment5.text=\n\ Get\ method\ for\ getting\ the\ wand's\ type\n\ @return\ Wand's\ type\n
+comment5.text=\r\n\ Get\ method\ for\ getting\ the\ wand's\ type\r\n\ @return\ Wand's\ type\r\n
 numComments=6

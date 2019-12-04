@@ -1,13 +1,13 @@
 #BlueJ class context
 comment0.target=OffensiveHawthron
-comment0.text=\n\ Class\ OffensiveHawthron\n\ Strategy\ Pattern\n\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 26/11/2019\n
+comment0.text=\r\n\ Class\ OffensiveHawthron\r\n\ Strategy\ Pattern\r\n\r\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\r\n\ @version\ 26/11/2019\r\n
 comment1.params=Name
 comment1.target=OffensiveHawthron(java.lang.String)
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ OffensiveHawthron\n\ @param\ Name\ Name\ given\ for\ the\ wand\n
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ OffensiveHawthron\r\n\ @param\ Name\ Name\ given\ for\ the\ wand\r\n
 comment2.params=characterOffensivePoints\ characterEnergyPoints
 comment2.target=float\ offensiveUse(float,\ float)
-comment2.text=\n\ Uses\ the\ wand\ and\ returns\ the\ attack\ points\n\ @param\ characterOffensivePoints\ The\ offensive\ points\ from\ the\ character\ that\ uses\ the\ wand\n\ @param\ characterEnergyPoints\ The\ energy\ points\ from\ the\ character\ that\ uses\ the\ wand\n\ @return\ Attack\ points\n
+comment2.text=\r\n\ Uses\ the\ wand\ and\ returns\ the\ attack\ points\r\n\ @param\ characterOffensivePoints\ The\ offensive\ points\ from\ the\ character\ that\ uses\ the\ wand\r\n\ @param\ characterEnergyPoints\ The\ energy\ points\ from\ the\ character\ that\ uses\ the\ wand\r\n\ @return\ Attack\ points\r\n
 comment3.params=characterdefensivePoints\ characterEnergyPoints
 comment3.target=float\ defensiveUse(float,\ float)
-comment3.text=\n\ Uses\ the\ wand\ and\ returns\ the\ resistance\ points\n\ @param\ characterDefensivePoints\ The\ defensive\ points\ from\ the\ character\ that\ uses\ the\ wand\n\ @param\ characterEnergyPoints\ The\ energy\ points\ from\ the\ character\ that\ uses\ the\ wand\n\ @return\ Resistance\ points\n
+comment3.text=\r\n\ Uses\ the\ wand\ and\ returns\ the\ resistance\ points\r\n\ @param\ characterDefensivePoints\ The\ defensive\ points\ from\ the\ character\ that\ uses\ the\ wand\r\n\ @param\ characterEnergyPoints\ The\ energy\ points\ from\ the\ character\ that\ uses\ the\ wand\r\n\ @return\ Resistance\ points\r\n
 numComments=4

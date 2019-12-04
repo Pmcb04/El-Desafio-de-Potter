@@ -10,16 +10,13 @@ public class Slytherin extends House {
  
   /**
    * Constructor for objects of class Slytherin
-   * 
-   * @param name Name of the Slytherin
    */
   public Slytherin (){
         super("Slytherin");
   }   
      
   /***
-   * Order from high to less by the attribute attackPoints the 
-   * character of characterList
+   * Sort characters by their offensive points in an descendant order
    */
   @Override
   public void orderCharacters() {

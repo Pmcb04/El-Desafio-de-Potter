@@ -98,4 +98,19 @@ public class initData
        
       
     }
+    
+    public void prueba() throws IOException {
+        House h = new Gryffindor();
+        House h2 = new Slytherin();
+        House h3 = new Hufflepuff();
+        
+        Hogwarts hogwarts = Hogwarts.getInstance();
+        
+        hogwarts.insertHouse(h3.getName(), h3);
+        hogwarts.insertHouse(h2.getName(), h2);
+        hogwarts.insertHouse(h.getName(), h);
+        
+        hogwarts.printAllCharacters(new FileWriter("null"));
+        
+    }
 }

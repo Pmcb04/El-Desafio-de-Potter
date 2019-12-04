@@ -10,8 +10,6 @@ public class Gryffindor extends House {
     
   /**
    * Constructor for objects of class Gryffindor
-   * 
-   * @param name Name of the Gryffindor
    */
   public Gryffindor (){
         super("Gryffindor");
@@ -19,8 +17,7 @@ public class Gryffindor extends House {
     
     
   /***
-   * Order from less to high by the attribute resistencePoints the 
-   * character of characterList
+   * Sort characters by their defensive points in an ascendant order
    */
   @Override
   public void orderCharacters() {

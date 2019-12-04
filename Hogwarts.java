@@ -118,6 +118,7 @@ public class Hogwarts
            }
         }
        fw.write("\n");
+       System.out.println();
     }
     
     
@@ -159,6 +160,7 @@ public class Hogwarts
             it.remove();
          }
         fw.write("\n");
+        System.out.println();
     }
     
     
@@ -173,11 +175,11 @@ public class Hogwarts
         if(c.getEnergyPoints() <= 0){
           c.setEnergyPoints(0f);
           c.printCharacter(fw);
-          System.out.println(" goes to dungeon");
+          System.out.printf(" goes to dungeon");
           fw.write(" goes to dungeon");
         }else{
           c.printCharacter(fw);
-          System.out.println(" returns to the house");
+          System.out.printf(" returns to the house");
           fw.write(" returns to the house"); 
         }    
         System.out.println();
@@ -228,6 +230,7 @@ public class Hogwarts
     public void printGiveWand(Wand w, FileWriter fw) throws IOException{
         String s;
         s = String.format("new wand assigned: <%s (class %s)>%n", w.getName(), w.getType());
+        System.out.println(s);
         fw.write(s);
     } 
     
@@ -532,6 +535,7 @@ public class Hogwarts
         for(Character c : currentCharacters){
             c.printCharacter(fw);
             fw.write("\n");
+             System.out.println();
         }
         System.out.println();
         fw.write("\n");
@@ -549,6 +553,7 @@ public class Hogwarts
             c.setEnergyPoints(0f);
             c.printCharacter(fw);
             fw.write("\n");
+            System.out.println();
         }
         System.out.println();
         fw.write("\n");

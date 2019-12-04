@@ -10,16 +10,13 @@ public class Hufflepuff extends House {
 
   /**
    * Constructor for objects of class Hufflepuff
-   * 
-   * @param name Name of the Hufflepuff
    */
   public Hufflepuff (){
         super("Hufflepuff");
   }
   
   /***
-   * Order from less to high by the attribute attackPoints the 
-   * character of characterList
+   * Sort characters by their offensive points in an ascendant order
    */
   @Override
   public void orderCharacters() {

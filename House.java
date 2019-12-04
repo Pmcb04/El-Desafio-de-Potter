@@ -23,29 +23,29 @@ public abstract class House {
   }
 
   /***
-   * Abstract method that especific house order it is own characters
+   * Abstract method that sorts characterList depending of the house
    */
   public abstract void orderCharacters();
 
   /***
    * Returns the name of the house
-   * @return name of the house
+   * @return The name of the house
    */
   protected String getName(){
       return name;
   }
   
   /***
-  * Introduces the name of the house
-  * @param name Name of the house
+  * Introduces a new name for the house
+  * @param name New name for the house
   */
   protected void setName(String name){
       this.name = name;
   }
    
   /**
-  * Returns the number of elements of characterList
-  * @return  size of characterList
+  * Returns the number of characters from characterList
+  * @return Size of characterList
   */
   public int howManyCharacters()
   {
@@ -54,24 +54,24 @@ public abstract class House {
 
   
   /***
-  * Return the characterList
-  * @return the characterList
+  * Returns characterList
+  * @return CharacterList
   */
   protected List<Character> getCharacterList(){
       return characterList;
   }
 
   /***
-   * Introduce one Character in the last index of characterList
+   * Introduce one Character in the last position of characterList
    *
-   * @param character Is a character that it will introduce in characterList
+   * @param character The character that will get introduced in characterList
    */
   public void setCharacter(Character character) {
     characterList.add(character);
   }
 
   /***
-   * Return the first character in characterList
+   * Returns the first character of characterList
    *
    * @return the first character of characterList
    */
@@ -81,7 +81,7 @@ public abstract class House {
   
   /***
    * Checks if the first Character of characterList is eliminated, if it is eliminated it gets deleted from
-   * characterList, if it isn't eliminated it gets moved to the last position of character List
+   * characterList. If it is not eliminated it gets moved to the last position of character List
    */
   public void checkCharacters(){
       
@@ -94,9 +94,9 @@ public abstract class House {
   }
   
   /**
-  * Calculated the total of energy points of all characters of characterList
+  * Calculates the sum of energy points from all characters of characterList
   * 
-  * @return total of energy points
+  * @return Sum of energy points from all characters
   */
   public int getTotalEnergyPoints()
   {
@@ -109,9 +109,9 @@ public abstract class House {
   }
   
   /**
-  * Calculated the total of defensive points and offensive of all characters of characterList
+  * Calculates the sum of defensive points from all characters of characterList
   * 
-  * @return total of defnsive points and offensive points
+  * @return Sum of defensive points from all characters
   */
   public int getTotalDefensiveOffensivePoints()
   {
@@ -124,13 +124,14 @@ public abstract class House {
   }
   
   /***
-   * Print all character in characterList with him attributes
+   * Prints all characters from characterList with their attributes
    */
   public void printCharacterList(FileWriter fw) throws IOException{
 
     for (Character c : characterList) {
         c.printCharacter(fw);
         fw.write("\n");
+        System.out.println();
     }
 
   }

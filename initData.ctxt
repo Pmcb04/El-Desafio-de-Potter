@@ -6,4 +6,6 @@ comment1.target=initData()
 comment2.params=
 comment2.target=void\ initData()
 comment2.text=\n\ Reads\ the\ input\ file\n
-numComments=3
+comment3.params=
+comment3.target=void\ prueba()
+numComments=4
