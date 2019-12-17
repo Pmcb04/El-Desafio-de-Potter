@@ -68,24 +68,15 @@ public abstract class Character
      * @return Character's wand
      */
     public String getWandName(){
-        return characterWand.getName();
+        return getWand().getName();
     }
-    
-     /***
-     * Returns the character's assigned wand type
-     * @return Character's wand type
-     */
-    public String getWandType(){
-        return characterWand.getType();
-    }
-    
     
      /***
      * Uses the wand in a offensive way in order to get the attack points 
      * @return Character's attack points
      */
     public float getAttackPoints(){
-        return characterWand.offensiveUse(getOffensivePoints(), getEnergyPoints());
+        return getWand().offensiveUse(getOffensivePoints(), getEnergyPoints());
     }
     
      /***
@@ -93,7 +84,7 @@ public abstract class Character
      * @return Character's resistance points
      */
     public float getResistancePoints(){
-        return characterWand.defensiveUse(getDefensivePoints(),getEnergyPoints());
+        return getWand().defensiveUse(getDefensivePoints(),getEnergyPoints());
     }
        
      /***
@@ -223,7 +214,7 @@ public abstract class Character
         float ep = Math.round(getEnergyPoints() * 100f) / 100f;
         
         String s = "character:<" + getName() + "> <e: " + ep + "> <o: " + op + "> <d: " +
-            dp + "> <wand: " + getWandName() + " (" + getWandType() + ")>"; 
+            dp + "> "+ getWand(); 
          
 
       System.out.printf(s);

@@ -39,7 +39,7 @@ public class SlytherinTest
         offensiv1 = new OffensiveHawthron("varHawt");
         defensiv1 = new DefensiveCharacter("character1", hollyDef2);
         offensiv2 = new OffensiveCharacter("character2", offensiv1);
-        slytheri1 = new Slytherin();
+        slytheri1 = new Slytherin("Slytherin");
         slytheri1.setCharacter(offensiv2);
         slytheri1.setCharacter(defensiv1);
     }

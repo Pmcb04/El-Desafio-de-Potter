@@ -36,4 +36,10 @@ public interface Wand
      * @return Wand's type
      */
     public String getType();
+    
+    /**
+     * Gets Wand info in order to print it.
+     * @return Wand info
+     */
+    public String toString();
 }

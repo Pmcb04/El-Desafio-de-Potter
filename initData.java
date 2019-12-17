@@ -20,7 +20,7 @@ public class initData
      */
     private void initData() throws IOException{
         
-       FileReader fr = new FileReader("files/input.log");  
+       FileReader fr = new FileReader("input.log");  
        Scanner sc = new Scanner(fr);
        String [] vS;
        int num, numHouses, cont, j;
@@ -54,10 +54,10 @@ public class initData
           House h;
           s = sc.nextLine();
           
-            if(s.equalsIgnoreCase("Gryffindor")) h = new Gryffindor();
-            else if(s.equalsIgnoreCase("Hufflepuff")) h = new Hufflepuff();
-            else if(s.equalsIgnoreCase("Slytherin")) h = new Slytherin();
-            else h = new Gryffindor();
+            if(s.equalsIgnoreCase("Gryffindor")) h = new Gryffindor(s);
+            else if(s.equalsIgnoreCase("Hufflepuff")) h = new Hufflepuff(s);
+            else if(s.equalsIgnoreCase("Slytherin")) h = new Slytherin(s);
+            else h = new Gryffindor(s);
   
        
             for(int i = 0; i < num; i++){

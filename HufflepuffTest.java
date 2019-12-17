@@ -40,7 +40,7 @@ public class HufflepuffTest
         offensiv1 = new OffensiveHawthron("varHawt");
         defensiv1 = new DefensiveCharacter("character1", hollyDef2);
         offensiv2 = new OffensiveCharacter("character2", offensiv1);
-        hufflepu1 = new Hufflepuff();
+        hufflepu1 = new Hufflepuff("Hufflepuff");
         hufflepu1.setCharacter(offensiv2);
         hufflepu1.setCharacter(defensiv1);
     }

@@ -11,8 +11,8 @@ public class Hufflepuff extends House {
   /**
    * Constructor for objects of class Hufflepuff
    */
-  public Hufflepuff (){
-        super("Hufflepuff");
+  public Hufflepuff (String name){
+        super(name);
   }
   
   /***

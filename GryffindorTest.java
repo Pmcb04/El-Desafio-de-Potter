@@ -40,7 +40,7 @@ public class GryffindorTest
         offensiv1 = new OffensiveHawthron("varHawt");
         defensiv1 = new DefensiveCharacter("character1", hollyDef2);
         offensiv2 = new OffensiveCharacter("character2", offensiv1);
-        gryffind1 = new Gryffindor();
+        gryffind1 = new Gryffindor("Gryffindor");
         gryffind1.setCharacter(offensiv2);
         gryffind1.setCharacter(defensiv1);
     }

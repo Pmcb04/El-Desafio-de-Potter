@@ -59,4 +59,14 @@ public abstract class AbstractWand implements Wand
     public String getType(){
      return Type;
     }
+    
+    
+   /**
+     * Gets Wand info in order to print it.
+     * @return Wand info
+     */
+    @Override
+    public String toString(){
+        return "<wand: " + getName() + " (" + getType() + ")>";
+    };
 }

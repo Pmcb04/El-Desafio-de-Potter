@@ -11,8 +11,8 @@ public class Slytherin extends House {
   /**
    * Constructor for objects of class Slytherin
    */
-  public Slytherin (){
-        super("Slytherin");
+  public Slytherin (String name){
+        super(name);
   }   
      
   /***

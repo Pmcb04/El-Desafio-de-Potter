@@ -34,7 +34,7 @@
     
     public static void main (String[] arg) throws IOException{
         
-          FileWriter fw = new FileWriter("files/output.log");
+          FileWriter fw = new FileWriter("output.log");
           initData id = new initData();
     
           int turns = 0; 

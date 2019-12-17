@@ -52,7 +52,6 @@ public class DefensiveCharacterTest
         assertEquals(20, defensiv2.getOffensivePoints(), 0.1);
         assertEquals(25, defensiv2.getDefensivePoints(), 0.1);
         assertEquals("defensiveWand", defensiv2.getWandName());
-        assertEquals("HollyDefensive", defensiv2.getWandType());
     }
 
     @Test
@@ -64,7 +63,6 @@ public class DefensiveCharacterTest
         assertEquals(15, defensiv1.getDefensivePoints(), 0.1);
         assertEquals(10, defensiv1.getEnergyPoints(), 0.1);
         assertEquals("defensiveWand", defensiv1.getWandName());
-        assertEquals("HollyDefensive", defensiv1.getWandType());
     }
 
     @Test
@@ -73,10 +71,8 @@ public class DefensiveCharacterTest
         OffensiveHawthron defensiv1 = new OffensiveHawthron("newWand");
         DefensiveCharacter defensiv2 = new DefensiveCharacter("testName", hollyDef1);
         assertEquals("defensiveWand", defensiv2.getWandName());
-        assertEquals("HollyDefensive", defensiv2.getWandType());
         defensiv2.changeWand(defensiv1);
         assertEquals("newWand", defensiv2.getWandName());
-        assertEquals("OffensiveHawthron", defensiv2.getWandType());
     }
 
     @Test

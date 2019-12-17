@@ -11,8 +11,8 @@ public class Gryffindor extends House {
   /**
    * Constructor for objects of class Gryffindor
    */
-  public Gryffindor (){
-        super("Gryffindor");
+  public Gryffindor (String name){
+        super(name);
   }  
     
     
