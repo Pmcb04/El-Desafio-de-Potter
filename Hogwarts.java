@@ -265,29 +265,27 @@ public class Hogwarts
      * @return True if all houses have different number of characters
      */
     public boolean checkDifferentNumberCharacters(){
-        Iterator<String> it1 = houseCollection.keySet().iterator(); 
-        House h1; House h2; boolean found = true;
-        while(it1.hasNext()){
-         String key1 = it1.next();
-         String nameHouse1 = houseCollection.get(key1).getName();
-         if (nameHouse1 != null){
-            h1 = houseCollection.get(key1);
-           if(h1.howManyCharacters() < 0){
-             Iterator<String> it2 = houseCollection.keySet().iterator(); 
-             while(it2.hasNext() && found){
-                 String key2 = it2.next();
-                 String nameHouse2 = houseCollection.get(key2).getName();
-                 if (nameHouse2 != null){
-                    h2 = houseCollection.get(key2);
-                    if(!(h1.getName().equals(h2.getName())) && (h1.howManyCharacters() == h2.howManyCharacters())){
-                           found = false;
-                    } 
-                }
-             }
-           } 
-         }
-       }
-       return found;
+      Iterator<String> it = houseCollection.keySet().iterator(); 
+      House h1; House h2; boolean found = true; String key, nameHouse; 
+      
+      key = it.next(); 
+      h1 = houseCollection.get(key);
+      nameHouse = houseCollection.get(key).getName();
+      if (nameHouse != null){
+       while(it.hasNext() && found){
+        key = it.next();
+        nameHouse = houseCollection.get(key).getName();
+        if (nameHouse != null){
+         h2 = houseCollection.get(key);
+	 if(h2.howManyCharacters() > 0){
+          if(h2.howManyCharacters() == h1.howManyCharacters()){
+              found = false;
+          }
+	 }
+        }
+       }  
+      }
+      return found;
     }
     
     /**
@@ -296,27 +294,27 @@ public class Hogwarts
      * @return True if total energy points of each house is different
      */
     public boolean checkDifferentEnergyPoints(){
-        Iterator<String> it1 = houseCollection.keySet().iterator(); 
-        House h1; House h2; boolean found = true;
-        while(it1.hasNext()){
-        String key1 = it1.next();
-        String nameHouse1 = houseCollection.get(key1).getName();
-         if (nameHouse1 != null){
-           h1 = houseCollection.get(key1);  
-           Iterator<String> it2 = houseCollection.keySet().iterator(); 
-           while(it2.hasNext() && found){
-             String key2 = it2.next();
-             String nameHouse2 = houseCollection.get(key2).getName();
-             if (nameHouse2 != null){
-                h2 = houseCollection.get(key2);
-                if(!(h1.getName().equals(h2.getName())) && (h1.getTotalEnergyPoints() == h2.getTotalEnergyPoints())){
-                 found = false;
-                } 
-             }
-           }
+      Iterator<String> it = houseCollection.keySet().iterator(); 
+      House h1; House h2; boolean found = true; String key, nameHouse; 
+      
+      key = it.next(); 
+      h1 = houseCollection.get(key);
+      nameHouse = houseCollection.get(key).getName();
+      if (nameHouse != null){
+       while(it.hasNext() && found){
+        key = it.next();
+        nameHouse = houseCollection.get(key).getName();
+        if (nameHouse != null){
+         h2 = houseCollection.get(key);
+	 if(h2.getTotalEnergyPoints() > 0f){
+          if(h2.getTotalEnergyPoints() == h1.getTotalEnergyPoints()){
+              found = false;
+          }
+	 }
         }
-       }
-       return found;
+       }  
+      }
+      return found;
     }
     
     
@@ -327,29 +325,27 @@ public class Hogwarts
      * @return True if total sum of the defensive points and offensive points of each house is different
      */
     public boolean checkDifferentDefensiveOffensivePoints(){
-        Iterator<String> it1 = houseCollection.keySet().iterator(); 
-        House h1; House h2; boolean found = true;
-        while(it1.hasNext()){
-         String key1 = it1.next();
-         String nameHouse1 = houseCollection.get(key1).getName();
-         if (nameHouse1 != null){
-            h1 = houseCollection.get(key1);
-         
-         Iterator<String> it2 = houseCollection.keySet().iterator(); 
-         while(it2.hasNext() && found){
-             String key2 = it2.next();
-             String nameHouse2 = houseCollection.get(key2).getName();
-             if (nameHouse2 != null){
-                h2 = houseCollection.get(key2);
-                if(!(h1.getName().equals(h2.getName())) && 
-                (h1.getTotalDefensiveOffensivePoints() == h2.getTotalDefensiveOffensivePoints())){
-                      found = false;
-                } 
-             }
-         }
+      Iterator<String> it = houseCollection.keySet().iterator(); 
+      House h1; House h2; boolean found = true; String key, nameHouse; 
+      
+      key = it.next(); 
+      h1 = houseCollection.get(key);
+      nameHouse = houseCollection.get(key).getName();
+      if (nameHouse != null){
+       while(it.hasNext() && found){
+        key = it.next();
+        nameHouse = houseCollection.get(key).getName();
+        if (nameHouse != null){
+         h2 = houseCollection.get(key);
+	 if(h2.getTotalDefensiveOffensivePoints() > 0f){
+          if(h2.getTotalDefensiveOffensivePoints() == h1.getTotalDefensiveOffensivePoints()){
+              found = false;
+          }
+	 }
         }
-       }
-       return found;
+       }  
+      }
+      return found;
     }
     
     /**
@@ -440,7 +436,7 @@ public class Hogwarts
      */
     public House winnerHouse(){
         Iterator<String> it = houseCollection.keySet().iterator(); 
-        House h; boolean found = false; String nameHouse, key;
+        House h = null; boolean found = false; String nameHouse, key;
         while(it.hasNext() && !found){
           key = it.next();
           nameHouse = houseCollection.get(key).getName();
@@ -448,11 +444,10 @@ public class Hogwarts
              h = houseCollection.get(key);
              if(h.howManyCharacters() > 0){
                 found = true;
-                return h;
              }
           }
         }
-        return null;
+        return h;
     }
     
     

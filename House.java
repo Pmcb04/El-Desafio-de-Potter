@@ -98,9 +98,9 @@ public abstract class House {
   * 
   * @return Sum of energy points from all characters
   */
-  public int getTotalEnergyPoints()
+  public float getTotalEnergyPoints()
   {
-    int totalEnergy = 0;
+    float totalEnergy = 0;
     
     for(Character c : characterList)
         totalEnergy += c.getEnergyPoints();
@@ -109,13 +109,13 @@ public abstract class House {
   }
   
   /**
-  * Calculates the sum of defensive points from all characters of characterList
+  * Calculates the sum of defensive and offensive points from all characters of characterList
   * 
   * @return Sum of defensive points from all characters
   */
-  public int getTotalDefensiveOffensivePoints()
+  public float getTotalDefensiveOffensivePoints()
   {
-    int totalPoints = 0;
+    float totalPoints = 0;
     
     for(Character c : characterList)
         totalPoints += c.getOffensivePoints() + c.getDefensivePoints();

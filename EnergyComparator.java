@@ -1,7 +1,7 @@
 import java.util.*;
 /**
  * Class EnergyComparator
- * Sorts by energyPoints in an ascending order. If defensivePoints are equal, it sorts by name
+ * Sorts by energyPoints in an ascending order. If energyPoints are equal, it sorts by name
  * 
  * @author Pedro Miguel Carmona Broncano & Rubén Marín Lucas & Adrián Ruiz Parra
  * @version 12/11/2019
