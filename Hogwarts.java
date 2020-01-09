@@ -58,7 +58,7 @@ public class Hogwarts
     public void insertCharacters(){
         Iterator<String> it = houseCollection.keySet().iterator();
         House h;
-        while(it.hasNext()){
+       while(it.hasNext()){
             String key = it.next();
             String nameHouse = houseCollection.get(key).getName();
         if (nameHouse != null){
@@ -88,6 +88,15 @@ public class Hogwarts
      */
     public void insertHouse(String nameHouse, House h){
         houseCollection.put(nameHouse, h);
+    }
+    
+    /**
+     * Return the number of houses in houseCollection
+     *
+     * @return the number if houses in houseCollection
+     */
+    public int numHouses(){
+        return houseCollection.size();
     }
 
     /**
@@ -121,23 +130,7 @@ public class Hogwarts
        fw.write("\n");
        System.out.println();
     }
-    
-    
-    /**
-     * Prints the information of the duel between two characters in a file writer
-     *
-     *@param fw FileWriter where the info will be printed
-     *@param c1 The character that fights against the other character 
-     *@param c2 The opponent character
-     */
-    public void printAttackCharacters(Character c1, Character c2,FileWriter fw) throws IOException{
-          String s1;
-          s1 = String.format("<%s> is dueling against <%s>%n", 
-                                   c1.getName(), c2.getName());
-          fw.write(s1);
-          System.out.printf(s1);
-    }
-    
+      
     
     
     /**
@@ -164,30 +157,7 @@ public class Hogwarts
         System.out.println();
     }
     
-    
-    
-    /***
-     * Print method to print the results of all duels
-     * 
-     * @param fw FileWriter where the info will be printed
-     */
-    public void printResultDuels(Character c, FileWriter fw) throws IOException{
-        
-        if(c.getEnergyPoints() <= 0){
-          c.setEnergyPoints(0f);
-          c.printCharacter(fw);
-          System.out.printf(" goes to dungeon");
-          fw.write(" goes to dungeon");
-        }else{
-          c.printCharacter(fw);
-          System.out.printf(" returns to the house");
-          fw.write(" returns to the house"); 
-        }    
-        System.out.println();
-        fw.write("\n");
-    }
-    
-    
+       
     /**
      * Check if all houses have characters. If a house has characters, we check the first character of the house in checkCharacters.
      *
@@ -219,20 +189,6 @@ public class Hogwarts
             printGiveWand(newWand, fw);
             newWandCollection.remove(newWand);
         }
-    } 
-    
-    
-    /**
-     * Print method to print the wand that has been assigned to character
-     * 
-     * @param fw FileWriter where the info will be printed
-     * @param w The wand that will be assigned
-     */
-    public void printGiveWand(Wand w, FileWriter fw) throws IOException{
-        String s;
-        s = String.format("new wand assigned: <%s (class %s)>%n", w.getName(), w.getType());
-        System.out.printf(s);
-        fw.write(s);
     } 
     
     /**
@@ -277,11 +233,11 @@ public class Hogwarts
         nameHouse = houseCollection.get(key).getName();
         if (nameHouse != null){
          h2 = houseCollection.get(key);
-	 if(h2.howManyCharacters() > 0){
+     if(h2.howManyCharacters() > 0){
           if(h2.howManyCharacters() == h1.howManyCharacters()){
               found = false;
           }
-	 }
+     }
         }
        }  
       }
@@ -306,11 +262,11 @@ public class Hogwarts
         nameHouse = houseCollection.get(key).getName();
         if (nameHouse != null){
          h2 = houseCollection.get(key);
-	 if(h2.getTotalEnergyPoints() > 0f){
+     if(h2.getTotalEnergyPoints() > 0f){
           if(h2.getTotalEnergyPoints() == h1.getTotalEnergyPoints()){
               found = false;
           }
-	 }
+     }
         }
        }  
       }
@@ -337,11 +293,11 @@ public class Hogwarts
         nameHouse = houseCollection.get(key).getName();
         if (nameHouse != null){
          h2 = houseCollection.get(key);
-	 if(h2.getTotalDefensiveOffensivePoints() > 0f){
+     if(h2.getTotalDefensiveOffensivePoints() > 0f){
           if(h2.getTotalDefensiveOffensivePoints() == h1.getTotalDefensiveOffensivePoints()){
               found = false;
           }
-	 }
+     }
         }
        }  
       }
@@ -450,28 +406,7 @@ public class Hogwarts
         return h;
     }
     
-    
-    
-    /**
-     * Print method to print all wands of the newWandCollection
-     *
-     * @param fw FileWriter where the info will be written
-     */
-    public void printWands(FileWriter fw) throws IOException{
-      Iterator<Wand> it = newWandCollection.iterator();
-      String s;
-      Wand w;
-      while(it.hasNext()){
-          w = it.next();
-          s = String.format("wand: <%s (%s)>%n", w.getName(), w.getType());
-          System.out.printf(s);
-          fw.write(s);
-      }
-    }
-    
-    
-
-     /**
+         /**
      * Gets the winner house depending of all cases
      * @return The winner house
      */
@@ -491,6 +426,72 @@ public class Hogwarts
             }
         }
         return null;
+    }
+    
+    /**
+     * Print method to print all wands of the newWandCollection
+     *
+     * @param fw FileWriter where the info will be written
+     */
+    public void printWands(FileWriter fw) throws IOException{
+      Iterator<Wand> it = newWandCollection.iterator();
+      String s;
+      Wand w;
+      while(it.hasNext()){
+          w = it.next();
+          s = String.format("wand: <%s (%s)>%n", w.getName(), w.getType());
+          System.out.printf(s);
+          fw.write(s);
+      }
+    }
+    
+        /**
+     * Print method to print the wand that has been assigned to character
+     * 
+     * @param fw FileWriter where the info will be printed
+     * @param w The wand that will be assigned
+     */
+    public void printGiveWand(Wand w, FileWriter fw) throws IOException{
+        String s;
+        s = String.format("new wand assigned: <%s (class %s)>%n", w.getName(), w.getType());
+        System.out.printf(s);
+        fw.write(s);
+    }
+    
+        /***
+     * Print method to print the results of all duels
+     * 
+     * @param fw FileWriter where the info will be printed
+     */
+    public void printResultDuels(Character c, FileWriter fw) throws IOException{
+        
+        if(c.getEnergyPoints() <= 0){
+          c.setEnergyPoints(0f);
+          c.printCharacter(fw);
+          System.out.printf(" goes to dungeon");
+          fw.write(" goes to dungeon");
+        }else{
+          c.printCharacter(fw);
+          System.out.printf(" returns to the house");
+          fw.write(" returns to the house"); 
+        }    
+        System.out.println();
+        fw.write("\n");
+    }
+    
+        /**
+     * Prints the information of the duel between two characters in a file writer
+     *
+     *@param fw FileWriter where the info will be printed
+     *@param c1 The character that fights against the other character 
+     *@param c2 The opponent character
+     */
+    public void printAttackCharacters(Character c1, Character c2,FileWriter fw) throws IOException{
+          String s1;
+          s1 = String.format("<%s> is dueling against <%s>%n", 
+                                   c1.getName(), c2.getName());
+          fw.write(s1);
+          System.out.printf(s1);
     }
     
     /**
