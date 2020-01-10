@@ -46,11 +46,9 @@ public class HogwartsTest
         gryffind1 = new Gryffindor("Gryffindor");
         hufflepu1 = new Hufflepuff("Hufflepuff");
         slytheri1 = new Slytherin("Slytherin");
-        hufflepu1.setCharacter(offensiv3);
-        gryffind1.setCharacter(offensiv2);
-        hogwarts.insertHouse("gryf", gryffind1);
-        hogwarts.insertHouse("huf", hufflepu1);
-        hogwarts.insertHouse("slh", slytheri1);
+        hogwarts.insertHouse(gryffind1);
+        hogwarts.insertHouse(hufflepu1);
+        hogwarts.insertHouse(slytheri1);
     }
 
     /**
@@ -61,6 +59,7 @@ public class HogwartsTest
     @After
     public void tearDown()
     {
+        hogwarts.deleteAllHouses();
     }
 
     @Test
@@ -68,8 +67,6 @@ public class HogwartsTest
     {
         hufflepu1.setCharacter(offensiv3);
         gryffind1.setCharacter(offensiv2);
-        hogwarts.insertHouse("gryf", gryffind1);
-        hogwarts.insertHouse("huf", hufflepu1);
         assertFalse(hogwarts.checkDifferentDefensiveOffensivePoints());
         DefensiveCharacter defensiv1 = new DefensiveCharacter("testDef1", hollyDef1);
         gryffind1.setCharacter(defensiv1);
@@ -81,20 +78,17 @@ public class HogwartsTest
     {
         hufflepu1.setCharacter(offensiv3);
         gryffind1.setCharacter(offensiv2);
+        slytheri1.setCharacter(offensiv2);
         DefensiveCharacter defensiv1 = new DefensiveCharacter("testChar", hollyDef1);
         gryffind1.setCharacter(defensiv1);
-        hogwarts.insertHouse("g", gryffind1);
-        hogwarts.insertHouse("h", hufflepu1);
-        assertNotEquals(gryffind1, hogwarts.minDefensiveOffensivePoints());
+        slytheri1.setCharacter(defensiv1);
+        assertEquals(hufflepu1, hogwarts.minDefensiveOffensivePoints());
     }
 
     @Test
     public void testCheckWinnerHouse()
     {
         gryffind1.setCharacter(offensiv2);
-        hogwarts.insertHouse("s", slytheri1);
-        hogwarts.insertHouse("h", hufflepu1);
-        hogwarts.insertHouse("g", gryffind1);
         assertEquals(gryffind1,hogwarts.winnerHouse());
     }
     
@@ -104,7 +98,7 @@ public class HogwartsTest
     {
         Gryffindor gryffind2 = new Gryffindor("prueba");
         assertEquals(3, hogwarts.numHouses());
-        hogwarts.insertHouse("prueba", gryffind2);
+        hogwarts.insertHouse(gryffind2);
         assertEquals(4, hogwarts.numHouses());
     }
   
@@ -114,23 +108,78 @@ public class HogwartsTest
         DefensiveCharacter defensiv1 = new DefensiveCharacter("g", hollyDef1);
         gryffind1.setCharacter(defensiv1);
         gryffind1.setCharacter(offensiv2);
-        hogwarts.insertHouse("maxg", gryffind1);
+        hogwarts.insertHouse(gryffind1);
         assertSame(gryffind1, hogwarts.maxNumberCharacters());
+    }
+
+ 
+    @Test
+    public void testCheckDifferentNumberCharacters()
+    {  
+        DefensiveCharacter defensiv1 = new DefensiveCharacter("g", hollyDef1);
+        gryffind1.setCharacter(defensiv1);
+        hufflepu1.setCharacter(offensiv3); 
+        gryffind1.setCharacter(offensiv2);
+        assertTrue(hogwarts.checkDifferentNumberCharacters());
+        hufflepu1.setCharacter(offensiv2);
+        assertFalse(hogwarts.checkDifferentNumberCharacters());
     }
 
     @Test
     public void testGetWinnerHouse()
     {
-        assertNotNull(hogwarts.getWinnerHouse());
-        assertNotSame(gryffind1, hogwarts.getWinnerHouse());
+        gryffind1.setCharacter(offensiv3);
+        assertEquals(gryffind1, hogwarts.getWinnerHouse());
+        hufflepu1.setCharacter(offensiv3);
+        hufflepu1.setCharacter(offensiv2);
+        assertEquals(hufflepu1, hogwarts.getWinnerHouse());
+        OffensiveCharacter offensiv4 = new OffensiveCharacter("testVida", 40, 20, 20, offensiv1);
+        gryffind1.setCharacter(offensiv4);
+        assertEquals(gryffind1, hogwarts.getWinnerHouse());
+        slytheri1.setCharacter(offensiv3);
+        OffensiveCharacter offensiv5 = new OffensiveCharacter("testLow", 40, 10, 10, offensiv1);
+        slytheri1.setCharacter(offensiv5);
+        assertEquals(slytheri1, hogwarts.getWinnerHouse());
     }
 
     @Test
-    public void testCheckDifferentNumberCharacters()
+    public void testCheckDifferentEnergyPoints()
     {
-        assertTrue( hogwarts.checkDifferentNumberCharacters());
+        gryffind1.setCharacter(offensiv2);
+        hufflepu1.setCharacter(offensiv2);
+        slytheri1.setCharacter(offensiv2);
+        assertFalse(hogwarts.checkDifferentEnergyPoints());
+        gryffind1.setCharacter(offensiv3);
+        hufflepu1.setCharacter(offensiv3); 
+        DefensiveCharacter defensiv1 = new DefensiveCharacter("testChar", hollyDef1);
+        gryffind1.setCharacter(defensiv1);
+        assertTrue(hogwarts.checkDifferentEnergyPoints());
+    }
+
+    @Test
+    public void testEndSimulation()
+    {
+        assertTrue(hogwarts.endSimulation());
+        gryffind1.setCharacter(offensiv2);
+        assertTrue(hogwarts.endSimulation());
+        hufflepu1.setCharacter(offensiv3);
+        assertFalse(hogwarts.endSimulation());
+    }
+
+    @Test
+    public void checkMaxEnergyPoints()
+    {
+        gryffind1.setCharacter(offensiv2);
+        assertEquals(gryffind1, hogwarts.maxEnergyPoints());
+        hufflepu1.setCharacter(offensiv3);
+        hufflepu1.setCharacter(offensiv2);
+        assertEquals(hufflepu1, hogwarts.maxEnergyPoints());
     }
 }
+
+
+
+
 
 
 

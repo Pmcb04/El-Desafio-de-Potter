@@ -86,8 +86,8 @@ public class Hogwarts
      * @param nameHouse The name of the house
      * @param h The house to insert
      */
-    public void insertHouse(String nameHouse, House h){
-        houseCollection.put(nameHouse, h);
+    public void insertHouse(House h){
+        houseCollection.put(h.getName(), h);
     }
     
     /**
@@ -192,9 +192,9 @@ public class Hogwarts
     } 
     
     /**
-     * Returns true if just one house has characters left.
+     * Returns true if there is one or less houses with characters.
      * 
-     * @return True if just one house has characters left.
+     * @return True if there is one or less houses with characters
      */
     public boolean endSimulation(){
         Iterator<String> it = houseCollection.keySet().iterator(); 
@@ -554,6 +554,13 @@ public class Hogwarts
         fw.write("\n");
     }
     
-     
+     /**
+     * Deletes all houses from hogwarts
+     *
+     */
+    public void deleteAllHouses()
+    {  
+        houseCollection.clear();
+    }
 }
 

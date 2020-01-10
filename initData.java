@@ -91,7 +91,7 @@ public class initData
             }
         
           h.orderCharacters();
-          hogwarts.insertHouse(h.getName(),h);
+          hogwarts.insertHouse(h);
         
           cont--;
        }

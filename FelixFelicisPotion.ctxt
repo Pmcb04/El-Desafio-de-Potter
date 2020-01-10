@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=FelixFelicisPotion
-comment0.text=\n\ Class\ FelixFelicisPotion\n\ Decorator\ Pattern\n\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\n\ @version\ 26/11/2019\n
+comment0.text=\r\n\ Class\ FelixFelicisPotion\r\n\ Decorator\ Pattern\r\n\r\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\r\n\ @version\ 26/11/2019\r\n
 comment1.params=character
 comment1.target=FelixFelicisPotion(Character)
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ FelixFelicisPotion\n\ @param\ character\ Character\ that\ will\ be\ decorated\n
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ FelixFelicisPotion\r\n\ @param\ character\ Character\ that\ will\ be\ decorated\r\n
 comment2.params=
 comment2.target=float\ getOffensivePoints()
 numComments=3

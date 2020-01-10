@@ -98,13 +98,13 @@ public class HufflepuffTest
     @Test
     public void testGetTotalEnergyPoints()
     {
-        assertEquals(40, hufflepu1.getTotalEnergyPoints());
+        assertEquals(40, hufflepu1.getTotalEnergyPoints(), 0.1);
     }
 
     @Test
     public void testGetTotalDefensiveOffensivePoints()
     {
-        assertEquals(90, hufflepu1.getTotalDefensiveOffensivePoints());
+        assertEquals(90, hufflepu1.getTotalDefensiveOffensivePoints(), 0.1);
     }
 }
 

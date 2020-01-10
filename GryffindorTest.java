@@ -98,13 +98,13 @@ public class GryffindorTest
     @Test
     public void testGetTotalEnergyPoints()
     {
-        assertEquals(40, gryffind1.getTotalEnergyPoints());
+        assertEquals(40, gryffind1.getTotalEnergyPoints(), 0.1);
     }
 
     @Test
     public void testGetTotalDefensiveOffensivePoints()
     {
-        assertEquals(90, gryffind1.getTotalDefensiveOffensivePoints());
+        assertEquals(90, gryffind1.getTotalDefensiveOffensivePoints(), 0.1);
     }
 }
 

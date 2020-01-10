@@ -97,13 +97,13 @@ public class SlytherinTest
     @Test
     public void testGetTotalEnergyPoints()
     {
-        assertEquals(40, slytheri1.getTotalEnergyPoints());
+        assertEquals(40, slytheri1.getTotalEnergyPoints(), 0.1);
     }
 
     @Test
     public void testGetTotalDefensiveOffensivePoints()
     {
-        assertEquals(90, slytheri1.getTotalDefensiveOffensivePoints());
+        assertEquals(90, slytheri1.getTotalDefensiveOffensivePoints(), 0.1);
     }
 }
 
