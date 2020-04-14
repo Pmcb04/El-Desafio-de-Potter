@@ -9,8 +9,8 @@ VERSION or DATE: 5/12/2019
 THIS PROJECT STARTED: 12/11/2019
 AUTHORS:
     Pedro Miguel Carmona Broncano
-    Ruben Marin Lucas
-    Adrian Ruiz Parra
+    Rubén Marín Lucas
+    Adrián Ruiz Parra
 USER INSTRUCTIONS
     - You must rename the inputX.log file to input.log before run the project, You can find this
       file in 'files' folder
