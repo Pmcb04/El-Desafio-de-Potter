@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=HogwartDemo
+comment0.text=\r\n\ Class\ HogwartsDemo\r\n\r\n\ @author\ Pedro\ Miguel\ Carmona\ Broncano\ &\ Rub\u00E9n\ Mar\u00EDn\ Lucas\ &\ Adri\u00E1n\ Ruiz\ Parra\r\n\ @version\ 12/11/2019\r\n
+comment1.params=s\ fw
+comment1.target=void\ printString(java.lang.String,\ java.io.FileWriter)
+comment1.text=\r\n\ Prints\ string\ s\r\n\ @param\ s\ String\ that\ will\ be\ printed\r\n\ @param\ fw\ FileWriter\r\n
+comment2.params=arg
+comment2.target=void\ main(java.lang.String[])
+numComments=3
